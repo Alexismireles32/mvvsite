@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Lipo HD 360",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575584/lipohd_zg9lxy.png",
+  productUrl: "/lipohd",
+  description: "Lipo HD 360 es el quemador de grasa localizada más efectivo para reducir medidas en abdomen, cintura, brazos y piernas. Fórmula 360° que ataca la grasa desde todos los ángulos: quema grasa rebelde, bloquea formación de nueva grasa y moldea tu figura. Ideal para personas que ya bajaron de peso pero tienen grasa localizada difícil. Reduce centímetros visiblemente en zonas problemáticas. Combina con ejercicio para resultados dramáticos. Pastillas adelgazantes específicas para grasa rebelde que no se elimina con dieta.",
+  benefits: [
+    "Quema grasa localizada en abdomen, cintura, brazos y muslos",
+    "Reduce medidas y centímetros en zonas problemáticas",
+    "Bloquea la formación de nueva grasa corporal",
+    "Efecto 360°: trabaja todo tu cuerpo simultáneamente",
+    "Moldea tu figura y define músculos",
+    "Resultados visibles en medidas desde la primera semana"
+  ],
+  ingredients: [
+    "CLA (Ácido Linoleico Conjugado) 1000mg - Reduce grasa localizada",
+    "L-Carnitina Tartrato 500mg - Transporta grasa para quemarla",
+    "Extracto de Té Verde EGCG - Termogénico natural",
+    "Forskolina (Coleus Forskohlii) - Activa quema de grasa",
+    "Extracto de Cayena - Aumenta temperatura corporal",
+    "Pimienta Negra BioPerine - Mejora absorción 200%",
+    "Cromo Picolinato - Controla azúcar y reduce antojos",
+    "Vitamina B6, B12 - Metabolismo energético"
+  ],
+  howToUse: "Tomar 2 cápsulas en la mañana con el desayuno. Para mejores resultados, combinar con ejercicio cardiovascular y de resistencia 30 minutos al día. Beber 2-3 litros de agua diarios. Medir cintura, caderas y muslos al inicio para ver progreso. Tratamiento recomendado: 8-12 semanas. Combina perfecto con dieta alta en proteína."
+};
+---
+
+<Layout 
+  title="Lipo HD 360 - Quemador de Grasa Localizada | Reduce Medidas Rápido"
+  description="Lipo HD 360: quema grasa localizada en abdomen, cintura, brazos. Fórmula 360° reduce medidas visiblemente. Moldea tu figura. Resultados semana 1."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>

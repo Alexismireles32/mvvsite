@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Slim Coffee (Café Adelgazante)",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575569/SlimCoffee_tfczj8.png",
+  productUrl: "/slimcoffee",
+  description: "Slim Coffee es el café adelgazante natural que sustituye tu café de la mañana y te ayuda a quemar grasa desde el primer sorbo. Café 100% arábica enriquecido con extractos naturales quemagrasas: té verde, garcinia cambogia y L-carnitina. Acelera metabolismo desde la mañana, controla apetito todo el día, aumenta energía y quema calorías. Delicioso sabor a café gourmet con beneficios adelgazantes. Fácil de usar: solo prepara como café normal. Sin azúcar añadida, sin químicos, solo ingredientes naturales. Perfecto para personas ocupadas que quieren bajar de peso sin complicaciones.",
+  benefits: [
+    "Café 100% natural enriquecido con quemadores de grasa",
+    "Acelera metabolismo desde la mañana todo el día",
+    "Controla apetito y reduce antojos por 6-8 horas",
+    "Rico en antioxidantes que protegen y rejuvenecen",
+    "Aumenta energía y concentración sin nerviosismo",
+    "Fácil de usar: sustituye tu café diario normal"
+  ],
+  ingredients: [
+    "Café Arábica Premium 100% - Base de calidad gourmet",
+    "Extracto de Té Verde (EGCG) - Quema grasa y antioxidante",
+    "Garcinia Cambogia Extract - Bloquea producción de grasa",
+    "L-Carnitina - Transporta grasa para quemarla",
+    "Extracto de Té Oolong - Metabolismo de grasas",
+    "Cromo Picolinato - Controla azúcar y antojos",
+    "Fibra Soluble - Aumenta saciedad",
+    "Canela Extract - Regula glucosa en sangre"
+  ],
+  howToUse: "Preparar como café normal: 1-2 cucharadas en 200ml de agua caliente. Tomar en la mañana sustituyendo tu café regular. Puedes agregar leche descremada o edulcorante si deseas (evitar azúcar). Para mejores resultados: tomar en ayunas o con desayuno ligero. No exceder 2 tazas al día. Combinar con alimentación balanceada. Cada frasco rinde aproximadamente 15-20 tazas."
+};
+---
+
+<Layout 
+  title="Slim Coffee - Café Adelgazante Natural Para Bajar de Peso | MVV"
+  description="Slim Coffee: café adelgazante con té verde, garcinia, L-carnitina. Acelera metabolismo, controla apetito. Sustituye tu café diario. Delicioso."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>

@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "SOS Burn Sensitive",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575569/SosBurnSensitive_aewzpe.png",
+  productUrl: "/sosburn-sensitive",
+  description: "SOS Burn Sensitive es el quemador de grasa diseñado específicamente para personas sensibles a estimulantes. Quema grasa efectivamente sin causar nerviosismo, taquicardia, sudoración excesiva o insomnio. Fórmula balanceada con termogénicos suaves pero efectivos. Controla apetito sin efectos secundarios molestos. Resultados progresivos y sostenibles sin ansiedad. Ideal para personas mayores, sensibles a cafeína, con presión alta controlada o que han tenido malas experiencias con otros quemadores. Pérdida de peso saludable y segura. No recomendado tomar después de 4 PM.",
+  benefits: [
+    "Ideal para personas sensibles a la cafeína y estimulantes",
+    "Sin nerviosismo, taquicardia, sudores o insomnio",
+    "Quema grasa de forma suave pero efectiva y constante",
+    "Controla apetito sin efectos secundarios molestos",
+    "Resultados progresivos, saludables y sostenibles",
+    "Seguro para personas mayores o con sensibilidad"
+  ],
+  ingredients: [
+    "Extracto de Té Verde Descafeinado - Quema grasa sin cafeína",
+    "5-HTP - Controla apetito y mejora ánimo",
+    "Garcinia Cambogia - Bloquea grasa sin estimular",
+    "L-Carnitina - Metaboliza grasa naturalmente",
+    "Cromo Picolinato - Reduce antojos sin nervios",
+    "Extracto de Canela - Regula azúcar suavemente",
+    "Vitaminas del Complejo B - Energía natural",
+    "Fibra Soluble - Saciedad prolongada"
+  ],
+  howToUse: "Tomar 1 cápsula en la mañana con el desayuno y 1 cápsula con el almuerzo. No tomar después de las 4 PM para no interferir con el sueño. Resultados graduales: notarás menos apetito en días, pérdida de peso en semanas. Ser constante es clave. Uso continuo 12-16 semanas para resultados óptimos y duraderos. Combinar con caminar 30 minutos diarios."
+};
+---
+
+<Layout 
+  title="SOS Burn Sensitive - Quemador Suave Para Personas Sensibles | Sin Nervios"
+  description="SOS Burn Sensitive: diseñado para personas sensibles. Quema grasa sin nerviosismo, taquicardia o insomnio. Efectivo, suave y seguro."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>

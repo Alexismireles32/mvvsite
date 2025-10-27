@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Alpha Glow (Belleza Desde Adentro)",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575532/alphaglow_jwu8mg.png",
+  productUrl: "/alphaglow",
+  description: "Alpha Glow es el suplemento de belleza más completo: colágeno hidrolizado + biotina + ácido hialurónico + antioxidantes. Fórmula triple acción para piel radiante sin arrugas, cabello fuerte y brillante, uñas sanas que no se quiebran. Combate envejecimiento desde adentro, reduce manchas y líneas de expresión, aumenta firmeza y elasticidad. Resultados visibles en 21 días: piel más luminosa, cabello más grueso, uñas resistentes. Belleza natural que se nota desde dentro. Colágeno tipo 1 y 3 de máxima absorción con vitamina C.",
+  benefits: [
+    "Piel más firme, luminosa y sin arrugas visibles",
+    "Cabello más fuerte con crecimiento acelerado y brillo",
+    "Uñas resistentes que no se quiebran ni descascaran",
+    "Reduce manchas oscuras y líneas de expresión",
+    "Aumenta producción de colágeno natural en el cuerpo",
+    "Resultados visibles en 21-30 días de uso continuo"
+  ],
+  ingredients: [
+    "Colágeno Hidrolizado Tipo 1 y 3 - 5000mg por porción",
+    "Biotina (Vitamina B7) 5000mcg - Cabello y uñas fuertes",
+    "Ácido Hialurónico 100mg - Hidratación profunda de piel",
+    "Vitamina C 500mg - Síntesis de colágeno",
+    "Vitamina E - Antioxidante que protege piel",
+    "Zinc y Selenio - Salud de piel y cabello",
+    "Extracto de Semilla de Uva - Antioxidante anti-edad",
+    "Coenzima Q10 - Energía celular y anti-envejecimiento"
+  ],
+  howToUse: "Tomar 2 cápsulas en la mañana con el desayuno y 1 cápsula en la noche con la cena. Para mejores resultados tomar con vitamina C y mucha agua. Uso continuo mínimo 3 meses para resultados óptimos. Efectos iniciales en 21 días, máximos en 90 días. Combinar con protector solar y buenos hábitos. Seguro para uso prolongado sin efectos secundarios."
+};
+---
+
+<Layout 
+  title="Alpha Glow - Colágeno + Biotina + Ácido Hialurónico | Belleza Natural"
+  description="Alpha Glow: colágeno 5000mg + biotina + ácido hialurónico. Piel radiante, cabello fuerte, uñas sanas. Anti-envejecimiento. Resultados 21 días."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>

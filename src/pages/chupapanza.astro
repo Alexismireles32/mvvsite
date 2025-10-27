@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Chupa Panza (Gel Reductor)",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575545/chupapanza_m7zfgs.png",
+  productUrl: "/chupapanza",
+  description: "Chupa Panza es el gel reductor de abdomen de aplicación tópica más efectivo de México. Quema grasa localizada, reduce medidas visiblemente y tonifica la piel del abdomen. Efecto termogénico con calor que activa quema de grasa local donde se aplica. Reduce cintura, rollitos y elimina piel flácida. Complemento perfecto para quemadores orales o ejercicio. Fórmula con extractos naturales que penetran profundo. Resultados visibles desde la primera semana de uso constante. Ideal combinar con masajes circulares y faja moldeadora. Aroma agradable, no mancha ropa.",
+  benefits: [
+    "Reduce grasa abdominal localizada donde se aplica",
+    "Efecto termogénico: calor que activa quema de grasa",
+    "Tonifica y reafirma la piel del abdomen flácida",
+    "Reduce medidas de cintura y elimina rollitos",
+    "Complemento perfecto para quemadores orales y ejercicio",
+    "Resultados visibles en medidas desde 7 días"
+  ],
+  ingredients: [
+    "Cafeína Tópica - Quema grasa localizada",
+    "L-Carnitina - Metaboliza grasa en energía",
+    "Extracto de Cayena - Efecto termogénico calor",
+    "Alcanfor - Mejora circulación sanguínea",
+    "Mentol - Sensación refrescante y penetración",
+    "Aloe Vera - Hidrata y suaviza piel",
+    "Extracto de Té Verde - Antioxidante quemagrasas",
+    "Colágeno - Reafirma y tonifica piel"
+  ],
+  howToUse: "Aplicar generosamente en abdomen, cintura y rollitos con masaje circular por 5-10 minutos hasta completa absorción. Usar 2 veces al día: mañana y noche después de ducha. Para mejores resultados: usar faja moldeadora después de aplicar y hacer 30 min de cardio. Combinar con quemador oral y dieta. Medir cintura cada semana. Uso continuo 4-8 semanas para resultados óptimos."
+};
+---
+
+<Layout 
+  title="Chupa Panza - Gel Reductor de Abdomen | Quema Grasa Localizada"
+  description="Chupa Panza gel reductor: quema grasa abdominal localizada, reduce medidas, tonifica piel. Efecto termogénico. Resultados visibles 7 días."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>

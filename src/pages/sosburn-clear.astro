@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "SOS Burn Clear",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575569/SosBurnClear_oj4hvf.png",
+  productUrl: "/sosburn-clear",
+  description: "SOS Burn Clear es la versión mejorada y potenciada de SOS Burn original. Fórmula transparente sin colorantes artificiales para máxima pureza y absorción. Quema grasa efectivamente, controla ansiedad por comida y aumenta energía limpia sin estimulantes fuertes. Mayor biodisponibilidad que versión original: tu cuerpo absorbe mejor los ingredientes activos. Ideal para personas que prefieren productos sin colorantes o que son sensibles pero quieren resultados potentes. Sin nerviosismo ni taquicardia. Energía sostenida todo el día sin crash.",
+  benefits: [
+    "Fórmula mejorada sin colorantes artificiales añadidos",
+    "Mayor absorción y efectividad que versión original",
+    "Quema grasa y controla apetito naturalmente todo el día",
+    "Sin nerviosismo: ideal para personas sensibles",
+    "Energía limpia y sostenida sin crash o bajones",
+    "Pureza máxima con ingredientes de grado farmacéutico"
+  ],
+  ingredients: [
+    "Extracto de Té Verde Purificado - Sin colorantes",
+    "Cafeína Natural Micronizada - Mejor absorción",
+    "L-Carnitina Tartrato Pura - Alta biodisponibilidad",
+    "Garcinia Cambogia Premium - Sin aditivos",
+    "Extracto de Té Blanco - Antioxidante puro",
+    "Cromo GTF Quelado - Máxima absorción",
+    "L-Tirosina Farmacéutica - Concentración mental",
+    "Vitaminas B Activas - Energía celular"
+  ],
+  howToUse: "Tomar 1 cápsula en la mañana con el desayuno. Si se tolera bien, agregar 1 cápsula más al medio día (antes de las 3 PM). No exceder 2 cápsulas diarias. Debido a su mayor absorción, comenzar con 1 cápsula para evaluar tolerancia. Beber 2-3 litros de agua diarios. Combinar con alimentación saludable. Ciclo recomendado: 8-12 semanas, descansar 1 semana."
+};
+---
+
+<Layout 
+  title="SOS Burn Clear - Quemador Sin Colorantes | Máxima Pureza y Absorción"
+  description="SOS Burn Clear: versión mejorada sin colorantes. Mayor absorción, quema grasa, controla ansiedad. Ideal sensibles. Energía limpia sin nervios."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>

@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "SOS Burn",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575596/sosburn_g2ui2b.png",
+  productUrl: "/sosburn",
+  description: "SOS Burn es el quemador termogénico más efectivo para quemar grasa rápido. Fórmula termogénica avanzada que activa la quema de grasa las 24 horas del día, incluso en reposo. Controla el apetito, elimina ansiedad por comer, aumenta energía y acelera resultados. Ideal para personas que necesitan bajar de peso rápido y de forma segura. Hasta 6-8 kilos por mes sin nerviosismo ni efectos secundarios. Pastillas para adelgazar probadas por miles de clientes satisfechos en México y USA.",
+  benefits: [
+    "Efecto termogénico intenso: quema calorías 24/7 incluso en reposo",
+    "Suprime el apetito y elimina antojos por comida chatarra",
+    "Aumenta energía, concentración y resistencia para entrenar",
+    "Acelera pérdida de peso: hasta 6-8 kilos en el primer mes",
+    "Sin nerviosismo, taquicardia ni insomnio",
+    "Mejora metabolismo de grasas y carbohidratos"
+  ],
+  ingredients: [
+    "Extracto de Citrus Aurantium (Sinefrina) - Termogénico potente",
+    "Cafeína Anhidra - Energía limpia y metabolismo acelerado",
+    "Té Verde EGCG - Antioxidante que quema grasa abdominal",
+    "Extracto de Cayena - Aumenta temperatura corporal",
+    "L-Tirosina - Mejora concentración y estado de ánimo",
+    "Pimienta Negra (Bioperine) - Mejora absorción de nutrientes",
+    "Yohimbina - Quema grasa difícil en abdomen y caderas",
+    "Vitamina B6 y B12 - Aumenta energía y metabolismo"
+  ],
+  howToUse: "Tomar 1 cápsula en la mañana con el desayuno. Si se tolera bien, agregar 1 cápsula adicional 4-5 horas después con alimento. No exceder 2 cápsulas al día. No tomar después de las 4 PM para evitar insomnio. Beber abundante agua (2-3 litros diarios). Ciclo recomendado: 8-12 semanas con 1 semana de descanso."
+};
+---
+
+<Layout 
+  title="SOS Burn - Quemador de Grasa Termogénico | Pastillas Para Adelgazar"
+  description="SOS Burn termogénico potente. Quema grasa 24/7, elimina antojos, aumenta energía. Baja 6-8 kilos/mes. Sin nerviosismo. Envío rápido México y USA."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>

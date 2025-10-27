@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Higa2 Hepato Protector",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575578/higa2_bzokur.png",
+  productUrl: "/higa2",
+  description: "Higa2 es el protector hepático natural más efectivo para limpiar, proteger y regenerar tu hígado. Esencial si tomas medicamentos, suplementos, quemadores de grasa, alcohol o tienes hígado graso. Fórmula con cardo mariano (silimarina) que desintoxica hígado profundamente, regenera células dañadas y optimiza función hepática. Reduce grasa acumulada en hígado, mejora digestión de grasas y protege contra daño. Complemento perfecto si usas quemadores o medicamentos fuertes. Tu hígado procesa todo: protégelo con Higa2. Apto para diabéticos.",
+  benefits: [
+    "Protege y regenera células del hígado dañadas",
+    "Mejora función hepática y desintoxicación profunda",
+    "Ideal si tomas suplementos, quemadores o medicamentos",
+    "Reduce grasa acumulada en el hígado (hígado graso)",
+    "Mejora digestión de grasas y metabolismo",
+    "Con extracto de cardo mariano y alcachofa concentrados"
+  ],
+  ingredients: [
+    "Extracto de Cardo Mariano (Silimarina) 300mg - Regenera hígado",
+    "Extracto de Alcachofa 200mg - Desintoxica y protege",
+    "N-Acetil L-Cisteína (NAC) - Antioxidante hepático potente",
+    "Extracto de Diente de León - Estimula flujo biliar",
+    "Cúrcuma (Curcumina) - Antiinflamatorio hepático",
+    "Ácido Alfa Lipoico - Regeneración celular",
+    "Vitaminas del Complejo B - Función hepática óptima",
+    "Zinc y Selenio - Protección antioxidante"
+  ],
+  howToUse: "Mantenimiento y protección: tomar 1 cápsula en la mañana y 1 en la noche con alimentos. Si usas quemadores o medicamentos: tomar 2 cápsulas 2 veces al día. Para limpieza profunda: 2 cápsulas 3 veces al día por 30 días. Beber abundante agua. Ciclo recomendado: 2-3 meses. Seguro para uso prolongado. Ideal combinar con alimentación baja en grasas."
+};
+---
+
+<Layout 
+  title="Higa2 - Protector Hepático Natural | Limpia y Regenera Hígado"
+  description="Higa2 Hepato Protector: regenera hígado, desintoxica, reduce hígado graso. Con cardo mariano y alcachofa. Ideal con medicamentos/suplementos."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>

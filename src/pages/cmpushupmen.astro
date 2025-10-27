@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "CM Push Up Men (Masa Muscular)",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575544/cmpushup_ncxzh6.png",
+  productUrl: "/cmpushupmen",
+  description: "CM Push Up Men es la fórmula especializada para aumentar masa muscular magra y definición en hombres. Aumenta testosterona naturalmente, acelera recuperación post-entreno, define músculo y quema grasa simultáneamente. Ideal para hombres que entrenan y quieren resultados más rápidos: más fuerza, más músculo, mejor recuperación. Fórmula anabólica natural con tribulus, fenogreco y ZMA. Sin esteroides, solo extractos naturales concentrados. Resultados de gimnasio en menos tiempo. Combina perfecto con proteína y entrenamiento de resistencia.",
+  benefits: [
+    "Aumenta testosterona de forma natural y segura",
+    "Acelera ganancia de masa muscular magra",
+    "Mejora recuperación después de entrenar intenso",
+    "Define músculo y quema grasa simultáneamente",
+    "Aumenta fuerza, resistencia y rendimiento físico",
+    "Sin esteroides: solo ingredientes naturales"
+  ],
+  ingredients: [
+    "Tribulus Terrestris 1000mg - Aumenta testosterona",
+    "Fenogreco Extract 600mg - Anabólico natural",
+    "ZMA (Zinc, Magnesio, B6) - Recuperación y testosterona",
+    "D-Aspártico Acid - Producción hormonal",
+    "Maca Negra - Energía y resistencia",
+    "L-Arginina - Óxido nítrico y pump muscular",
+    "Extracto de Tongkat Ali - Libido y masa muscular",
+    "Vitamina D3 - Testosterona y fuerza"
+  ],
+  howToUse: "Tomar 3 cápsulas en la mañana con el desayuno y 2 cápsulas 30-45 minutos antes de entrenar. En días sin entrenamiento: 3 cápsulas mañana y 2 cápsulas en la noche. Combinar con entrenamiento de resistencia/pesas 4-5 veces por semana y dieta alta en proteína. Ciclo: 8-12 semanas entrenando, descansar 2-4 semanas. Beber 3-4 litros de agua diarios."
+};
+---
+
+<Layout 
+  title="CM Push Up Men - Masa Muscular y Testosterona Natural | Hombres"
+  description="CM Push Up Men: aumenta testosterona natural, acelera masa muscular, mejora recuperación. Define músculo sin grasa. Para hombres que entrenan."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>

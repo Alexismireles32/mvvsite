@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "H-Flex (Colágeno Para Articulaciones)",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575568/HFlex_vl3kef.png",
+  productUrl: "/hflex",
+  description: "H-Flex es colágeno hidrolizado premium tipo 1 y 2 para articulaciones, huesos, piel y cartílagos. Reduce dolor articular en rodillas, codos, hombros y espalda. Fortalece huesos previniendo osteoporosis y mejora elasticidad de piel reduciendo arrugas. Ideal para personas con dolor articular, deportistas, adultos mayores o quienes hacen ejercicio intenso. Colágeno de máxima absorción con glucosamina y condroitina. Recupera movilidad y juventud desde adentro. Resultados visibles en piel a los 30 días, en articulaciones 60-90 días.",
+  benefits: [
+    "Reduce dolor en articulaciones, rodillas y coyunturas",
+    "Fortalece huesos y previene osteoporosis efectivamente",
+    "Mejora elasticidad, firmeza y juventud de la piel",
+    "Colágeno tipo 1 y 2 de alta absorción y biodisponibilidad",
+    "Con glucosamina y condroitina para cartílagos",
+    "Resultados visibles: piel en 30 días, articulaciones en 60 días"
+  ],
+  ingredients: [
+    "Colágeno Hidrolizado Tipo 1 y 2 - 5000mg",
+    "Glucosamina Sulfato - Regenera cartílago",
+    "Condroitina Sulfato - Lubrica articulaciones",
+    "MSM (Metilsulfonilmetano) - Reduce inflamación",
+    "Ácido Hialurónico - Lubricación y piel",
+    "Vitamina C - Síntesis de colágeno natural",
+    "Cúrcuma Extract - Antiinflamatorio articular",
+    "Vitamina D3 y Calcio - Fortalece huesos"
+  ],
+  howToUse: "Tomar 3 cápsulas en la mañana con el desayuno y 2 cápsulas en la noche con la cena (total 5 al día). Para mejores resultados en articulaciones combinar con ejercicio suave y estiramientos. Uso continuo mínimo 90 días para regeneración completa de cartílago. Efectos en piel visibles desde 30 días. Seguro para uso prolongado sin efectos secundarios."
+};
+---
+
+<Layout 
+  title="H-Flex - Colágeno Para Articulaciones y Huesos | Reduce Dolor"
+  description="H-Flex colágeno tipo 1 y 2: reduce dolor articular, fortalece huesos, mejora piel. Con glucosamina y condroitina. Resultados 30-60 días."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>

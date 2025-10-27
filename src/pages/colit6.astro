@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Colit 6 (Limpieza 6 Días)",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575551/colit6_te7kpi.png",
+  productUrl: "/colit6",
+  description: "Colit 6 es la limpieza intestinal express más potente: 6 días de desintoxicación profunda que elimina hasta 6 kilos de desechos acumulados, toxinas y parásitos intestinales. Limpieza rápida y efectiva que desinflama tu abdomen inmediatamente. Perfecto para reinicio total antes de dieta o después de excesos. Elimina bacterias dañinas, parásitos y material fecal antiguo acumulado. Abdomen plano visible desde el día 3. Fórmula concentrada para resultados rápidos. Ideal antes de eventos especiales o para empezar tratamiento adelgazante con éxito.",
+  benefits: [
+    "Elimina hasta 6 kilos de desechos y peso retenido",
+    "Limpieza profunda express en solo 6 días",
+    "Elimina parásitos, bacterias dañinas y toxinas",
+    "Abdomen plano y desinflamado desde el día 3",
+    "Reinicio total del sistema digestivo",
+    "Preparación ideal antes de tratamiento adelgazante"
+  ],
+  ingredients: [
+    "Sen Concentrado - Limpieza intestinal potente",
+    "Psyllium Husk - Fibra que arrastra desechos",
+    "Cascara Sagrada - Laxante herbal efectivo",
+    "Raíz de Ruibarbo - Limpieza colon profunda",
+    "Aloe Vera Concentrado - Sana y limpia",
+    "Jengibre - Reduce cólicos y gases",
+    "Probióticos - Restaura flora buena",
+    "Enzimas Digestivas - Mejor absorción"
+  ],
+  howToUse: "Programa de 6 días: Tomar 2-3 cápsulas cada noche antes de dormir con 2 vasos de agua. Durante el día beber 3-4 litros de agua, comer ligero (frutas, verduras, caldos). Evitar lácteos, carnes rojas y procesados. Efectos en 8-12 horas. Mantenerse cerca de baño. No usar más de 6 días seguidos. Repetir cada 3-6 meses como mantenimiento."
+};
+---
+
+<Layout 
+  title="Colit 6 - Limpieza Intestinal 6 Días | Elimina 6 Kilos de Desechos"
+  description="Colit 6: limpieza intestinal express en 6 días. Elimina hasta 6 kilos de desechos, parásitos, toxinas. Abdomen plano día 3. Reinicio total."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
