@@ -111,29 +111,28 @@
   
     <!-- Script para manejar el WhatsApp popup -->
     <script is:inline>
-      // Esperar a que el DOM esté listo
-      document.addEventListener('DOMContentLoaded', () => {
-        // Función para buscar el botón flotante de WhatsApp
-        function triggerWhatsAppPopup() {
-          // Buscar el botón flotante de WhatsApp
-          const floatButton = document.querySelector('[aria-label="Contactar por WhatsApp"]');
-          
-          if (floatButton) {
-            floatButton.click();
-          } else {
-            // Si no encuentra el botón, intentar de nuevo después de un breve delay
-            setTimeout(() => {
-              const floatButtonRetry = document.querySelector('[aria-label="Contactar por WhatsApp"]');
-              if (floatButtonRetry) {
-                floatButtonRetry.click();
-              }
-            }, 100);
-          }
+      // Función para buscar el botón flotante de WhatsApp
+      function triggerWhatsAppPopup() {
+        // Buscar el botón flotante de WhatsApp
+        const floatButton = document.querySelector('[aria-label="Contactar por WhatsApp"]');
+        
+        if (floatButton) {
+          floatButton.click();
+        } else {
+          // Si no encuentra el botón, intentar de nuevo después de un breve delay
+          setTimeout(() => {
+            const floatButtonRetry = document.querySelector('[aria-label="Contactar por WhatsApp"]');
+            if (floatButtonRetry) {
+              floatButtonRetry.click();
+            }
+          }, 100);
         }
+      }
 
-        // Buscar el botón de WhatsApp
+      // Buscar el botón de WhatsApp tan pronto como sea posible
+      document.addEventListener('DOMContentLoaded', () => {
         const whatsappButton = document.getElementById('open-whatsapp-popup');
-
+        
         if (whatsappButton) {
           whatsappButton.addEventListener('click', (e) => {
             e.preventDefault();
@@ -141,6 +140,17 @@
           });
         }
       });
+
+      // También intentar asignar el event listener inmediatamente
+      (function() {
+        const whatsappButton = document.getElementById('open-whatsapp-popup');
+        if (whatsappButton) {
+          whatsappButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            triggerWhatsAppPopup();
+          });
+        }
+      })();
     </script>
 </section>
 
