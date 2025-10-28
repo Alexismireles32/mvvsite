@@ -7,7 +7,7 @@ export function Header76({ onOpenWhatsApp }) {
   return (
     <section
       id="relume"
-      className="grid grid-cols-1 gap-y-16 pt-16 md:grid-flow-row md:pt-24 lg:grid-flow-col lg:grid-cols-2 lg:items-center lg:pt-0"
+      className="grid grid-cols-1 gap-y-8 pt-8 md:gap-y-16 md:pt-16 lg:grid-flow-col lg:grid-cols-2 lg:items-center lg:pt-0 lg:gap-y-16"
     >
       <div className="mx-[5%] max-w-[40rem] justify-self-start lg:ml-[5vw] lg:mr-20 lg:justify-self-end">
         <h1 className="mb-4 text-3xl font-bold leading-tight xxs:text-4xl sm:mb-5 md:mb-6 md:text-6xl md:leading-tight lg:text-8xl lg:leading-tight xl:text-10xl xl:leading-none">

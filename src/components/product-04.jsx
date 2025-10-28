@@ -17,7 +17,7 @@ export function Product4() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 justify-items-start gap-x-4 gap-y-8 xxs:gap-x-5 xxs:gap-y-10 xs:grid-cols-2 md:gap-x-8 md:gap-y-12 lg:grid-cols-4">
+        <div className="grid grid-cols-2 justify-items-start gap-x-4 gap-y-8 xxs:gap-x-5 xxs:gap-y-10 xs:grid-cols-2 md:gap-x-8 md:gap-y-12 lg:grid-cols-4">
           {/* 1. Duo 60 Fusion */}
           <div className="group">
             {/* Badge "Más Vendido" */}

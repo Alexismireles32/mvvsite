@@ -30,10 +30,10 @@ export function HowItWorks() {
     <section className="px-[5%] py-10 md:py-16 lg:py-20 bg-background-primary">
       <div className="container">
         <div className="mb-8 text-center md:mb-12 lg:mb-16">
-          <h2 className="mb-4 text-2xl font-bold leading-tight xxs:text-3xl sm:text-4xl sm:mb-5 md:mb-6 md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
+          <h2 className="mb-4 text-xl font-bold leading-tight xxs:text-2xl sm:text-3xl sm:mb-5 md:mb-6 md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight">
             Cómo Bajar de Peso Rápido Naturalmente (Sin Trucos Raros)
           </h2>
-          <p className="mx-auto max-w-2xl text-base leading-relaxed text-text-secondary md:text-lg">
+          <p className="mx-auto max-w-2xl text-sm leading-relaxed text-text-secondary xxs:text-base md:text-lg">
             Nada complicado. Así es como miles de personas en México y USA están bajando de peso con nuestros <strong>suplementos para adelgazar rápido</strong>.
           </p>
         </div>
@@ -47,10 +47,10 @@ export function HowItWorks() {
                 </div>
               </div>
               <div className="pt-2">
-                <h3 className="mb-3 text-2xl font-bold leading-tight md:text-3xl">
+                <h3 className="mb-3 text-lg font-bold leading-tight xxs:text-xl md:text-2xl md:text-3xl">
                   {step.title}
                 </h3>
-                <p className="text-base leading-relaxed text-text-secondary md:text-lg">
+                <p className="text-sm leading-relaxed text-text-secondary xxs:text-base md:text-lg">
                   {step.description}
                 </p>
               </div>

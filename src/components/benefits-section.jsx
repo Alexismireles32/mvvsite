@@ -35,10 +35,10 @@ export function BenefitsSection() {
     <section className="px-[5%] py-10 md:py-16 lg:py-20 bg-white">
       <div className="container">
         <div className="mb-8 max-w-3xl md:mb-12 lg:mb-16">
-          <h2 className="mb-4 text-2xl font-bold leading-tight xxs:text-3xl sm:text-4xl sm:mb-5 md:mb-6 md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
+          <h2 className="mb-4 text-xl font-bold leading-tight xxs:text-2xl sm:text-3xl sm:mb-5 md:mb-6 md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight">
             Por Qué Nuestros Suplementos Naturales Sí Funcionan (Y Otros No)
           </h2>
-          <p className="text-base leading-relaxed text-text-secondary md:text-lg">
+          <p className="text-sm leading-relaxed text-text-secondary xxs:text-base md:text-lg">
             No más falsas promesas. Aquí está la verdad sobre cómo funcionan realmente los <strong>productos para adelgazar efectivos</strong>.
           </p>
         </div>
@@ -52,10 +52,10 @@ export function BenefitsSection() {
                 </div>
               </div>
               <div>
-                <h3 className="mb-2 text-xl font-bold leading-tight md:text-2xl">
+                <h3 className="mb-2 text-lg font-bold leading-tight xxs:text-xl md:text-2xl">
                   {benefit.title}
                 </h3>
-                <p className="text-base leading-relaxed text-text-secondary">
+                <p className="text-sm leading-relaxed text-text-secondary xxs:text-base md:text-lg">
                   {benefit.description}
                 </p>
               </div>
