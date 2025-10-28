@@ -5,35 +5,34 @@ import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
 import { Footer2 } from '../components/footer-02.jsx';
 
 const productData = {
-  productName: "Alpha Glow (Belleza Desde Adentro)",
+  productName: "Alpha Glow",
   productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575532/alphaglow_jwu8mg.png",
   productUrl: "/alphaglow",
-  description: "Alpha Glow es el suplemento de belleza más completo: colágeno hidrolizado + biotina + ácido hialurónico + antioxidantes. Fórmula triple acción para piel radiante sin arrugas, cabello fuerte y brillante, uñas sanas que no se quiebran. Combate envejecimiento desde adentro, reduce manchas y líneas de expresión, aumenta firmeza y elasticidad. Resultados visibles en 21 días: piel más luminosa, cabello más grueso, uñas resistentes. Belleza natural que se nota desde dentro. Colágeno tipo 1 y 3 de máxima absorción con vitamina C.",
+  description: "Alpha Glow es un súper inhibidor de apetito con acción quemadora de grasa y efecto tonificante. Fórmula avanzada diseñada para quienes buscan resultados reales en la reducción de peso sin comprometer su salud. Su combinación de extractos naturales, aminoácidos y agentes tonificantes actúa de manera sinérgica para reducir el apetito, aumentar la quema calórica y mejorar la firmeza de la piel, evitando el temido efecto rebote. Ideal para sobrepeso y obesidad mórbida.",
   benefits: [
-    "Piel más firme, luminosa y sin arrugas visibles",
-    "Cabello más fuerte con crecimiento acelerado y brillo",
-    "Uñas resistentes que no se quiebran ni descascaran",
-    "Reduce manchas oscuras y líneas de expresión",
-    "Aumenta producción de colágeno natural en el cuerpo",
-    "Resultados visibles en 21-30 días de uso continuo"
+    "Súper inhibidor de apetito - controla el hambre todo el día",
+    "Sin rebote garantizado - mantiene el peso perdido",
+    "Especial para sobrepeso y obesidad mórbida",
+    "Activador del metabolismo y quemador calórico intenso",
+    "Efecto tonificante - mejora la firmeza de la piel",
+    "Disminución del apetito desde los primeros días"
   ],
   ingredients: [
-    "Colágeno Hidrolizado Tipo 1 y 3 - 5000mg por porción",
-    "Biotina (Vitamina B7) 5000mcg - Cabello y uñas fuertes",
-    "Ácido Hialurónico 100mg - Hidratación profunda de piel",
-    "Vitamina C 500mg - Síntesis de colágeno",
-    "Vitamina E - Antioxidante que protege piel",
-    "Zinc y Selenio - Salud de piel y cabello",
-    "Extracto de Semilla de Uva - Antioxidante anti-edad",
-    "Coenzima Q10 - Energía celular y anti-envejecimiento"
+    "Colágeno - Favorece firmeza de la piel, previene flacidez, fortalece uñas, cabello y articulaciones",
+    "Aguaje - Rico en fitoestrógenos naturales, equilibra hormonas femeninas, mejora silueta y contornos corporales",
+    "Creatinina - Activador del metabolismo muscular, quema calórica en reposo, aumenta energía y rendimiento físico",
+    "Caralluma Fimbriata - Inhibidor natural del apetito, controla antojos actuando sobre el hipotálamo",
+    "Gymnema Sylvestre - Bloquea receptores del gusto dulce, regula glucosa y controla antojos de azúcar",
+    "L-Arginina - Mejora circulación, oxigenación celular, tonificación muscular y quema de grasa durante ejercicio",
+    "Pectina - Fibra soluble que aumenta saciedad, regula tránsito intestinal, reduce absorción de grasas y azúcares"
   ],
-  howToUse: "Tomar 2 cápsulas en la mañana con el desayuno y 1 cápsula en la noche con la cena. Para mejores resultados tomar con vitamina C y mucha agua. Uso continuo mínimo 3 meses para resultados óptimos. Efectos iniciales en 21 días, máximos en 90 días. Combinar con protector solar y buenos hábitos. Seguro para uso prolongado sin efectos secundarios."
+  howToUse: "Tomar 1 cápsula en ayunas, acompañada de un vaso de agua. No exceder la dosis recomendada. Resultados esperados: disminución del apetito desde los primeros días, reducción progresiva de peso y medidas, piel más firme y tonificada, mayor energía y bienestar general, sin efecto rebote."
 };
 ---
 
 <Layout 
-  title="Alpha Glow - Colágeno + Biotina + Ácido Hialurónico | Belleza Natural"
-  description="Alpha Glow: colágeno 5000mg + biotina + ácido hialurónico. Piel radiante, cabello fuerte, uñas sanas. Anti-envejecimiento. Resultados 21 días."
+  title="Alpha Glow - Súper Inhibidor de Apetito y Quemador de Grasa | Sin Rebote"
+  description="Alpha Glow: súper inhibidor de apetito con quema de grasa y tonificación. Sin rebote garantizado. Especial para sobrepeso y obesidad mórbida. Resultados desde el primer día."
 >
   <Navbar6 client:load />
   <ProductPageWrapper client:load productData={productData} />
