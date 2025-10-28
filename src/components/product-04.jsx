@@ -85,16 +85,21 @@ export function Product4() {
             </Button>
           </div>
 
-          {/* 3. Chupa Panza */}
+          {/* 3. Chupa Panza with "Producto Clásico" badge */}
           <div className="group">
-            <a href="/chupapanza" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
-              <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575545/chupapanza_m7zfgs.png"
-                alt="Chupa Panza - MVV Natural"
-                className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
-            </a>
+            <div className="relative mb-3 md:mb-4">
+              <div className="absolute -top-2 -right-2 z-10 bg-purple-500 text-white px-3 py-1 rounded-full font-bold text-xs shadow-xl rotate-12 animate-pulse">
+                📜 Producto Clásico
+              </div>
+              <a href="/chupapanza" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
+                <img
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575545/chupapanza_m7zfgs.png"
+                  alt="Chupa Panza - MVV Natural"
+                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </a>
+            </div>
             <a href="/chupapanza" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Chupa Panza</h3>

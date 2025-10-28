@@ -86,7 +86,8 @@ export function Product4_1() {
               </a>
             </Button>
           </div>
-          <div className="group">
+          {/* ELIMINAR ALPHA GLOW DUPLICADO */}
+          {/* <div className="group">
             <a href="/alphaglow" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575532/alphaglow_jwu8mg.png"
@@ -111,7 +112,7 @@ export function Product4_1() {
                 Ver Producto
               </a>
             </Button>
-          </div>
+          </div> */}
           <div className="group">
             <a href="/serenity" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
@@ -139,14 +140,19 @@ export function Product4_1() {
             </Button>
           </div>
           <div className="group">
-            <a href="/applecyder" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
-              <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575550/applecyder_xxg1ps.png"
-                alt="Apple Cider Vinagre - MVV Natural"
-                className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
-            </a>
+            <div className="relative mb-3 md:mb-4">
+              <div className="absolute -top-2 -right-2 z-10 bg-como text-white px-3 py-1 rounded-full font-bold text-xs shadow-xl rotate-12 animate-pulse">
+                ✨ Producto Nuevo
+              </div>
+              <a href="/applecyder" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
+                <img
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575550/applecyder_xxg1ps.png"
+                  alt="Apple Cider Vinagre - MVV Natural"
+                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </a>
+            </div>
             <a href="/applecyder" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Apple Cider Vinagre</h3>
