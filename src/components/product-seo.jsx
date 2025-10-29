@@ -4,6 +4,8 @@ import React from "react";
 
 export function ProductSEO({ productName, productImage, productUrl, description }) {
   // Product Schema
+  // Note: aggregateRating removed - add back when you have 5+ verified reviews
+  // Pricing kept in schema for internal use but not displayed to users (price: "0")
   const productSchema = {
     "@context": "https://schema.org/",
     "@type": "Product",
@@ -38,13 +40,6 @@ export function ProductSEO({ productName, productImage, productUrl, description 
         "name": "MVV Natural USA"
       },
       "eligibleRegion": ["US", "MX"]
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "1",
-      "bestRating": "5",
-      "worstRating": "1"
     }
   };
 
