@@ -18,11 +18,11 @@ export function ProductSEO({ productName, productImage, productUrl, description 
     "manufacturer": {
       "@type": "Organization",
       "name": "MVV Natural",
-      "url": "https://www.mvvnatural.com"
+      "url": "https://www.mvvnaturales.com"
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://www.mvvnatural.com${productUrl}`,
+      "url": `https://www.mvvnaturales.com${productUrl}`,
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "itemCondition": "https://schema.org/NewCondition",
@@ -57,19 +57,19 @@ export function ProductSEO({ productName, productImage, productUrl, description 
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://www.mvvnatural.com/"
+        "item": "https://www.mvvnaturales.com/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Productos",
-        "item": "https://www.mvvnatural.com/productos"
+        "item": "https://www.mvvnaturales.com/productos"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": productName,
-        "item": `https://www.mvvnatural.com${productUrl}`
+        "item": `https://www.mvvnaturales.com${productUrl}`
       }
     ]
   };

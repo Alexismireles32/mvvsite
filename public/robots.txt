@@ -1,11 +1,11 @@
 # robots.txt for MVV Natural
-# https://www.mvvnatural.com/robots.txt
+# https://www.mvvnaturales.com/robots.txt
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.mvvnatural.com/sitemap-index.xml
+Sitemap: https://www.mvvnaturales.com/sitemap-index.xml
 
 # Block common bot crawlers that waste bandwidth
 User-agent: AhrefsBot

@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.mvvnatural.com',
+  site: 'https://www.mvvnaturales.com',
   output: 'static',
   
   // Build optimizations
@@ -53,7 +53,7 @@ export default defineConfig({
         let changefreq = 'weekly';
         
         // Homepage - highest priority
-        if (item.url === 'https://www.mvvnatural.com/') {
+        if (item.url === 'https://www.mvvnaturales.com/') {
           priority = 1.0;
           changefreq = 'daily';
         }

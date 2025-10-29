@@ -28,8 +28,8 @@ export function LegalPrivacidad() {
               <ul className="ml-6 list-disc space-y-2">
                 <li><strong>Denominación:</strong> MVV Natural USA</li>
                 <li><strong>Nombre comercial:</strong> MVV Natural</li>
-                <li><strong>Sitio web:</strong> www.mvvnatural.com</li>
-                <li><strong>Email de contacto:</strong> privacidad@mvvnatural.com</li>
+                <li><strong>Sitio web:</strong> www.mvvnaturales.com</li>
+                <li><strong>Email de contacto:</strong> privacidad@mvvnaturales.com</li>
               </ul>
               <p>
                 Operamos en <strong>México</strong> y <strong>Estados Unidos</strong>, cumpliendo con las leyes de protección de datos de ambos países.
@@ -231,7 +231,7 @@ export function LegalPrivacidad() {
                 Para ejercer cualquiera de estos derechos, puede contactarnos:
               </p>
               <ul className="ml-6 list-disc space-y-2">
-                <li><strong>Email:</strong> privacidad@mvvnatural.com</li>
+                <li><strong>Email:</strong> privacidad@mvvnaturales.com</li>
                 <li><strong>Asunto:</strong> "Ejercicio de Derechos ARCO" o "Privacy Rights Request"</li>
                 <li><strong>Información a incluir:</strong> nombre completo, email, descripción de su solicitud</li>
               </ul>
@@ -332,8 +332,8 @@ export function LegalPrivacidad() {
                 Para cualquier pregunta, solicitud o queja relacionada con la privacidad y protección de sus datos:
               </p>
               <ul className="ml-6 list-disc space-y-2">
-                <li><strong>Email de privacidad:</strong> privacidad@mvvnatural.com</li>
-                <li><strong>Email general:</strong> contacto@mvvnatural.com</li>
+                <li><strong>Email de privacidad:</strong> privacidad@mvvnaturales.com</li>
+                <li><strong>Email general:</strong> contacto@mvvnaturales.com</li>
                 <li><strong>WhatsApp México:</strong> +52 631 298 2043</li>
                 <li><strong>WhatsApp USA:</strong> +1 520 216 1443</li>
               </ul>
