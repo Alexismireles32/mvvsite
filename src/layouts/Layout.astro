@@ -1,5 +1,6 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
+import SpeedInsights from '@vercel/speed-insights/astro';
 import '../styles/global.css';
 
 interface Props {
@@ -147,5 +148,6 @@ const siteName = 'MVV Natural';
   </head>
   <body>
     <slot />
+    <SpeedInsights />
   </body>
 </html>
