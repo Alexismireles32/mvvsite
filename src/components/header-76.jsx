@@ -49,7 +49,12 @@ export function Header76({ onOpenWhatsApp }) {
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575568/Duo-60fusion_xhsjhs.png"
                   alt="Duo-60 Fusion - MVV Natural"
-                  loading="lazy"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                  width="600"
+                  height="720"
+                  sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:768px) 45vw, 90vw"
                 />
               </a>
             </div>
@@ -60,6 +65,10 @@ export function Header76({ onOpenWhatsApp }) {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575578/higa2_bzokur.png"
                   alt="Higa2 - MVV Natural"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="720"
+                  sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:768px) 45vw, 90vw"
                 />
               </a>
             </div>
@@ -70,6 +79,10 @@ export function Header76({ onOpenWhatsApp }) {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575576/Lidabooster_xd5mo9.png"
                   alt="Lida Booster - MVV Natural"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="720"
+                  sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:768px) 45vw, 90vw"
                 />
               </a>
             </div>
@@ -80,6 +93,10 @@ export function Header76({ onOpenWhatsApp }) {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575584/lipohd_zg9lxy.png"
                   alt="Lipo HD - MVV Natural"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="720"
+                  sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:768px) 45vw, 90vw"
                 />
               </a>
             </div>
@@ -90,6 +107,10 @@ export function Header76({ onOpenWhatsApp }) {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575568/Duo-60fusion_xhsjhs.png"
                   alt="Duo-60 Fusion - MVV Natural"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="720"
+                  sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:768px) 45vw, 90vw"
                 />
               </a>
             </div>
@@ -100,6 +121,10 @@ export function Header76({ onOpenWhatsApp }) {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575596/sosburn_g2ui2b.png"
                   alt="SOS Burn - MVV Natural"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="720"
+                  sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:768px) 45vw, 90vw"
                 />
               </a>
             </div>
@@ -112,6 +137,10 @@ export function Header76({ onOpenWhatsApp }) {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575597/primerose_jk26zj.png"
                   alt="Prime Rose - MVV Natural"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="720"
+                  sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:768px) 45vw, 90vw"
                 />
               </a>
             </div>
@@ -122,6 +151,10 @@ export function Header76({ onOpenWhatsApp }) {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575568/Duo-60fusion_xhsjhs.png"
                   alt="Duo-60 Fusion - MVV Natural"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="720"
+                  sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:768px) 45vw, 90vw"
                 />
               </a>
             </div>
@@ -132,6 +165,10 @@ export function Header76({ onOpenWhatsApp }) {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575545/chupapanza_m7zfgs.png"
                   alt="Chupa Panza - MVV Natural"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="720"
+                  sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:768px) 45vw, 90vw"
                 />
               </a>
             </div>
@@ -142,6 +179,10 @@ export function Header76({ onOpenWhatsApp }) {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575526/30daydetox_roziws.png"
                   alt="30 Day Detox - MVV Natural"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="720"
+                  sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:768px) 45vw, 90vw"
                 />
               </a>
             </div>
@@ -152,6 +193,10 @@ export function Header76({ onOpenWhatsApp }) {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575568/Duo-60fusion_xhsjhs.png"
                   alt="Duo-60 Fusion - MVV Natural"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="720"
+                  sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:768px) 45vw, 90vw"
                 />
               </a>
             </div>
@@ -162,6 +207,10 @@ export function Header76({ onOpenWhatsApp }) {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575544/cmpushup_ncxzh6.png"
                   alt="CM Push Up (Body Shape) - MVV Natural"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="720"
+                  sizes="(min-width:1280px) 25vw, (min-width:1024px) 33vw, (min-width:768px) 45vw, 90vw"
                 />
               </a>
             </div>
