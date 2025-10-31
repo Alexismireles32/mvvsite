@@ -22,6 +22,8 @@
               alt="Duo-60 Fusion Xtreme - Quemador de grasa #1 en México"
               class="w-full max-w-[240px] xs:max-w-xs mx-auto h-auto object-contain drop-shadow-2xl"
               loading="eager"
+              width="600"
+              height="720"
             />
           </div>
         </div>
@@ -85,14 +87,15 @@
             </svg>
           </a>
           
-          <a
-            href="javascript:void(0)"
+          <button
+            type="button"
             class="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white text-white px-4 xs:px-6 py-3 xs:py-4 rounded-full font-bold text-sm xs:text-base hover:bg-white/20 transition-all duration-300 active:scale-95 min-h-[44px]"
             id="open-whatsapp-popup"
+            aria-label="Abrir opciones de compra por WhatsApp"
           >
             <span class="text-lg xs:text-xl">💬</span>
             Comprar por WhatsApp
-          </a>
+          </button>
         </div>
         
         <!-- Trust Indicators -->
@@ -134,8 +137,7 @@
         const whatsappButton = document.getElementById('open-whatsapp-popup');
         
         if (whatsappButton) {
-          whatsappButton.addEventListener('click', (e) => {
-            e.preventDefault();
+          whatsappButton.addEventListener('click', () => {
             triggerWhatsAppPopup();
           });
         }
@@ -145,8 +147,7 @@
       (function() {
         const whatsappButton = document.getElementById('open-whatsapp-popup');
         if (whatsappButton) {
-          whatsappButton.addEventListener('click', (e) => {
-            e.preventDefault();
+          whatsappButton.addEventListener('click', () => {
             triggerWhatsAppPopup();
           });
         }

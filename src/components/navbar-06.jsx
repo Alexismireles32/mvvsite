@@ -26,6 +26,7 @@ const useRelume = () => {
   const animateDropdownMenu = isDropdownOpen ? "open" : "close";
   const animateDropdownMenuIcon = isDropdownOpen ? "rotated" : "initial";
   return {
+    isMobileMenuOpen,
     toggleMobileMenu,
     openOnDesktopDropdownMenu,
     closeOnDesktopDropdownMenu,
@@ -50,6 +51,8 @@ export function Navbar6() {
             src="https://res.cloudinary.com/dsulhqvza/image/upload/v1761550208/mvvnatural_pbzwrl.png"
             alt="MVV Natural - Suplementos Naturales"
             className="h-12 w-auto md:h-14"
+            width="500"
+            height="500"
           />
         </a>
         <div className="absolute hidden h-screen overflow-auto border-b border-border-primary bg-background-primary px-[5%] pb-24 pt-4 md:pb-0 lg:static lg:ml-6 lg:flex lg:h-auto lg:flex-1 lg:items-center lg:justify-between lg:border-none lg:bg-none lg:px-0 lg:pt-0">
@@ -120,6 +123,9 @@ export function Navbar6() {
         <button
           className="-mr-2 flex size-12 cursor-pointer flex-col items-center justify-center lg:hidden"
           onClick={useActive.toggleMobileMenu}
+          aria-label={useActive.isMobileMenuOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación'}
+          aria-expanded={useActive.isMobileMenuOpen}
+          aria-controls="mobile-navigation"
         >
           <motion.span
             className="my-[3px] h-0.5 w-6 bg-como"
@@ -167,6 +173,7 @@ export function Navbar6() {
           initial="close"
           exit="close"
           className="absolute left-0 right-0 top-full w-full overflow-hidden lg:hidden"
+          id="mobile-navigation"
           transition={{ duration: 0.4 }}
         >
           <motion.div

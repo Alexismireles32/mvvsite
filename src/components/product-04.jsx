@@ -9,9 +9,9 @@ export function Product4() {
       <div className="container">
         <div className="mb-10 md:mb-14 lg:mb-18">
           <div className="mx-auto max-w-lg text-center">
-            <h1 className="mt-2 text-2xl font-bold leading-tight xxs:text-3xl sm:mt-3 md:mt-4 md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight xl:text-7xl xl:leading-none">
+            <h2 className="mt-2 text-2xl font-bold leading-tight xxs:text-3xl sm:mt-3 md:mt-4 md:text-4xl md:leading-tight lg:text-6xl lg:leading-tight xl:text-7xl xl:leading-none">
               Productos Destacados
-            </h1>
+            </h2>
             <p className="mt-4 text-sm xxs:text-base md:mt-6 md:text-md">
               Nuestros suplementos naturales más populares
             </p>
@@ -27,7 +27,7 @@ export function Product4() {
               </div>
               <a href="/duo-60-fusion" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575568/Duo-60fusion_xhsjhs.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Duo-60fusion_xhsjhs.png"
                   alt="Duo-60 Fusion - MVV Natural"
                   className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
@@ -36,7 +36,7 @@ export function Product4() {
             </div>
             <a href="/duo-60-fusion" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Duo-60 Fusion</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Duo-60 Fusion</h3>
               </div>
             </a>
             <Button
@@ -60,7 +60,7 @@ export function Product4() {
               </div>
               <a href="/alphaglow" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575532/alphaglow_jwu8mg.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575532/alphaglow_jwu8mg.png"
                   alt="Alpha Glow - MVV Natural"
                   className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
@@ -69,7 +69,7 @@ export function Product4() {
             </div>
             <a href="/alphaglow" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Alpha Glow</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Alpha Glow</h3>
               </div>
             </a>
             <Button
@@ -93,7 +93,7 @@ export function Product4() {
               </div>
               <a href="/chupapanza" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575545/chupapanza_m7zfgs.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575545/chupapanza_m7zfgs.png"
                   alt="Chupa Panza - MVV Natural"
                   className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
@@ -102,7 +102,7 @@ export function Product4() {
             </div>
             <a href="/chupapanza" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Chupa Panza</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Chupa Panza</h3>
               </div>
             </a>
             <Button
@@ -122,7 +122,7 @@ export function Product4() {
           <div className="group">
             <a href="/sosburn" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575596/sosburn_g2ui2b.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575596/sosburn_g2ui2b.png"
                 alt="SOS Burn - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -130,7 +130,7 @@ export function Product4() {
             </a>
             <a href="/sosburn" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">SOS Burn</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">SOS Burn</h3>
               </div>
             </a>
             <Button
@@ -150,7 +150,7 @@ export function Product4() {
           <div className="group">
             <a href="/sosburnsensitive" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575600/sosburnsensitive_dfsrs1.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575600/sosburnsensitive_dfsrs1.png"
                 alt="SOS Burn Sensitive - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -158,7 +158,7 @@ export function Product4() {
             </a>
             <a href="/sosburnsensitive" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">SOS Burn Sensitive</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">SOS Burn Sensitive</h3>
               </div>
             </a>
             <Button
@@ -178,7 +178,7 @@ export function Product4() {
           <div className="group">
             <a href="/primerose" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575597/primerose_jk26zj.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575597/primerose_jk26zj.png"
                 alt="Prime Rose - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -186,7 +186,7 @@ export function Product4() {
             </a>
             <a href="/primerose" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Prime Rose</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Prime Rose</h3>
               </div>
             </a>
             <Button
@@ -206,7 +206,7 @@ export function Product4() {
           <div className="group">
             <a href="/lidabooster" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575576/Lidabooster_xd5mo9.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575576/Lidabooster_xd5mo9.png"
                 alt="Lida Booster - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -214,7 +214,7 @@ export function Product4() {
             </a>
             <a href="/lidabooster" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Lida Booster</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Lida Booster</h3>
               </div>
             </a>
             <Button
@@ -234,7 +234,7 @@ export function Product4() {
           <div className="group">
             <a href="/lipohd" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575584/lipohd_zg9lxy.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575584/lipohd_zg9lxy.png"
                 alt="Lipo HD 360 - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -242,7 +242,7 @@ export function Product4() {
             </a>
             <a href="/lipohd" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Lipo HD 360</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Lipo HD 360</h3>
               </div>
             </a>
             <Button

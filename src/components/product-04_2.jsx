@@ -11,7 +11,7 @@ export function Product4_2() {
           <div className="group">
             <a href="/colit6" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575551/colit6_te7kpi.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575551/colit6_te7kpi.png"
                 alt="Colit 6 - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -19,7 +19,7 @@ export function Product4_2() {
             </a>
             <a href="/colit6" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Colit 6</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Colit 6</h3>
               </div>
             </a>
             <Button
@@ -41,7 +41,7 @@ export function Product4_2() {
               </div>
               <a href="/floryva" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575563/floryva_nb3b0y.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575563/floryva_nb3b0y.png"
                   alt="Floryva - MVV Natural"
                   className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
@@ -50,7 +50,7 @@ export function Product4_2() {
             </div>
             <a href="/floryva" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Floryva</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Floryva</h3>
               </div>
             </a>
             <Button
@@ -72,7 +72,7 @@ export function Product4_2() {
               </div>
               <a href="/encimax" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575578/encimax_kuhluy.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575578/encimax_kuhluy.png"
                   alt="Encimax - MVV Natural"
                   className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
@@ -81,7 +81,7 @@ export function Product4_2() {
             </div>
             <a href="/encimax" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Encimax</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Encimax</h3>
               </div>
             </a>
             <Button
@@ -99,7 +99,7 @@ export function Product4_2() {
           <div className="group">
             <a href="/macapremium" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575588/macapremium_s6k65z.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575588/macapremium_s6k65z.png"
                 alt="Maca Premium - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -107,7 +107,7 @@ export function Product4_2() {
             </a>
             <a href="/macapremium" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Maca Premium</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Maca Premium</h3>
               </div>
             </a>
             <Button
@@ -125,7 +125,7 @@ export function Product4_2() {
           <div className="group">
             <a href="/cmpushupmen" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575544/cmpushup_ncxzh6.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575544/cmpushup_ncxzh6.png"
                 alt="CM Push up Men - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -133,7 +133,7 @@ export function Product4_2() {
             </a>
             <a href="/cmpushupmen" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">CM Push up Men</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">CM Push up Men</h3>
               </div>
             </a>
             <Button

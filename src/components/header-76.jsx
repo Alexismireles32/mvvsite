@@ -47,7 +47,7 @@ export function Header76({ onOpenWhatsApp }) {
               <a href="/duo-60-fusion" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575568/Duo-60fusion_xhsjhs.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Duo-60fusion_xhsjhs.png"
                   alt="Duo-60 Fusion - MVV Natural"
                   loading="eager"
                   fetchpriority="high"
@@ -62,7 +62,7 @@ export function Header76({ onOpenWhatsApp }) {
               <a href="/higa2" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575578/higa2_bzokur.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575578/higa2_bzokur.png"
                   alt="Higa2 - MVV Natural"
                   loading="lazy"
                   decoding="async"
@@ -76,7 +76,7 @@ export function Header76({ onOpenWhatsApp }) {
               <a href="/lidabooster" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575576/Lidabooster_xd5mo9.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575576/Lidabooster_xd5mo9.png"
                   alt="Lida Booster - MVV Natural"
                   loading="lazy"
                   decoding="async"
@@ -90,7 +90,7 @@ export function Header76({ onOpenWhatsApp }) {
               <a href="/lipohd" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575584/lipohd_zg9lxy.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575584/lipohd_zg9lxy.png"
                   alt="Lipo HD - MVV Natural"
                   loading="lazy"
                   decoding="async"
@@ -104,7 +104,7 @@ export function Header76({ onOpenWhatsApp }) {
               <a href="/duo-60-fusion" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575568/Duo-60fusion_xhsjhs.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Duo-60fusion_xhsjhs.png"
                   alt="Duo-60 Fusion - MVV Natural"
                   loading="lazy"
                   decoding="async"
@@ -118,7 +118,7 @@ export function Header76({ onOpenWhatsApp }) {
               <a href="/sosburn" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575596/sosburn_g2ui2b.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575596/sosburn_g2ui2b.png"
                   alt="SOS Burn - MVV Natural"
                   loading="lazy"
                   decoding="async"
@@ -134,7 +134,7 @@ export function Header76({ onOpenWhatsApp }) {
               <a href="/primerose" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575597/primerose_jk26zj.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575597/primerose_jk26zj.png"
                   alt="Prime Rose - MVV Natural"
                   loading="lazy"
                   decoding="async"
@@ -148,7 +148,7 @@ export function Header76({ onOpenWhatsApp }) {
               <a href="/duo-60-fusion" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575568/Duo-60fusion_xhsjhs.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Duo-60fusion_xhsjhs.png"
                   alt="Duo-60 Fusion - MVV Natural"
                   loading="lazy"
                   decoding="async"
@@ -162,7 +162,7 @@ export function Header76({ onOpenWhatsApp }) {
               <a href="/chupapanza" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575545/chupapanza_m7zfgs.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575545/chupapanza_m7zfgs.png"
                   alt="Chupa Panza - MVV Natural"
                   loading="lazy"
                   decoding="async"
@@ -176,7 +176,7 @@ export function Header76({ onOpenWhatsApp }) {
               <a href="/30daydetox" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575526/30daydetox_roziws.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575526/30daydetox_roziws.png"
                   alt="30 Day Detox - MVV Natural"
                   loading="lazy"
                   decoding="async"
@@ -190,7 +190,7 @@ export function Header76({ onOpenWhatsApp }) {
               <a href="/duo-60-fusion" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575568/Duo-60fusion_xhsjhs.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Duo-60fusion_xhsjhs.png"
                   alt="Duo-60 Fusion - MVV Natural"
                   loading="lazy"
                   decoding="async"
@@ -204,7 +204,7 @@ export function Header76({ onOpenWhatsApp }) {
               <a href="/cmpushup" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575544/cmpushup_ncxzh6.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575544/cmpushup_ncxzh6.png"
                   alt="CM Push Up (Body Shape) - MVV Natural"
                   loading="lazy"
                   decoding="async"

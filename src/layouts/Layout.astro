@@ -1,5 +1,4 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
 import SpeedInsights from '@vercel/speed-insights/astro';
 import '../styles/global.css';
 
@@ -28,9 +27,6 @@ const siteName = 'MVV Natural';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="generator" content={Astro.generator} />
-    
-    <!-- Astro View Transitions for SPA-like navigation -->
-    <ViewTransitions />
     
     <!-- Mobile Optimization -->
     <meta name="theme-color" content="#4A7C59" />
@@ -151,7 +147,9 @@ const siteName = 'MVV Natural';
     </script>
   </head>
   <body>
-    <slot />
+    <main id="main-content" role="main" tabIndex="-1">
+      <slot />
+    </main>
     <SpeedInsights />
   </body>
 </html>

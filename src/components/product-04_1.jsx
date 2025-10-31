@@ -11,7 +11,7 @@ export function Product4_1() {
           <div className="group">
             <a href="/30daydetox" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575526/30daydetox_roziws.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575526/30daydetox_roziws.png"
                 alt="30-Day Detox - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -19,7 +19,7 @@ export function Product4_1() {
             </a>
             <a href="/30daydetox" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">30-Day Detox</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">30-Day Detox</h3>
               </div>
             </a>
             <Button
@@ -37,7 +37,7 @@ export function Product4_1() {
           <div className="group">
             <a href="/lipohd" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575584/lipohd_zg9lxy.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575584/lipohd_zg9lxy.png"
                 alt="Lipo HD 360 - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -45,7 +45,7 @@ export function Product4_1() {
             </a>
             <a href="/lipohd" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Lipo HD 360</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Lipo HD 360</h3>
               </div>
             </a>
             <Button
@@ -63,7 +63,7 @@ export function Product4_1() {
           <div className="group">
             <a href="/chupapanza" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575545/chupapanza_m7zfgs.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575545/chupapanza_m7zfgs.png"
                 alt="Chupa Panza - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -71,7 +71,7 @@ export function Product4_1() {
             </a>
             <a href="/chupapanza" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Chupa Panza</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Chupa Panza</h3>
               </div>
             </a>
             <Button
@@ -90,7 +90,7 @@ export function Product4_1() {
           {/* <div className="group">
             <a href="/alphaglow" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575532/alphaglow_jwu8mg.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575532/alphaglow_jwu8mg.png"
                 alt="Alpha Glow - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -98,7 +98,7 @@ export function Product4_1() {
             </a>
             <a href="/alphaglow" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Alpha Glow</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Alpha Glow</h3>
               </div>
             </a>
             <Button
@@ -116,7 +116,7 @@ export function Product4_1() {
           <div className="group">
             <a href="/serenity" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575589/serenity_mnncq7.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575589/serenity_mnncq7.png"
                 alt="Serenity - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
@@ -124,7 +124,7 @@ export function Product4_1() {
             </a>
             <a href="/serenity" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Serenity</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Serenity</h3>
               </div>
             </a>
             <Button
@@ -146,7 +146,7 @@ export function Product4_1() {
               </div>
               <a href="/applecyder" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
-                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761575550/applecyder_xxg1ps.png"
+                  src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575550/applecyder_xxg1ps.png"
                   alt="Apple Cider Vinagre - MVV Natural"
                   className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
@@ -155,7 +155,7 @@ export function Product4_1() {
             </div>
             <a href="/applecyder" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
-                <h3 className="font-semibold text-text-primary transition-colors group-hover:text-como">Apple Cider Vinagre</h3>
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Apple Cider Vinagre</h3>
               </div>
             </a>
             <Button

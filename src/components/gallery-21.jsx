@@ -43,18 +43,18 @@ const useCarousel = () => {
 export function Gallery21() {
   const carouselState = useCarousel();
   const testimonies = [
-    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761579690/testimonio_dih0u8.png", alt: "Testimonio MVV Natural 1" },
-    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761579691/testimonio_szvhma.jpg", alt: "Testimonio MVV Natural 2" },
-    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761579693/HOLA_MI_TESTIMONIO_ES_ASOMBROSO._BAJE_MAS_DE_25_KILOS_CON_DUO_FUSION_XTREME._kjocjy.png", alt: "Testimonio - Bajé más de 25 kilos" },
-    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761579693/test1_zy1npa.jpg", alt: "Testimonio MVV Natural 3" },
-    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761579693/test3_cjq8wv.jpg", alt: "Testimonio MVV Natural 4" },
-    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761579694/test2_ndab4x.jpg", alt: "Testimonio MVV Natural 5" },
-    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761579695/testimonio2_luzqbe.webp", alt: "Testimonio MVV Natural 6" },
-    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761579695/WhatsApp_Image_2025-10-27_at_6.37.17_AM_hjl01y.jpg", alt: "Testimonio MVV Natural 7" },
-    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761579696/WhatsApp_Image_2025-10-27_at_6.37.50_AM_ya6lni.jpg", alt: "Testimonio MVV Natural 8" },
-    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761579697/WhatsApp_Image_2025-10-27_at_6.42.33_AM_ew3mfb.jpg", alt: "Testimonio MVV Natural 9" },
-    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761579698/WhatsApp_Image_2025-10-27_at_6.44.06_AM_dkuaua.jpg", alt: "Testimonio MVV Natural 10" },
-    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761579700/WhatsApp_Image_2025-10-27_at_6.44.30_AM_wvy6as.jpg", alt: "Testimonio MVV Natural 11" },
+    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761579690/testimonio_dih0u8.png", alt: "Testimonio MVV Natural 1" },
+    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761579691/testimonio_szvhma.jpg", alt: "Testimonio MVV Natural 2" },
+    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761579693/HOLA_MI_TESTIMONIO_ES_ASOMBROSO._BAJE_MAS_DE_25_KILOS_CON_DUO_FUSION_XTREME._kjocjy.png", alt: "Testimonio - Bajé más de 25 kilos" },
+    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761579693/test1_zy1npa.jpg", alt: "Testimonio MVV Natural 3" },
+    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761579693/test3_cjq8wv.jpg", alt: "Testimonio MVV Natural 4" },
+    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761579694/test2_ndab4x.jpg", alt: "Testimonio MVV Natural 5" },
+    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761579695/testimonio2_luzqbe.webp", alt: "Testimonio MVV Natural 6" },
+    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761579695/WhatsApp_Image_2025-10-27_at_6.37.17_AM_hjl01y.jpg", alt: "Testimonio MVV Natural 7" },
+    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761579696/WhatsApp_Image_2025-10-27_at_6.37.50_AM_ya6lni.jpg", alt: "Testimonio MVV Natural 8" },
+    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761579697/WhatsApp_Image_2025-10-27_at_6.42.33_AM_ew3mfb.jpg", alt: "Testimonio MVV Natural 9" },
+    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761579698/WhatsApp_Image_2025-10-27_at_6.44.06_AM_dkuaua.jpg", alt: "Testimonio MVV Natural 10" },
+    { src: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761579700/WhatsApp_Image_2025-10-27_at_6.44.30_AM_wvy6as.jpg", alt: "Testimonio MVV Natural 11" },
     { src: "https://res.cloudinary.com/dsulhqvza/image/upload/ar_1:1,c_crop/WhatsApp_Image_2025-10-27_at_6.44.20_AM_yu68zh.jpg", alt: "Testimonio MVV Natural 12" },
   ];
 

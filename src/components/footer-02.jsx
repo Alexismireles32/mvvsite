@@ -15,6 +15,8 @@ export function Footer2() {
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/v1761550208/mvvnatural_pbzwrl.png"
                 alt="MVV Natural"
                 className="h-10 w-auto md:h-12"
+                width="500"
+                height="500"
               />
             </a>
             <div className="flex items-center gap-3">
