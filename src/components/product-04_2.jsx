@@ -148,6 +148,62 @@ export function Product4_2() {
               </a>
             </Button>
           </div>
+          <div className="group">
+            <a href="/edetox" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
+              <img
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Edetox_vnbmiq.png"
+                alt="E-Detox Plus - MVV Natural"
+                className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+                width="600"
+                height="720"
+              />
+            </a>
+            <a href="/edetox" className="flex flex-col text-center md:text-md">
+              <div className="mb-2">
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">E-Detox Plus</h3>
+              </div>
+            </a>
+            <Button
+              variant="secondary"
+              size="sm"
+              title="Ver Producto E-Detox Plus"
+              className="mt-3 w-full md:mt-4"
+              asChild
+            >
+              <a href="/edetox">
+                Ver Producto
+              </a>
+            </Button>
+          </div>
+          <div className="group">
+            <a href="/ashwagandha" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
+              <img
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575567/Ashawandha_nmq29y.png"
+                alt="Ashwagandha - MVV Natural"
+                className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+                width="600"
+                height="720"
+              />
+            </a>
+            <a href="/ashwagandha" className="flex flex-col text-center md:text-md">
+              <div className="mb-2">
+                <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Ashwagandha</h3>
+              </div>
+            </a>
+            <Button
+              variant="secondary"
+              size="sm"
+              title="Ver Producto Ashwagandha"
+              className="mt-3 w-full md:mt-4"
+              asChild
+            >
+              <a href="/ashwagandha">
+                Ver Producto
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

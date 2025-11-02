@@ -22,6 +22,8 @@ const allProducts = [
   { name: "Fat Blazer", url: "/fatblazer", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761578536/fatblazer_vw1fks.png" },
   { name: "Slim Coffee", url: "/slimcoffe", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575594/slimcoffe_taahyd.png" },
   { name: "Apple Cider Vinagre", url: "/applecyder", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575550/applecyder_xxg1ps.png" },
+  { name: "E-Detox Plus", url: "/edetox", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Edetox_vnbmiq.png" },
+  { name: "Ashwagandha", url: "/ashwagandha", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575567/Ashawandha_nmq29y.png" },
   { name: "Maxi Fibra", url: "/maxi-fibra", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549538/catalogo-mvvnatural-18_l4r57w.webp" },
   { name: "Bikini Strong", url: "/bikini-strong", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549586/catalogo-mvvnatural-33_tpgqj5.webp" },
   { name: "Mens Exotic", url: "/mens-exotic", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549796/catalogo-mvvnatural-25_mbl2mh.webp" },
