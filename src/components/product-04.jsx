@@ -30,8 +30,7 @@ export function Product4() {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Duo-60fusion_xhsjhs.png"
                   alt="Duo-60 Fusion - MVV Natural"
                   className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                   width="600" height="720" loading="lazy"
-              / width="600" height="720" width="600" height="720">
+                   width="600" height="720" loading="lazy" />
             </a>
             </div>
             <a href="/duo-60-fusion" className="flex flex-col text-center md:text-md">
@@ -63,8 +62,7 @@ export function Product4() {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575532/alphaglow_jwu8mg.png"
                   alt="Alpha Glow - MVV Natural"
                   className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                   width="600" height="720" loading="lazy"
-                / width="600" height="720" width="600" height="720">
+                   width="600" height="720" loading="lazy" />
               </a>
             </div>
             <a href="/alphaglow" className="flex flex-col text-center md:text-md">
@@ -96,8 +94,7 @@ export function Product4() {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575545/chupapanza_m7zfgs.png"
                   alt="Chupa Panza - MVV Natural"
                   className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                   width="600" height="720" loading="lazy"
-                / width="600" height="720" width="600" height="720">
+                   width="600" height="720" loading="lazy" />
               </a>
             </div>
             <a href="/chupapanza" className="flex flex-col text-center md:text-md">
@@ -125,8 +122,7 @@ export function Product4() {
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575596/sosburn_g2ui2b.png"
                 alt="SOS Burn - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                 width="600" height="720" loading="lazy"
-              / width="600" height="720" width="600" height="720">
+                 width="600" height="720" loading="lazy" />
             </a>
             <a href="/sosburn" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
@@ -153,8 +149,7 @@ export function Product4() {
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575600/sosburnsensitive_dfsrs1.png"
                 alt="SOS Burn Sensitive - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                 width="600" height="720" loading="lazy"
-              / width="600" height="720" width="600" height="720">
+                 width="600" height="720" loading="lazy" />
             </a>
             <a href="/sosburnsensitive" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
@@ -181,8 +176,7 @@ export function Product4() {
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575597/primerose_jk26zj.png"
                 alt="Prime Rose - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                 width="600" height="720" loading="lazy"
-              / width="600" height="720" width="600" height="720">
+                 width="600" height="720" loading="lazy" />
             </a>
             <a href="/primerose" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
@@ -209,8 +203,7 @@ export function Product4() {
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575576/Lidabooster_xd5mo9.png"
                 alt="Lida Booster - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                 width="600" height="720" loading="lazy"
-              / width="600" height="720" width="600" height="720">
+                 width="600" height="720" loading="lazy" />
             </a>
             <a href="/lidabooster" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
@@ -237,8 +230,7 @@ export function Product4() {
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575584/lipohd_zg9lxy.png"
                 alt="Lipo HD 360 - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                 width="600" height="720" loading="lazy"
-              / width="600" height="720" width="600" height="720">
+                 width="600" height="720" loading="lazy" />
             </a>
             <a href="/lipohd" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
