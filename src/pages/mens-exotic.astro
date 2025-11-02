@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Mens Exotic Potenciador Masculino",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549796/catalogo-mvvnatural-25_mbl2mh.webp",
+  productUrl: "/mens-exotic",
+  description: "Mens Exotic Potenciador Masculino ofrece máxima potencia natural. Mejora el flujo sanguíneo hacia el pene, logrando una erección más dura y rígida. Recupera sensibilidad y excitación natural. Aumenta la resistencia física y sexual, la fertilidad masculina y la concentración mental. Disminuye los efectos del estrés y la fatiga y favorece el buen estado de ánimo. Fórmula 100% natural diseñada específicamente para hombres que buscan mejorar su rendimiento sexual y vitalidad general.",
+  benefits: [
+    "Mejora el flujo sanguíneo para erecciones más duras y rígidas",
+    "Recupera sensibilidad y excitación natural",
+    "Aumenta resistencia física y sexual",
+    "Mejora fertilidad masculina",
+    "Aumenta concentración mental",
+    "Disminuye efectos del estrés y fatiga",
+    "Favorece buen estado de ánimo",
+    "Máxima potencia natural"
+  ],
+  ingredients: [
+    "Yohimbina - Mejora flujo sanguíneo y rendimiento sexual",
+    "Maca negra - Aumenta libido, energía y resistencia",
+    "Arginina - Mejora circulación y flujo sanguíneo",
+    "Tribulus terrestris - Aumenta testosterona natural",
+    "Ginseng - Energía y resistencia física",
+    "L-arginina - Óxido nítrico para mejor flujo sanguíneo"
+  ],
+  howToUse: "Tomar 1 cápsula al día preferentemente en ayunas. Según los efectos y necesidades individuales, se puede aumentar a 2 cápsulas por día. Beber abundante agua durante el día. Para mejores resultados, combinar con alimentación balanceada y ejercicio regular. No exceder la dosis recomendada."
+};
+---
+
+<Layout 
+  title="Mens Exotic Potenciador Masculino - Máxima Potencia Natural"
+  description="Mens Exotic: potenciador masculino natural. Mejora erecciones, resistencia sexual, fertilidad. Recupera sensibilidad y excitación. Fórmula 100% natural."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
+

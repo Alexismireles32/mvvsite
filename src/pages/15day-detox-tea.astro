@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "15 Day Detox Tea",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549522/catalogo-mvvnatural-15_qpsuiu.webp",
+  productUrl: "/15day-detox-tea",
+  description: "15 Day Detox Tea limpia hígado, riñones y colon. Potente diurético que elimina toxinas y grasas almacenadas en los tejidos, regula la digestión, reduce triglicéridos y colesterol. Té de hierbas naturales diseñado para una limpieza profunda del organismo en un período de 15 días. Fórmula natural que ayuda a desintoxicar el cuerpo de manera segura y efectiva, mejorando la función de órganos vitales como hígado, riñones y colon.",
+  benefits: [
+    "Limpia hígado, riñones y colon",
+    "Potente diurético natural",
+    "Elimina toxinas y grasas almacenadas en tejidos",
+    "Regula la digestión",
+    "Reduce triglicéridos y colesterol",
+    "Desintoxicación profunda en 15 días",
+    "Fórmula natural y segura",
+    "Mejora función de órganos vitales"
+  ],
+  ingredients: [
+    "Hoja de sen - Laxante natural suave",
+    "Fenogreco - Digestión y limpieza",
+    "Raíz de agracejo - Apoyo hepático",
+    "Diente de león - Diurético y detox",
+    "Raíz de genciana - Digestión y limpieza",
+    "Hierbas naturales adicionales"
+  ],
+  howToUse: "Tomar 1 bolsa de té cada noche. Dejar reposar la bolsa en agua caliente durante 3-5 minutos. Beber preferentemente antes de dormir. Para mejores resultados, seguir el tratamiento durante 15 días consecutivos. Beber abundante agua durante el día mientras se usa el té. No exceder la dosis recomendada."
+};
+---
+
+<Layout 
+  title="15 Day Detox Tea - Limpia Hígado, Riñones y Colon | Té Detox"
+  description="15 Day Detox Tea: limpia hígado, riñones y colon. Potente diurético, elimina toxinas y grasas. Regula digestión, reduce colesterol. Té natural 15 días."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
+

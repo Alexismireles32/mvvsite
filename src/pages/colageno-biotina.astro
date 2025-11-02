@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Colágeno & Biotina con Ácido Hialurónico",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549535/catalogo-mvvnatural-17_lvwwel.webp",
+  productUrl: "/colageno-biotina",
+  description: "Colágeno & Biotina con ácido hialurónico reafirma tu belleza. Favorece una piel firme, elástica y saludable; fortalece huesos, cabello, uñas, músculos y articulaciones; ayuda al sistema nervioso y previene enfermedades degenerativas; fortalece el sistema cardiovascular. Fórmula completa que combina los tres componentes esenciales para la salud y belleza: colágeno para estructura, biotina para crecimiento de cabello y uñas, y ácido hialurónico para hidratación y elasticidad de la piel.",
+  benefits: [
+    "Reafirma tu belleza naturalmente",
+    "Favorece piel firme, elástica y saludable",
+    "Fortalece huesos, cabello y uñas",
+    "Fortalece músculos y articulaciones",
+    "Ayuda al sistema nervioso",
+    "Previene enfermedades degenerativas",
+    "Fortalece el sistema cardiovascular",
+    "Fórmula completa de triple acción"
+  ],
+  ingredients: [
+    "Colágeno hidrolizado - Estructura y firmeza",
+    "Biotina - Crecimiento de cabello y uñas",
+    "Ácido hialurónico - Hidratación y elasticidad",
+    "Vitaminas adicionales - Para absorción óptima",
+    "Minerales esenciales - Para salud general"
+  ],
+  howToUse: "Tomar 2 cápsulas al día, preferentemente con las comidas para mejor absorción. Beber abundante agua durante el día. Para mejores resultados, usar de forma continua durante al menos 2-3 meses. Puede combinarse con una dieta rica en proteínas y vitamina C para potenciar la producción de colágeno."
+};
+---
+
+<Layout 
+  title="Colágeno & Biotina con Ácido Hialurónico | Reafirma Tu Belleza"
+  description="Colágeno & Biotina con ácido hialurónico: reafirma belleza, piel firme, fortalece cabello y uñas. Fórmula completa triple acción. Resultados visibles."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
+

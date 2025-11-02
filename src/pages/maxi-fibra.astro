@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Maxi Fibra",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549538/catalogo-mvvnatural-18_l4r57w.webp",
+  productUrl: "/maxi-fibra",
+  description: "Maxi Fibra es un suplemento de fibra en polvo de 500 g que mejora la digestión, ayuda con colitis y estreñimiento, reduce colesterol y triglicéridos, regula la flora intestinal y reduce la grasa abdominal. Presentación con sabor agradable. Suplemento natural rico en fibra soluble e insoluble que ayuda a mejorar el tránsito intestinal, promover la sensación de saciedad y mantener un sistema digestivo saludable. Ideal para complementar tu dieta y mejorar tu bienestar digestivo.",
+  benefits: [
+    "Mejora la digestión y el tránsito intestinal",
+    "Ayuda con colitis y estreñimiento",
+    "Reduce colesterol y triglicéridos",
+    "Regula la flora intestinal",
+    "Reduce la grasa abdominal",
+    "Promueve sensación de saciedad",
+    "Presentación con sabor agradable"
+  ],
+  ingredients: [
+    "Piña - Enzimas digestivas naturales",
+    "Linaza - Fibra soluble rica en omega-3",
+    "Psyllium - Fibra que promueve regularidad intestinal",
+    "Senna - Laxante natural suave",
+    "Avena - Fibra soluble que reduce colesterol",
+    "Manzana - Pectina que mejora digestión",
+    "Germen de trigo - Rico en fibra y nutrientes",
+    "Chía - Fibra y omega-3",
+    "Nopal - Fibra y control de glucosa"
+  ],
+  howToUse: "Agregar 1-2 cucharadas en agua o jugo. Mezclar bien hasta disolver completamente. Tomar preferentemente en ayunas o antes de las comidas principales. Beber abundante agua durante el día. Puede usarse diariamente como parte de una dieta balanceada. Presentación de 500 g."
+};
+---
+
+<Layout 
+  title="Maxi Fibra - Suplemento de Fibra en Polvo 500g | Mejora Digestión"
+  description="Maxi Fibra: suplemento de fibra en polvo 500g. Mejora digestión, ayuda con colitis y estreñimiento, reduce colesterol. Sabor agradable. Envío rápido México y USA."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
+

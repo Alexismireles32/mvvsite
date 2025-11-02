@@ -1,17 +1,32 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { useWhatsApp } from "./home-wrapper";
 import { ProductSEO } from "./product-seo";
 import { BiCheck } from "react-icons/bi";
+import { RxChevronLeft, RxChevronRight } from "react-icons/rx";
 
-export function ProductSimple({ productName, productImage, productUrl, description, benefits, ingredients, howToUse }) {
+export function ProductSimple({ productName, productImage, productUrl, description, benefits, ingredients, howToUse, secondaryImages = [] }) {
   const onOpenWhatsApp = useWhatsApp();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Combinar imagen principal con secundarias
+  const allImages = [productImage, ...(secondaryImages || [])];
 
   const handleClick = () => {
     if (onOpenWhatsApp) {
       onOpenWhatsApp();
     }
+  };
+
+  const nextImage = (e) => {
+    e.stopPropagation();
+    setCurrentImageIndex((prev) => (prev + 1) % allImages.length);
+  };
+
+  const prevImage = (e) => {
+    e.stopPropagation();
+    setCurrentImageIndex((prev) => (prev - 1 + allImages.length) % allImages.length);
   };
 
   return (
@@ -25,14 +40,59 @@ export function ProductSimple({ productName, productImage, productUrl, descripti
       <section className="px-[5%] py-12 md:py-16 lg:py-20">
         <div className="container max-w-5xl">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
-            {/* Product Image */}
-            <div className="overflow-hidden rounded-2xl bg-white/5">
+            {/* Product Image with Swipe */}
+            <div className="relative overflow-hidden rounded-2xl bg-white/5">
               <img
-                src={productImage}
+                src={allImages[currentImageIndex]}
                 alt={`${productName} - MVV Natural`}
                 className="w-full h-auto object-contain"
-                loading="eager"
+                loading={currentImageIndex === 0 ? "eager" : "lazy"}
               />
+              
+              {/* Navigation buttons if there are multiple images */}
+              {allImages.length > 1 && (
+                <>
+                  <button
+                    onClick={prevImage}
+                    className="absolute left-2 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-como shadow-lg hover:bg-white transition-all duration-300 hover:scale-110 active:scale-95"
+                    aria-label="Imagen anterior"
+                    type="button"
+                  >
+                    <RxChevronLeft className="h-6 w-6" />
+                  </button>
+                  <button
+                    onClick={nextImage}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-como shadow-lg hover:bg-white transition-all duration-300 hover:scale-110 active:scale-95"
+                    aria-label="Imagen siguiente"
+                    type="button"
+                  >
+                    <RxChevronRight className="h-6 w-6" />
+                  </button>
+                  
+                  {/* Image indicators */}
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                    {allImages.map((_, idx) => (
+                      <button
+                        key={idx}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setCurrentImageIndex(idx);
+                        }}
+                        className={`h-2 rounded-full transition-all duration-300 ${
+                          idx === currentImageIndex ? 'w-8 bg-como' : 'w-2 bg-white/60 hover:bg-white/80'
+                        }`}
+                        aria-label={`Ver imagen ${idx + 1}`}
+                        type="button"
+                      />
+                    ))}
+                  </div>
+                  
+                  {/* Swipe hint for mobile */}
+                  <div className="absolute top-4 right-4 bg-como/90 text-white text-xs px-2 py-1 rounded-full">
+                    {currentImageIndex + 1} / {allImages.length}
+                  </div>
+                </>
+              )}
             </div>
 
             {/* Product Info */}

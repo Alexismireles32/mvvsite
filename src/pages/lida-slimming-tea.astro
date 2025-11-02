@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Li-Da Daidahua Slimming Tea",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549659/catalogo-mvvnatural-37_jbem0i.webp",
+  productUrl: "/lida-slimming-tea",
+  description: "Li-Da Daidahua Slimming Tea es natural y orgánico, eficiente en la pérdida de peso; ayuda a extraer la grasa consumida y la ya existente. Detox, depura, digestivo; limpia sangre, riñones y colon; ayuda con síntomas de gastritis; elimina costra intestinal; recoge la piel flácida (reafirma) y ayuda con la presión arterial. Desinflama, baja de peso y tallas y brinda saciedad. 12 bolsas de té de fórmula tradicional china para pérdida de peso efectiva.",
+  benefits: [
+    "Natural y orgánico, eficiente en pérdida de peso",
+    "Ayuda a extraer la grasa consumida y la ya existente",
+    "Detox, depura y mejora digestión",
+    "Limpia sangre, riñones y colon",
+    "Ayuda con síntomas de gastritis",
+    "Elimina costra intestinal",
+    "Recoge la piel flácida (reafirma)",
+    "Ayuda con la presión arterial",
+    "Desinflama y brinda saciedad",
+    "Baja de peso y tallas efectivamente"
+  ],
+  ingredients: [
+    "Equisetum arvense - Diurético y detox",
+    "Cassia - Control de peso y digestión",
+    "Camelia sinensis - Té verde antioxidante",
+    "Sen - Laxante natural suave",
+    "Lotus de la India - Quema grasa"
+  ],
+  howToUse: "Usar 1 sobre de té por la noche, dejar reposar durante 3 minutos en agua caliente. Li-Da puede usarse de dos formas: para bajar de peso se toma diariamente por un mes; para mantenimiento se usa cada 2 o 3 días. Beber abundante agua durante el día. 12 bolsas de té. Para mejores resultados, combinar con alimentación balanceada."
+};
+---
+
+<Layout 
+  title="Li-Da Daidahua Slimming Tea - Té Natural Orgánico | 12 Bolsas"
+  description="Li-Da Daidahua Slimming Tea: té natural orgánico para pérdida de peso. Detox, limpia riñones y colon, ayuda gastritis. 12 bolsas. Fórmula tradicional."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
+

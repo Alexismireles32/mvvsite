@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "3 Day Reset",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549535/catalogo-mvvnatural-16_yiewjp.webp",
+  productUrl: "/3day-reset",
+  description: "3 Day Reset - Dale un reset a tu vida. Una cápsula limpia el colon, elimina toxinas, activa el metabolismo, mejora la absorción de nutrientes, reduce la inflamación abdominal, previene el estreñimiento o colon irritable y es diurético. Fórmula de acción rápida diseñada para dar un reinicio completo al sistema digestivo en solo 3 días. Ideal para comenzar un programa de pérdida de peso o para dar un descanso a tu sistema digestivo.",
+  benefits: [
+    "Dale un reset completo a tu vida",
+    "Limpia el colon profundamente",
+    "Elimina toxinas acumuladas",
+    "Activa el metabolismo",
+    "Mejora la absorción de nutrientes",
+    "Reduce la inflamación abdominal",
+    "Previene estreñimiento o colon irritable",
+    "Efecto diurético natural",
+    "Resultados en solo 3 días"
+  ],
+  ingredients: [
+    "Malva silvestre - Suavizante y antiinflamatorio intestinal",
+    "Hoja de té verde - Antioxidante y digestivo",
+    "Extracto de papaya - Enzimas digestivas",
+    "Extracto de uva - Antioxidante y digestivo",
+    "Extracto de ciruela - Laxante natural suave",
+    "Tejocote - Digestión y limpieza"
+  ],
+  howToUse: "Tomar 1 cápsula diaria por la noche antes de dormir. Beber abundante agua durante el día mientras se usa el producto. Tratamiento recomendado: 3 días consecutivos para un reset completo. Después del tratamiento, continuar con alimentación balanceada para mantener los resultados. No exceder la dosis recomendada."
+};
+---
+
+<Layout 
+  title="3 Day Reset - Dale un Reset a Tu Vida | Limpia Colon en 3 Días"
+  description="3 Day Reset: limpia colon, elimina toxinas, activa metabolismo, reduce inflamación abdominal. Reset completo en 3 días. Fórmula natural."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
+

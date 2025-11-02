@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Magic Booty Up",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549572/catalogo-mvvnatural-27_ohefys.webp",
+  productUrl: "/magic-booty-up",
+  description: "Magic Booty Up es un mágico tratamiento tópico que aumenta senos, aumenta glúteos, humecta, reafirma, combate estrías y volumiza. Fórmula concentrada con extractos naturales diseñada para ayudar a mejorar la apariencia y volumen de senos y glúteos de forma natural. Tratamiento no invasivo que nutre la piel y puede ayudar a mejorar la firmeza y elasticidad. Ideal para mujeres que buscan realzar sus curvas de forma natural.",
+  benefits: [
+    "Aumenta volumen de senos de forma natural",
+    "Aumenta volumen de glúteos",
+    "Humecta profundamente la piel",
+    "Reafirma y tonifica",
+    "Combate estrías",
+    "Volumiza áreas aplicadas",
+    "Tratamiento no invasivo",
+    "Fórmula con extractos naturales"
+  ],
+  ingredients: [
+    "Extracto de fenogreco - Fitoestrógenos naturales para volumen",
+    "Vitamina E - Antioxidante que nutre y reafirma la piel",
+    "Extracto de camu camu - Rico en vitamina C para elasticidad",
+    "Colágeno - Mejora firmeza y elasticidad de la piel",
+    "Extracto de primrose - Rico en ácidos grasos esenciales",
+    "Aceites naturales - Humectación profunda"
+  ],
+  howToUse: "Aplicar 5 gotas en el área deseada (senos o glúteos) y dar un masaje suave y circular durante 2-3 minutos hasta que se absorba completamente. Usar preferentemente por la noche antes de dormir para mejor absorción. Puede usarse diariamente. Para mejores resultados, mantener uso continuo durante al menos 8-12 semanas."
+};
+---
+
+<Layout 
+  title="Magic Booty Up - Tratamiento para Aumentar Senos y Glúteos"
+  description="Magic Booty Up: tratamiento mágico que aumenta senos y glúteos. Humecta, reafirma, anti estrías y volumiza. Fórmula natural con extractos. Resultados visibles."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
+

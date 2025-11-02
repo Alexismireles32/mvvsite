@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Protein Body",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549507/catalogo-mvvnatural-9_da08s1.webp",
+  productUrl: "/protein-body",
+  description: "Protein Body es una proteína natural disponible en sabores fresa y chocolate. Excelente multivitamínico que ayuda al sistema inmunológico y aporta colágeno especialmente beneficioso para la mujer. Contribuye al buen funcionamiento de tejidos, aumenta y recupera masa muscular, fortalece el acondicionamiento físico y regenera fibras musculares después del entrenamiento. Presentación de 500 g. Fórmula completa diseñada para complementar la nutrición y apoyar el desarrollo muscular saludable.",
+  benefits: [
+    "Proteína natural en sabores fresa y chocolate",
+    "Excelente multivitamínico completo",
+    "Ayuda al sistema inmunológico",
+    "Aporta colágeno especialmente para la mujer",
+    "Contribuye al buen funcionamiento de tejidos",
+    "Aumenta y recupera masa muscular",
+    "Fortalece el acondicionamiento físico",
+    "Regenera fibras musculares después del entrenamiento",
+    "Presentación de 500 g"
+  ],
+  ingredients: [
+    "Proteína de alta calidad - Para desarrollo muscular",
+    "Colágeno - Para salud de piel, uñas y cabello",
+    "Multivitamínicos - Complejo de vitaminas esenciales",
+    "Minerales esenciales - Para función muscular óptima",
+    "Aminoácidos - Para recuperación y crecimiento muscular",
+    "Saborizantes naturales - Fresa y chocolate"
+  ],
+  howToUse: "Mezclar 1-2 cucharadas en agua, leche o bebida favorita. Agitar bien hasta disolver completamente. Tomar preferentemente después del entrenamiento para mejor recuperación muscular. También puede usarse como sustituto de comida o snack nutritivo. Presentación de 500 g. Para mejores resultados, combinar con alimentación balanceada y ejercicio regular."
+};
+---
+
+<Layout 
+  title="Protein Body - Proteína Natural Fresa y Chocolate | 500g | MVV Natural"
+  description="Protein Body: proteína natural en sabores fresa y chocolate. Multivitamínico con colágeno. Aumenta masa muscular, recuperación post-entrenamiento. 500g."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
+

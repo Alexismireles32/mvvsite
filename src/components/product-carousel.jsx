@@ -21,7 +21,21 @@ const allProducts = [
   { name: "Encimax", url: "/encimax", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575578/encimax_kuhluy.png" },
   { name: "Fat Blazer", url: "/fatblazer", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761578536/fatblazer_vw1fks.png" },
   { name: "Slim Coffee", url: "/slimcoffe", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575594/slimcoffe_taahyd.png" },
-  { name: "Apple Cider Vinagre", url: "/applecyder", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575550/applecyder_xxg1ps.png" }
+  { name: "Apple Cider Vinagre", url: "/applecyder", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575550/applecyder_xxg1ps.png" },
+  { name: "Maxi Fibra", url: "/maxi-fibra", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549538/catalogo-mvvnatural-18_l4r57w.webp" },
+  { name: "Bikini Strong", url: "/bikini-strong", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549586/catalogo-mvvnatural-33_tpgqj5.webp" },
+  { name: "Mens Exotic", url: "/mens-exotic", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549796/catalogo-mvvnatural-25_mbl2mh.webp" },
+  { name: "Magic Booty Up", url: "/magic-booty-up", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549572/catalogo-mvvnatural-27_ohefys.webp" },
+  { name: "Slim Shake", url: "/slim-shake", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549586/catalogo-mvvnatural-31_jg76gh.webp" },
+  { name: "Blueberry Colágeno", url: "/blueberry-colageno", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549573/catalogo-mvvnatural-32_r5ipwu.webp" },
+  { name: "Protein Body", url: "/protein-body", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549507/catalogo-mvvnatural-9_da08s1.webp" },
+  { name: "15 Day Detox Tea", url: "/15day-detox-tea", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549522/catalogo-mvvnatural-15_qpsuiu.webp" },
+  { name: "3 Day Reset", url: "/3day-reset", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549535/catalogo-mvvnatural-16_yiewjp.webp" },
+  { name: "Colágeno & Biotina", url: "/colageno-biotina", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549535/catalogo-mvvnatural-17_lvwwel.webp" },
+  { name: "Thyroide Support", url: "/thyroide-support", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549588/catalogo-mvvnatural-28_br04nr.webp" },
+  { name: "Meizitang Soft Gel", url: "/meizitang-soft-gel", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549584/catalogo-mvvnatural-35_ao2pay.webp" },
+  { name: "Li-Da Slimming Tea", url: "/lida-slimming-tea", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549659/catalogo-mvvnatural-37_jbem0i.webp" },
+  { name: "Slim24", url: "/slim24", image: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549663/catalogo-mvvnatural-40_w0njj9.webp" }
 ];
 
 export function ProductCarousel({ currentProductUrl }) {

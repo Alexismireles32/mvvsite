@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Meizitang Soft Gel (Botanical Slimming)",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549584/catalogo-mvvnatural-35_ao2pay.webp",
+  productUrl: "/meizitang-soft-gel",
+  description: "Meizitang Soft Gel (Botanical Slimming) es 100% natural soft gel. Descubre el secreto para alcanzar tu peso ideal. Reduce la grasa por endógenos, disminuye la absorción de colesterol y grasas, elimina radicales libres en el cuerpo, acelera el metabolismo, limpia el sistema digestivo y desintoxica el organismo. Fórmula botánica tradicional que combina hierbas naturales para una pérdida de peso efectiva y segura. 36 cápsulas de fórmula concentrada.",
+  benefits: [
+    "100% natural soft gel",
+    "Descubre el secreto para alcanzar tu peso ideal",
+    "Reduce la grasa por endógenos",
+    "Disminuye la absorción de colesterol y grasas",
+    "Elimina radicales libres en el cuerpo",
+    "Acelera el metabolismo",
+    "Limpia el sistema digestivo",
+    "Desintoxica el organismo",
+    "36 cápsulas de fórmula concentrada"
+  ],
+  ingredients: [
+    "Kolajagar - Quema grasa y detox",
+    "Goma - Control de apetito",
+    "Hoja de loto - Digestión y limpieza",
+    "Gardenia - Apoyo metabólico",
+    "Atractylodes - Digestión y metabolismo",
+    "Plátano oriental de agua - Detox",
+    "Semilla de cassia - Control de peso",
+    "Raíz de kutzu - Apoyo digestivo",
+    "Rizoma alismatis - Diurético"
+  ],
+  howToUse: "Tomar 1 cápsula en ayunas, 20 minutos antes de los alimentos. Beber abundante agua durante el día. Para mejores resultados, combinar con alimentación balanceada y ejercicio moderado. 36 cápsulas. IMPORTANTE: No apto para hipertensos, diabéticos ni para mujeres lactando o embarazadas. Consultar con un profesional de la salud antes de usar si tiene condiciones médicas."
+};
+---
+
+<Layout 
+  title="Meizitang Soft Gel - Botanical Slimming 100% Natural | 36 Cápsulas"
+  description="Meizitang Soft Gel: 100% natural botanical slimming. Reduce grasa, acelera metabolismo, limpia digestivo. 36 cápsulas. No apto hipertensos/diabéticos."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
+

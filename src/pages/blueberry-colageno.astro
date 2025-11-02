@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Blueberry Colágeno Hidrolizado con Resveratrol",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549573/catalogo-mvvnatural-32_r5ipwu.webp",
+  productUrl: "/blueberry-colageno",
+  description: "Blueberry Colágeno Hidrolizado con resveratrol ayuda al cuerpo a recuperarse después del ejercicio. Proteína que da estructura, firmeza y elasticidad a la piel; mantiene las células firmes y unidas y es importante para piel, uñas, cabello, huesos, ligamentos, tendones, cartílagos, visión y articulaciones. Elimina celulitis y mejora la salud. Fórmula completa con colágeno hidrolizado de alta biodisponibilidad y resveratrol antioxidante potente.",
+  benefits: [
+    "Ayuda al cuerpo a recuperarse después del ejercicio",
+    "Da estructura, firmeza y elasticidad a la piel",
+    "Mantiene células firmes y unidas",
+    "Importante para piel, uñas, cabello y huesos",
+    "Fortalece ligamentos, tendones y cartílagos",
+    "Mejora la salud de las articulaciones",
+    "Elimina celulitis",
+    "Mejora la salud general"
+  ],
+  ingredients: [
+    "Colágeno hidrolizado - Proteína esencial para piel y articulaciones",
+    "Resveratrol - Antioxidante potente de arándanos",
+    "Maca - Aumenta energía y resistencia",
+    "Aguaje - Rico en nutrientes esenciales",
+    "Kiwicha - Proteína completa y aminoácidos",
+    "Stevia - Endulzante natural",
+    "Quinoa - Proteína y nutrientes completos",
+    "Polen - Rico en vitaminas y minerales",
+    "Granola - Fibra y energía"
+  ],
+  howToUse: "Agregar 1 cucharada en agua (250 ml). Mezclar bien hasta disolver completamente. Tomar preferentemente después del ejercicio o antes de dormir para mejor absorción. Puede usarse diariamente como parte de una dieta balanceada. Presentación de 250 g."
+};
+---
+
+<Layout 
+  title="Blueberry Colágeno Hidrolizado con Resveratrol | Reafirma Piel"
+  description="Blueberry Colágeno Hidrolizado: reafirma piel, fortalece articulaciones, elimina celulitis. Con resveratrol antioxidante. Recuperación post-ejercicio. 250g."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
+

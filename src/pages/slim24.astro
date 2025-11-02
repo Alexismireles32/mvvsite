@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Slim24",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549663/catalogo-mvvnatural-40_w0njj9.webp",
+  productUrl: "/slim24",
+  description: "Slim24 ofrece 24 hrs sin hambre de día y noche. Quema grasa, regenera masa muscular, no es laxante, sin rebote y sin ansiedad. Acelera el metabolismo, controla el apetito, sin necesidad de dieta, no causa hipertensión y aporta energía. Fórmula completa diseñada para trabajar las 24 horas del día, suprimiendo el apetito de manera efectiva mientras quema grasa y ayuda a mantener o regenerar masa muscular. 30 cápsulas de acción prolongada.",
+  benefits: [
+    "24 hrs sin hambre de día y noche",
+    "Quema grasa efectivamente",
+    "Regenera masa muscular",
+    "No es laxante",
+    "Sin rebote",
+    "Sin ansiedad",
+    "Acelera el metabolismo",
+    "Controla el apetito eficientemente",
+    "Sin necesidad de dieta estricta",
+    "No causa hipertensión",
+    "Aporta energía sostenida",
+    "30 cápsulas de acción prolongada"
+  ],
+  ingredients: [
+    "Extractos de naranja amarga - Termogénico y supresor de apetito",
+    "Lotus de la India - Quemador de grasa natural",
+    "Semilla de cassia - Control de apetito y digestión",
+    "Alisma orientalis - Diurético y detox",
+    "L-carnitina - Transporta grasa para convertirla en energía"
+  ],
+  howToUse: "Tomar 1 cápsula en ayunas con un vaso grande de agua. Beber abundante agua durante el día (2-3 litros recomendados). Para mejores resultados, puede combinarse con alimentación balanceada y ejercicio moderado. 30 cápsulas. Tratamiento recomendado: 2-3 meses continuos para resultados óptimos y mantenimiento."
+};
+---
+
+<Layout 
+  title="Slim24 - 24 Hrs Sin Hambre | Quema Grasa Sin Rebote | 30 Cápsulas"
+  description="Slim24: 24 hrs sin hambre día y noche. Quema grasa, regenera masa muscular, sin rebote ni ansiedad. Acelera metabolismo. 30 cápsulas."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
+

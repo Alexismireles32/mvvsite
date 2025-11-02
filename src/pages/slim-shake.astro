@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar6 } from '../components/navbar-06.jsx';
+import { ProductPageWrapper } from '../components/product-page-wrapper.jsx';
+import { Footer2 } from '../components/footer-02.jsx';
+
+const productData = {
+  productName: "Slim Shake",
+  productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549586/catalogo-mvvnatural-31_jg76gh.webp",
+  productUrl: "/slim-shake",
+  description: "Slim Shake es una proteína natural que no engorda. Malteada diseñada para hacer tus curvas más pronunciadas sin subir tallas en cintura. Lipo sin bisturí: sus ingredientes ayudan a aumentar las glándulas mamarias y los glúteos. Moldea tu figura y ayuda a combatir los problemas hormonales brindando vitalidad y energía. Puede usarse como sustituto de desayuno, cena o ambos. Presentación de 250 g con fórmula nutritiva y balanceada diseñada para complementar tu dieta mientras ayudas a moldear tu figura.",
+  benefits: [
+    "Proteína natural que no engorda",
+    "Hace curvas más pronunciadas sin subir tallas en cintura",
+    "Ayuda a aumentar glándulas mamarias y glúteos",
+    "Moldea la figura de forma natural",
+    "Combate problemas hormonales",
+    "Brinda vitalidad y energía",
+    "Puede usarse como sustituto de desayuno o cena",
+    "Fórmula nutritiva y balanceada"
+  ],
+  ingredients: [
+    "Maca - Regula hormonas y aumenta energía",
+    "Aguaje - Rico en fitoestrógenos naturales",
+    "Colágeno - Mejora firmeza de la piel",
+    "Kiwicha - Proteína completa y nutrientes esenciales",
+    "Stevia - Endulzante natural sin calorías",
+    "Quinoa - Proteína completa de origen vegetal",
+    "Polen - Rico en nutrientes y energía",
+    "Granola - Fibra y energía sostenida"
+  ],
+  howToUse: "Agregar 1 cucharada en un vaso con 250 ml de agua. Mezclar bien hasta disolver completamente. Puede usarse como sustituto de desayuno, cena o ambos. Para mejores resultados, usar diariamente como parte de una dieta balanceada. Presentación de 250 g."
+};
+---
+
+<Layout 
+  title="Slim Shake - Proteína Natural que No Engorda | Moldea Tu Figura"
+  description="Slim Shake: proteína natural que no engorda. Hace curvas más pronunciadas, aumenta senos y glúteos. Sustituto de comida nutritivo. 250g. Envío rápido."
+>
+  <Navbar6 client:load />
+  <ProductPageWrapper client:load productData={productData} />
+  <Footer2 client:idle />
+</Layout>
+
