@@ -14,8 +14,8 @@ export function Product4_2() {
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575551/colit6_te7kpi.png"
                 alt="Colit 6 - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
+                 width="600" height="720" loading="lazy"
+              / width="600" height="720" width="600" height="720">
             </a>
             <a href="/colit6" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
@@ -44,8 +44,8 @@ export function Product4_2() {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575563/floryva_nb3b0y.png"
                   alt="Floryva - MVV Natural"
                   className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                />
+                   width="600" height="720" loading="lazy"
+                / width="600" height="720" width="600" height="720">
               </a>
             </div>
             <a href="/floryva" className="flex flex-col text-center md:text-md">
@@ -75,8 +75,8 @@ export function Product4_2() {
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575578/encimax_kuhluy.png"
                   alt="Encimax - MVV Natural"
                   className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                />
+                   width="600" height="720" loading="lazy"
+                / width="600" height="720" width="600" height="720">
               </a>
             </div>
             <a href="/encimax" className="flex flex-col text-center md:text-md">
@@ -102,8 +102,8 @@ export function Product4_2() {
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575588/macapremium_s6k65z.png"
                 alt="Maca Premium - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
+                 width="600" height="720" loading="lazy"
+              / width="600" height="720" width="600" height="720">
             </a>
             <a href="/macapremium" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
@@ -128,8 +128,8 @@ export function Product4_2() {
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575544/cmpushup_ncxzh6.png"
                 alt="CM Push up Men - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
+                 width="600" height="720" loading="lazy"
+              / width="600" height="720" width="600" height="720">
             </a>
             <a href="/cmpushupmen" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
@@ -157,7 +157,7 @@ export function Product4_2() {
                 loading="lazy"
                 width="600"
                 height="720"
-              />
+              / width="600" height="720" width="600" height="720">
             </a>
             <a href="/edetox" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
@@ -185,7 +185,7 @@ export function Product4_2() {
                 loading="lazy"
                 width="600"
                 height="720"
-              />
+              / width="600" height="720" width="600" height="720">
             </a>
             <a href="/ashwagandha" className="flex flex-col text-center md:text-md">
               <div className="mb-2">

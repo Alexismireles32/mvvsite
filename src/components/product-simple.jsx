@@ -47,6 +47,8 @@ export function ProductSimple({ productName, productImage, productUrl, descripti
                 alt={`${productName} - MVV Natural`}
                 className="w-full h-auto object-contain"
                 loading={currentImageIndex === 0 ? "eager" : "lazy"}
+                width="1200"
+                height="1200"
               />
               
               {/* Navigation buttons if there are multiple images */}
