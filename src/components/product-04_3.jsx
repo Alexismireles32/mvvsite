@@ -18,7 +18,7 @@ export function Product4_3() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-18_bj3iwu.webp"
                   alt="Maxi Fibra - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
@@ -53,7 +53,7 @@ export function Product4_3() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-32_qqgu08.webp"
                   alt="Bikini Strong - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
@@ -88,7 +88,7 @@ export function Product4_3() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-24_cayyap.webp"
                   alt="Mens Exotic - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
@@ -123,7 +123,7 @@ export function Product4_3() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-26_qacvkr.webp"
                   alt="Magic Booty Up - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
@@ -158,7 +158,7 @@ export function Product4_3() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-30_nal8d7.webp"
                   alt="Slim Shake - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
@@ -193,7 +193,7 @@ export function Product4_3() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-31_qsewuj.webp"
                   alt="Blueberry Colágeno - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"

@@ -18,7 +18,7 @@ export function Product4_4() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-9_x4mbwd.webp"
                   alt="Protein Body - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
@@ -53,7 +53,7 @@ export function Product4_4() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-15_ojfmth.webp"
                   alt="15 Day Detox Tea - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
@@ -88,7 +88,7 @@ export function Product4_4() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-16_ydcn0m.webp"
                   alt="3 Day Reset - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
@@ -123,7 +123,7 @@ export function Product4_4() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-17_qhlkxa.webp"
                   alt="Colágeno & Biotina - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
@@ -158,7 +158,7 @@ export function Product4_4() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-27_wezqrg.webp"
                   alt="Thyroide Support - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
@@ -193,7 +193,7 @@ export function Product4_4() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-34_nja22n.webp"
                   alt="Meizitang Soft Gel - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
@@ -228,7 +228,7 @@ export function Product4_4() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-36_mj6ljw.webp"
                   alt="Li-Da Slimming Tea - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
@@ -263,7 +263,7 @@ export function Product4_4() {
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-39_ylthvp.webp"
                   alt="Slim24 - MVV Natural"
-                  className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="size-full object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   width="600"
                   height="720"
