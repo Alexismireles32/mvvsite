@@ -7,6 +7,13 @@ import BlogHero from '../../components/BlogHero.astro';
 import BlogSection from '../../components/BlogSection.astro';
 import BlogCTA from '../../components/BlogCTA.astro';
 
+// Hero image: MVV Natural's own catalogue page describing what the capsules
+// are (cápsula vegetal, orgánico, vegano, botellas reciclables) — directly on
+// topic for an article about whether weight-loss pills work, and a first-party
+// asset instead of a generic Unsplash stock photo. Padded to 16:9 so the
+// portrait catalogue page fills the hero slot uncropped.
+const heroImage = "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200,h_675,c_pad,b_rgb:F5F1E8/v1761549725/catalogo-mvv-natural-2_ldtqwy.webp";
+
 // Article Schema
 const articleSchema = {
   "@context": "https://schema.org",
@@ -26,14 +33,15 @@ const articleSchema = {
     }
   },
   "datePublished": "2025-01-13",
-  "dateModified": new Date().toISOString().split('T')[0],
-  "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&h=800&fit=crop"
+  "dateModified": "2025-11-03",
+  "image": heroImage
 };
 ---
 
-<Layout 
-  title="¿Funcionan Las Pastillas Para Bajar de Peso? La Verdad Completa 2025"
+<Layout
+  title="¿Funcionan Las Pastillas Para Bajar de Peso? La Verdad 2025"
   description="La verdad sin filtros sobre si funcionan las pastillas para adelgazar. Estudios reales, experiencia de 15 años y qué esperar. No más mentiras ni falsas promesas."
+  image={heroImage}
 >
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
   
@@ -46,7 +54,7 @@ const articleSchema = {
         subtitle="La verdad sin filtros sobre si funcionan las pastillas para adelgazar. Estudios reales, experiencia de 15 años y qué esperar. No más mentiras ni falsas promesas."
         category="Salud Natural"
         readTime="12 min lectura"
-        heroImage="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&h=800&fit=crop"
+        heroImage={heroImage}
       />
 
       <div class="container max-w-4xl mx-auto px-[5%] py-12 md:py-16 lg:py-20">
@@ -258,9 +266,9 @@ const articleSchema = {
         <BlogCTA
           title="¿Listo para Comenzar?"
           description="Nuestros productos naturales combinan todos los ingredientes efectivos en dosis correctas. 15 años de experiencia. Miles de clientes satisfechos."
-          primaryLink="/productos"
+          primaryLink="/productos/"
           primaryText="Ver Productos"
-          secondaryLink="/preguntas-frecuentes"
+          secondaryLink="/preguntas-frecuentes/"
           secondaryText="¿Tienes Dudas? FAQ"
         />
 

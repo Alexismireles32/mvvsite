@@ -6,6 +6,7 @@ import { Footer2 } from '../components/footer-02.jsx';
 
 const productData = {
   productName: "Prime Rose",
+  productUrl: "/primrose",
   productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549565/catalogo-mvv-natural-23_jdfcan.webp",
   secondaryImages: ['https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549733/catalogo-mvv-natural-23_xxwr78.webp'],
   ingredients: [
@@ -19,8 +20,9 @@ const productData = {
 ---
 
 <Layout 
-  title="PRIME ROSE 60 Cápsulas - Resalta Curvas y Moldea Cuerpo | Sin Cirugía"
+  title="Prime Rose: 60 Cápsulas Para Resaltar Curvas Sin Cirugía"
   description="PRIME ROSE resalta curvas, moldea cuerpo, aumenta y tonifica senos sin cirugía. Regula sistema endocrino, baja testosterona, mejora energía y libido."
+  image={productData.productImage}
 >
   <Navbar6 client:load />
   <ProductPageWrapper client:load productData={productData} />

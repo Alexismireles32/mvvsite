@@ -8,6 +8,11 @@ import { Faq7 } from '../components/faq-07.jsx';
 import { Footer2 } from '../components/footer-02.jsx';
 
 // FAQPage Schema
+// IMPORTANTE: estas 8 preguntas y respuestas son una versión abreviada del texto
+// visible que renderiza src/components/faq-07.jsx. Si editas, agregas o eliminas
+// una pregunta en faq-07.jsx, actualiza este bloque en el mismo commit: Google
+// exige que el contenido del FAQPage schema coincida con el contenido visible
+// de la página, y si divergen la marcación deja de ser elegible para rich results.
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -88,6 +93,25 @@ const faqSchema = {
   
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
+
+    <!--
+      H1 a nivel de página (Astro estático, sin JavaScript).
+      El encabezado de faq-07.jsx es un h2 de sección, así que este es el único h1
+      del documento. No lo elimines sin sustituirlo por otro h1.
+    -->
+    <section class="bg-gradient-to-br from-como to-[#3d6849] px-[5%] py-12 md:py-16 lg:py-20">
+      <div class="container max-w-4xl mx-auto text-center text-white">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight mb-5 text-white">
+          ¿Funcionan Las Pastillas Para Bajar de Peso? Preguntas Frecuentes
+        </h1>
+        <p class="text-base md:text-lg text-white/90 leading-relaxed">
+          Respuestas honestas a las dudas que más nos escriben por WhatsApp: cuánto peso se pierde,
+          si los suplementos naturales son seguros, cuánto tarda el envío a México y Estados Unidos
+          y qué producto conviene según tu objetivo.
+        </p>
+      </div>
+    </section>
+
     <Faq7 client:idle />
     <Footer2 client:idle />
   </WhatsAppProvider>

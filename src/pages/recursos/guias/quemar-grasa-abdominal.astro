@@ -3,12 +3,39 @@ import Layout from '../../../layouts/Layout.astro';
 import { Navbar6 } from '../../../components/navbar-06.jsx';
 import { WhatsAppProvider } from '../../../components/home-wrapper.jsx';
 import Footer from '../../../components/Footer.astro';
+
+// BreadcrumbList Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.mvvnaturales.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos",
+      "item": "https://www.mvvnaturales.com/recursos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cómo Quemar Grasa Abdominal: Dieta + Ejercicio + Suplementos 2025",
+      "item": "https://www.mvvnaturales.com/recursos/guias/quemar-grasa-abdominal/"
+    }
+  ]
+};
 ---
 
 <Layout 
   title="Cómo Quemar Grasa Abdominal: Dieta + Ejercicio + Suplementos 2025"
   description="Guía completa para eliminar grasa del vientre. Plan de dieta, ejercicios específicos y suplementos naturales que queman grasa abdominal efectivamente."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
 
@@ -226,7 +253,7 @@ import Footer from '../../../components/Footer.astro';
             </ul>
 
             <div class="text-center">
-              <a href="/sos-burn-clear" class="inline-flex items-center justify-center gap-2 bg-como hover:bg-[#3d6849] text-white font-bold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-300">
+              <a href="/sosburn-clear/" class="inline-flex items-center justify-center gap-2 bg-como hover:bg-[#3d6849] text-white font-bold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-300">
                 Ver SOS Burn
               </a>
             </div>
@@ -240,7 +267,7 @@ import Footer from '../../../components/Footer.astro';
             </p>
             
             <div class="text-center">
-              <a href="/duo-60-fusion" class="inline-flex items-center justify-center gap-2 bg-gray-200 hover:bg-gray-300 text-como font-bold px-8 py-4 rounded-full shadow-md hover:shadow-lg active:scale-95 transition-all duration-300">
+              <a href="/duo-60-fusion/" class="inline-flex items-center justify-center gap-2 bg-gray-200 hover:bg-gray-300 text-como font-bold px-8 py-4 rounded-full shadow-md hover:shadow-lg active:scale-95 transition-all duration-300">
                 Ver Duo 60 Fusion
               </a>
             </div>
@@ -254,7 +281,7 @@ import Footer from '../../../components/Footer.astro';
             </p>
             
             <div class="text-center">
-              <a href="/lidabooster" class="inline-flex items-center justify-center gap-2 bg-gray-200 hover:bg-gray-300 text-como font-bold px-8 py-4 rounded-full shadow-md hover:shadow-lg active:scale-95 transition-all duration-300">
+              <a href="/lidabooster/" class="inline-flex items-center justify-center gap-2 bg-gray-200 hover:bg-gray-300 text-como font-bold px-8 py-4 rounded-full shadow-md hover:shadow-lg active:scale-95 transition-all duration-300">
                 Ver Lida Booster
               </a>
             </div>
@@ -347,15 +374,15 @@ import Footer from '../../../components/Footer.astro';
         <section class="mb-8 bg-ecru-white rounded-2xl p-6 md:p-8">
           <h2 class="text-2xl md:text-3xl font-bold mb-6">📚 Lee Más Sobre Grasa Abdominal</h2>
           <div class="grid md:grid-cols-3 gap-4">
-            <a href="/recursos/guias/grasa-visceral-vs-subcutanea" class="bg-white border-2 border-como rounded-xl p-4 hover:shadow-lg transition-all">
+            <a href="/recursos/guias/grasa-visceral-vs-subcutanea/" class="bg-white border-2 border-como rounded-xl p-4 hover:shadow-lg transition-all">
               <h3 class="font-bold mb-2 text-como">Grasa Visceral vs Subcutánea</h3>
               <p class="text-sm text-text-secondary">Diferencias y por qué la visceral es peligrosa</p>
             </a>
-            <a href="/recursos/guias/dieta-grasa-abdominal" class="bg-white border-2 border-como rounded-xl p-4 hover:shadow-lg transition-all">
+            <a href="/recursos/guias/dieta-grasa-abdominal/" class="bg-white border-2 border-como rounded-xl p-4 hover:shadow-lg transition-all">
               <h3 class="font-bold mb-2 text-como">Dieta para Barriga</h3>
               <p class="text-sm text-text-secondary">Plan de 30 días para eliminar grasa abdominal</p>
             </a>
-            <a href="/recursos/guias/rutina-ejercicios-abdomen" class="bg-white border-2 border-como rounded-xl p-4 hover:shadow-lg transition-all">
+            <a href="/recursos/guias/rutina-ejercicios-abdomen/" class="bg-white border-2 border-como rounded-xl p-4 hover:shadow-lg transition-all">
               <h3 class="font-bold mb-2 text-como">Ejercicios para Abdomen</h3>
               <p class="text-sm text-text-secondary">Rutinas 3 niveles: principiante a avanzado</p>
             </a>

@@ -3,12 +3,39 @@ import Layout from '../../../layouts/Layout.astro';
 import { Navbar6 } from '../../../components/navbar-06.jsx';
 import { WhatsAppProvider } from '../../../components/home-wrapper.jsx';
 import Footer from '../../../components/Footer.astro';
+
+// BreadcrumbList Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.mvvnaturales.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos",
+      "item": "https://www.mvvnaturales.com/recursos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ansiedad por Comer: Cómo Controlarla de Forma Natural | Guía 2025",
+      "item": "https://www.mvvnaturales.com/recursos/guias/ansiedad-por-comer/"
+    }
+  ]
+};
 ---
 
 <Layout 
   title="Ansiedad por Comer: Cómo Controlarla de Forma Natural | Guía 2025"
   description="Guía completa para controlar ansiedad por comer. Causas emocionales, físicas y técnicas probadas para eliminar comer compulsivo."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
 
@@ -109,12 +136,12 @@ import Footer from '../../../components/Footer.astro';
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
               <h3 class="font-bold text-lg mb-3">🌿 Body Shape</h3>
               <p class="text-sm mb-3">Suprime apetito sin cafeína ni nerviosismo. Ideal para ansiedad.</p>
-              <a href="/cmpushup" class="text-sm font-bold hover:underline">Ver Body Shape →</a>
+              <a href="/cmpushup/" class="text-sm font-bold hover:underline">Ver Body Shape →</a>
             </div>
             <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
               <h3 class="font-bold text-lg mb-3">🌸 Serenity</h3>
               <p class="text-sm mb-3">Adaptógenos que reducen estrés y ansiedad, controlan hambre emocional.</p>
-              <a href="/serenity" class="text-sm font-bold hover:underline">Ver Serenity →</a>
+              <a href="/serenity/" class="text-sm font-bold hover:underline">Ver Serenity →</a>
             </div>
           </div>
         </section>
@@ -123,11 +150,11 @@ import Footer from '../../../components/Footer.astro';
         <section class="mb-8 text-center">
           <p class="text-text-secondary mb-4">💡 <strong>Lee más:</strong></p>
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="/recursos/guias/controlar-apetito" class="text-como font-bold hover:underline">
+            <a href="/recursos/guias/controlar-apetito/" class="text-como font-bold hover:underline">
               Guía: Controlar Apetito →
             </a>
             <span class="text-gray-400">|</span>
-            <a href="/recursos/guias/hambre-emocional" class="text-como font-bold hover:underline">
+            <a href="/recursos/guias/hambre-emocional/" class="text-como font-bold hover:underline">
               Hambre Emocional →
             </a>
           </div>

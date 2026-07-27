@@ -6,6 +6,7 @@ import { Footer2 } from '../components/footer-02.jsx';
 
 const productData = {
   productName: "Serenity",
+  productUrl: "/serenity",
   productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549549/catalogo-mvv-natural-21_rcrlmk.webp",
   secondaryImages: ['https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549733/catalogo-mvv-natural-21_slzqqk.webp'],
   description: "Serenity es el suplemento natural más efectivo para calmar ansiedad, estrés y nerviosismo sin crear dependencia. Fórmula herbal que reduce antojos emocionales por comida (comer por ansiedad), mejora profundamente la calidad del sueño y te ayuda a controlar el peso causado por estrés. Ideal para personas con ansiedad generalizada, ataques de pánico, insomnio o que comen compulsivamente por nervios. Sin efectos de somnolencia durante el día. Alternativa natural a medicamentos ansiolíticos sin efectos secundarios ni adicción.",
@@ -34,6 +35,7 @@ const productData = {
 <Layout 
   title="Serenity - Calma Natural Para Ansiedad y Estrés | Sin Dependencia"
   description="Serenity: calma ansiedad y estrés naturalmente. Controla comer emocional, mejora sueño profundo. Sin dependencia. Valeriana, pasiflora, manzanilla."
+  image={productData.productImage}
 >
   <Navbar6 client:load />
   <ProductPageWrapper client:load productData={productData} />

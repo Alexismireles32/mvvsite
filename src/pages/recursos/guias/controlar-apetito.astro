@@ -3,12 +3,39 @@ import Layout from '../../../layouts/Layout.astro';
 import { Navbar6 } from '../../../components/navbar-06.jsx';
 import { WhatsAppProvider } from '../../../components/home-wrapper.jsx';
 import Footer from '../../../components/Footer.astro';
+
+// BreadcrumbList Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.mvvnaturales.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos",
+      "item": "https://www.mvvnaturales.com/recursos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cómo Controlar el Apetito Naturalmente y Eliminar Antojos",
+      "item": "https://www.mvvnaturales.com/recursos/guias/controlar-apetito/"
+    }
+  ]
+};
 ---
 
 <Layout 
-  title="Cómo Controlar el Apetito Naturalmente | Eliminar Antojos y Cravings"
-  description="10 estrategias comprobadas para controlar el apetito sin pasar hambre. Incluye dieta, suplementos naturales, técnicas mentales y productos que suprimen el hambre efectivamente."
+  title="Cómo Controlar el Apetito Naturalmente y Eliminar Antojos"
+  description="10 estrategias para controlar el apetito sin pasar hambre: dieta, suplementos naturales, técnicas mentales y productos que reducen los antojos."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
 
@@ -207,7 +234,7 @@ import Footer from '../../../components/Footer.astro';
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-green-600 font-bold">✓</span>
-                <span><strong>Cromo:</strong> Regula azúcar en sangre, elimina antojos</span>
+                <span><strong>Cromo:</strong> Contribuye al metabolismo normal de los macronutrientes y ayuda a manejar los antojos</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-green-600 font-bold">✓</span>
@@ -220,7 +247,7 @@ import Footer from '../../../components/Footer.astro';
             </ul>
 
             <div class="text-center">
-              <a href="/body-shape" class="inline-flex items-center justify-center gap-2 bg-como hover:bg-[#3d6849] text-white font-bold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-300">
+              <a href="/cmpushup/" class="inline-flex items-center justify-center gap-2 bg-como hover:bg-[#3d6849] text-white font-bold px-8 py-4 rounded-full shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-300">
                 Ver Body Shape
               </a>
             </div>
@@ -249,7 +276,7 @@ import Footer from '../../../components/Footer.astro';
             </ul>
 
             <div class="text-center">
-              <a href="/prim-rose" class="inline-flex items-center justify-center gap-2 bg-gray-200 hover:bg-gray-300 text-como font-bold px-8 py-4 rounded-full shadow-md hover:shadow-lg active:scale-95 transition-all duration-300">
+              <a href="/primrose/" class="inline-flex items-center justify-center gap-2 bg-gray-200 hover:bg-gray-300 text-como font-bold px-8 py-4 rounded-full shadow-md hover:shadow-lg active:scale-95 transition-all duration-300">
                 Ver Prim Rose
               </a>
             </div>
@@ -387,10 +414,10 @@ import Footer from '../../../components/Footer.astro';
                   Ashwagandha reduce cortisol (hormona que causa antojos por estrés), Prim Rose equilibra hormonas que causan comer emocional.
                 </p>
                 <div class="flex gap-3">
-                  <a href="/ashwagandha" class="text-sm font-semibold text-como hover:underline">
+                  <a href="/ashwagandha/" class="text-sm font-semibold text-como hover:underline">
                     Ver Ashwagandha →
                   </a>
-                  <a href="/primrose" class="text-sm font-semibold text-como hover:underline">
+                  <a href="/primrose/" class="text-sm font-semibold text-como hover:underline">
                     Ver Prim Rose →
                   </a>
                 </div>
@@ -408,7 +435,7 @@ import Footer from '../../../components/Footer.astro';
                 <p class="text-sm text-text-secondary mb-3">
                   Calma ansiedad mental que causa "vacío existencial" que llenas con comida. No es sedante, solo te relaja.
                 </p>
-                <a href="/serenity" class="text-sm font-semibold text-como hover:underline">
+                <a href="/serenity/" class="text-sm font-semibold text-como hover:underline">
                   Ver Serenity →
                 </a>
               </div>
@@ -423,9 +450,9 @@ import Footer from '../../../components/Footer.astro';
               <div class="bg-ecru-white rounded-lg p-4">
                 <h4 class="font-bold text-como mb-2">Recomendación: Body Shape</h4>
                 <p class="text-sm text-text-secondary mb-3">
-                  El cromo en Body Shape regula azúcar en sangre, eliminando antojos de azúcar y carbohidratos. Además, la Garcinia Cambogia reduce deseo por dulces.
+                  El cromo en Body Shape contribuye al metabolismo normal de los macronutrientes, lo que muchos clientes asocian con menos antojos de azúcar y carbohidratos. Además, la Garcinia Cambogia acompaña el control del deseo por dulces.
                 </p>
-                <a href="/body-shape" class="text-sm font-semibold text-como hover:underline">
+                <a href="/cmpushup/" class="text-sm font-semibold text-como hover:underline">
                   Ver Body Shape →
                 </a>
               </div>
@@ -465,15 +492,15 @@ import Footer from '../../../components/Footer.astro';
         <section class="mb-8 bg-ecru-white rounded-2xl p-6 md:p-8">
           <h2 class="text-2xl md:text-3xl font-bold mb-6">📚 Lee Más Sobre Control de Apetito</h2>
           <div class="grid md:grid-cols-3 gap-4">
-            <a href="/recursos/guias/ansiedad-por-comer" class="bg-white border-2 border-como rounded-xl p-4 hover:shadow-lg transition-all">
+            <a href="/recursos/guias/ansiedad-por-comer/" class="bg-white border-2 border-como rounded-xl p-4 hover:shadow-lg transition-all">
               <h3 class="font-bold mb-2 text-como">Ansiedad por Comer</h3>
               <p class="text-sm text-text-secondary">Técnicas para controlar hambre emocional y compulsiva</p>
             </a>
-            <a href="/recursos/guias/hambre-emocional" class="bg-white border-2 border-como rounded-xl p-4 hover:shadow-lg transition-all">
+            <a href="/recursos/guias/hambre-emocional/" class="bg-white border-2 border-como rounded-xl p-4 hover:shadow-lg transition-all">
               <h3 class="font-bold mb-2 text-como">Hambre Emocional</h3>
               <p class="text-sm text-text-secondary">Cómo identificar y superar comer por emociones</p>
             </a>
-            <a href="/recursos/guias/alimentos-saciantes" class="bg-white border-2 border-como rounded-xl p-4 hover:shadow-lg transition-all">
+            <a href="/recursos/guias/alimentos-saciantes/" class="bg-white border-2 border-como rounded-xl p-4 hover:shadow-lg transition-all">
               <h3 class="font-bold mb-2 text-como">15 Alimentos Saciantes</h3>
               <p class="text-sm text-text-secondary">Alimentos que eliminan hambre naturalmente</p>
             </a>

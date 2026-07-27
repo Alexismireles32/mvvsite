@@ -104,7 +104,7 @@ export function ProductHeader6({
                   </Fragment>
                   <Fragment>
                     <BreadcrumbItem>
-                      <BreadcrumbLink href="/productos">Productos</BreadcrumbLink>
+                      <BreadcrumbLink href="/productos/">Productos</BreadcrumbLink>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                   </Fragment>

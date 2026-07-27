@@ -6,6 +6,7 @@ import { Footer2 } from '../components/footer-02.jsx';
 
 const productData = {
   productName: "Chupa Panza",
+  productUrl: "/chupapanza",
   productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549515/catalogo-mvv-natural-13_lcfatz.webp",
   secondaryImages: ['https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549733/catalogo-mvv-natural-13_hdnhdg.webp'],
   description: "Chupa Panza es la fórmula potente termogénica de 30 cápsulas para eliminar vientre abultado, reducir tallas y quemar grasa difícil. Poderoso quema grasas, desintoxica, diurético y ayuda con problemas de estreñimiento. Fórmula diseñada para quemar grasa saturada, modelar cuerpo e inhibir apetito. Efectivo para la quema de grasa efectiva y elimina líquidos retenidos. Tonificador natural que desintoxica profundamente el organismo. Ideal para reducir medidas visiblemente y eliminar ese vientre abultado que no se va. 30 cápsulas de concentrado natural.",
@@ -34,8 +35,9 @@ const productData = {
 ---
 
 <Layout 
-  title="Chupa Panza Cápsulas - Elimina Vientre Abultado | Quema Grasa Difícil"
+  title="Chupa Panza: Cápsulas Termogénicas Para Vientre Abultado"
   description="Chupa Panza fórmula potente termogénica: elimina vientre abultado, reduce tallas, desintoxica, diurético. Quema grasa difícil. 30 cápsulas naturales."
+  image={productData.productImage}
 >
   <Navbar6 client:load />
   <ProductPageWrapper client:load productData={productData} />

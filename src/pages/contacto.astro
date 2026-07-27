@@ -6,12 +6,157 @@ import { Navbar6 } from '../components/navbar-06.jsx';
 import { Cta25 } from '../components/cta-25.jsx';
 import { Footer2 } from '../components/footer-02.jsx';
 import { WhatsAppFloat } from '../components/whatsapp-float.jsx';
+
+// BreadcrumbList Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.mvvnaturales.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contacto",
+      "item": "https://www.mvvnaturales.com/contacto"
+    }
+  ]
+};
 ---
 
-<Layout title="Contacto">
+<Layout
+  title="Contacto MVV Natural | Pedidos y Asesoría por WhatsApp"
+  description="¿Dudas o quieres hacer tu pedido? Escríbenos por WhatsApp: México +52 631 298 2043, USA +1 520 216 1443, o al correo contacto@mvvnaturales.com."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+
   <Navbar6 client:load />
+
+  <section class="px-[5%] py-10 md:py-16 lg:py-20 bg-white">
+    <div class="container max-w-4xl">
+      <div class="text-center">
+        <p class="mb-3 font-semibold md:mb-4">Contacto</p>
+        <h1 class="mb-5 text-2xl font-bold leading-tight xxs:text-3xl sm:text-4xl md:mb-6 md:text-5xl md:leading-tight lg:text-6xl lg:leading-tight">
+          Contáctanos: Pedidos y Asesoría Gratis por WhatsApp
+        </h1>
+        <p class="mx-auto max-w-3xl text-sm leading-relaxed text-text-secondary xxs:text-base md:text-lg">
+          Todos nuestros pedidos y asesorías se atienden por WhatsApp, en México
+          y en Estados Unidos. Escríbenos, cuéntanos tu objetivo y te decimos con
+          honestidad qué producto te conviene y cuánto cuesta. Sin compromiso.
+        </p>
+      </div>
+
+      <h2 class="mt-10 text-center text-2xl font-bold leading-tight xxs:text-3xl md:mt-14 md:text-4xl lg:mt-16">
+        Datos de contacto
+      </h2>
+
+      <div class="mt-8 grid grid-cols-1 gap-6 md:mt-10 md:grid-cols-3">
+        <div class="flex h-full flex-col border border-border-primary bg-white p-6 transition-all duration-300 hover:border-como hover:shadow-xl">
+          <h3 class="mb-2 text-lg font-bold md:text-xl">
+            <span aria-hidden="true">🇲🇽</span> WhatsApp México
+          </h3>
+          <p class="mb-4 text-sm leading-relaxed text-text-secondary">
+            Pedidos, precios y asesoría para toda la República Mexicana.
+          </p>
+          <a
+            href="tel:+526312982043"
+            class="mb-4 font-semibold text-como hover:underline"
+          >
+            +52 631 298 2043
+          </a>
+          <a
+            href="https://wa.me/526312982043?text=Hola,%20quisiera%20información%20sobre%20los%20productos%20MVV%20Natural"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-auto inline-flex min-h-[44px] items-center justify-center rounded-full bg-como px-6 py-3 font-bold text-white transition-all duration-300 hover:bg-[#3d6849]"
+          >
+            Escribir por WhatsApp
+          </a>
+        </div>
+
+        <div class="flex h-full flex-col border border-border-primary bg-white p-6 transition-all duration-300 hover:border-como hover:shadow-xl">
+          <h3 class="mb-2 text-lg font-bold md:text-xl">
+            <span aria-hidden="true">🇺🇸</span> WhatsApp USA
+          </h3>
+          <p class="mb-4 text-sm leading-relaxed text-text-secondary">
+            Pedidos y asesoría para clientes en Estados Unidos. Atendemos en
+            español e inglés.
+          </p>
+          <a
+            href="tel:+15202161443"
+            class="mb-4 font-semibold text-como hover:underline"
+          >
+            +1 520 216 1443
+          </a>
+          <a
+            href="https://wa.me/15202161443?text=Hola,%20quisiera%20información%20sobre%20los%20productos%20MVV%20Natural"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-auto inline-flex min-h-[44px] items-center justify-center rounded-full bg-como px-6 py-3 font-bold text-white transition-all duration-300 hover:bg-[#3d6849]"
+          >
+            Escribir por WhatsApp
+          </a>
+        </div>
+
+        <div class="flex h-full flex-col border border-border-primary bg-white p-6 transition-all duration-300 hover:border-como hover:shadow-xl">
+          <h3 class="mb-2 text-lg font-bold md:text-xl">
+            <span aria-hidden="true">✉️</span> Correo electrónico
+          </h3>
+          <p class="mb-4 text-sm leading-relaxed text-text-secondary">
+            Para facturación, aclaraciones o temas de privacidad y datos
+            personales.
+          </p>
+          <a
+            href="mailto:contacto@mvvnaturales.com"
+            class="mb-4 break-words font-semibold text-como hover:underline"
+          >
+            contacto@mvvnaturales.com
+          </a>
+          <a
+            href="mailto:contacto@mvvnaturales.com"
+            class="mt-auto inline-flex min-h-[44px] items-center justify-center rounded-full border-2 border-como px-6 py-3 font-bold text-como transition-all duration-300 hover:bg-ecru-white"
+          >
+            Enviar correo
+          </a>
+        </div>
+      </div>
+
+      <h2 class="mt-12 text-2xl font-bold leading-tight xxs:text-3xl md:mt-16 md:text-4xl">
+        Pedidos y envíos
+      </h2>
+      <ul class="mt-5 space-y-3 text-sm leading-relaxed text-text-secondary xxs:text-base md:mt-6 md:text-lg">
+        <li>
+          <strong>Envío el mismo día:</strong> si confirmas tu pedido antes de
+          las 2:00 PM (hora de México), tu paquete sale ese mismo día.
+        </li>
+        <li>
+          <strong>México:</strong> 1 a 3 días hábiles con Estafeta o Fedex.
+        </li>
+        <li>
+          <strong>Estados Unidos:</strong> 3 a 5 días hábiles con USPS.
+        </li>
+        <li>
+          Todos los envíos incluyen número de rastreo y se empacan de forma
+          discreta.
+        </li>
+        <li>
+          <strong>Formas de pago —</strong> México: transferencia, depósito
+          OXXO, Mercado Pago y Kueski Pay. USA: Zelle, PayPal, CashApp y
+          tarjetas de crédito o débito.
+        </li>
+      </ul>
+      <p class="mt-6 text-sm leading-relaxed text-text-secondary xxs:text-base md:text-lg">
+        Somos una tienda en línea: no contamos con sucursal física, todo se
+        atiende por WhatsApp y correo electrónico.
+      </p>
+    </div>
+  </section>
+
   <Cta25 client:idle />
   <Footer2 client:idle />
   <WhatsAppFloat client:load />
 </Layout>
-

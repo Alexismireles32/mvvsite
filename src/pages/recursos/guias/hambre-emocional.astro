@@ -3,12 +3,39 @@ import Layout from '../../../layouts/Layout.astro';
 import { Navbar6 } from '../../../components/navbar-06.jsx';
 import { WhatsAppProvider } from '../../../components/home-wrapper.jsx';
 import Footer from '../../../components/Footer.astro';
+
+// BreadcrumbList Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.mvvnaturales.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos",
+      "item": "https://www.mvvnaturales.com/recursos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Hambre Emocional: Cómo Identificarla y Superarla | Guía 2025",
+      "item": "https://www.mvvnaturales.com/recursos/guias/hambre-emocional/"
+    }
+  ]
+};
 ---
 
 <Layout 
   title="Hambre Emocional: Cómo Identificarla y Superarla | Guía 2025"
   description="Aprende a diferenciar hambre física de hambre emocional. Técnicas psicológicas y suplementos para controlar comer por emociones."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
 
@@ -73,7 +100,7 @@ import Footer from '../../../components/Footer.astro';
             <div class="bg-white border-2 border-como rounded-xl p-6">
               <h3 class="text-xl font-bold mb-4 text-como">1. R.A.I.N (Mindfulness)</h3>
               <div class="space-y-2 text-sm">
-                <p><strong>R</strong>ecocer: "Tengo ganas de comer por estrés"</p>
+                <p><strong>R</strong>econocer: "Tengo ganas de comer por estrés"</p>
                 <p><strong>A</strong>ceptar: "Es normal, no es fallo mío"</p>
                 <p><strong>I</strong>nvestigar: "¿Qué emoción hay debajo?"</p>
                 <p><strong>N</strong>o identificarse: "La ansiedad no es yo"</p>
@@ -81,13 +108,16 @@ import Footer from '../../../components/Footer.astro';
             </div>
 
             <div class="bg-white border-2 border-purple-300 rounded-xl p-6">
-              <h3 class="text-xl font-bold mb-4 text-purple-800">2. HALT Method</h3>
-              <p class="text-sm mb-3">Antes de comer, pregúntate:</p>
-              <div class="grid grid-cols-4 gap-2 text-xs">
-                <div class="bg-gray-100 px-2 py-1 rounded text-center"><strong>H</strong>ungry?</div>
-                <div class="bg-gray-100 px-2 py-1 rounded text-center"><strong>A</strong>ngry?</div>
-                <div class="bg-gray-100 px-2 py-1 rounded text-center"><strong>L</strong>onely?</div>
-                <div class="bg-gray-100 px-2 py-1 rounded text-center"><strong>T</strong>ired?</div>
+              <h3 class="text-xl font-bold mb-4 text-purple-800">2. Método HALT</h3>
+              <p class="text-sm mb-3">
+                HALT es una regla nemotécnica del inglés <em>Hungry, Angry, Lonely, Tired</em>
+                (hambre, enojo, soledad, cansancio). Antes de comer, pregúntate:
+              </p>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
+                <div class="bg-gray-100 px-2 py-2 rounded text-center"><strong>H</strong>ungry<br/>¿Tengo hambre de verdad?</div>
+                <div class="bg-gray-100 px-2 py-2 rounded text-center"><strong>A</strong>ngry<br/>¿Estoy enojado o enojada?</div>
+                <div class="bg-gray-100 px-2 py-2 rounded text-center"><strong>L</strong>onely<br/>¿Me siento solo o sola?</div>
+                <div class="bg-gray-100 px-2 py-2 rounded text-center"><strong>T</strong>ired<br/>¿Estoy cansado o cansada?</div>
               </div>
               <p class="text-sm mt-3">Si la respuesta NO es hambre física, haz otra cosa.</p>
             </div>
@@ -112,7 +142,7 @@ import Footer from '../../../components/Footer.astro';
             Los suplementos naturales pueden ayudar a controlar hambre emocional mientras trabajas las técnicas psicológicas.
           </p>
           <a
-            href="/cmpushup"
+            href="/cmpushup/"
             class="inline-flex items-center justify-center gap-3 bg-white text-como px-8 py-4 md:px-12 md:py-6 rounded-full font-bold text-base md:text-lg shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-300"
           >
             Ver Body Shape (Sin Cafeína) →
@@ -123,11 +153,11 @@ import Footer from '../../../components/Footer.astro';
         <section class="mb-8 text-center">
           <p class="text-text-secondary mb-4">💡 <strong>Lee más:</strong></p>
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="/recursos/guias/controlar-apetito" class="text-como font-bold hover:underline">
+            <a href="/recursos/guias/controlar-apetito/" class="text-como font-bold hover:underline">
               Guía: Controlar Apetito →
             </a>
             <span class="text-gray-400">|</span>
-            <a href="/recursos/guias/ansiedad-por-comer" class="text-como font-bold hover:underline">
+            <a href="/recursos/guias/ansiedad-por-comer/" class="text-como font-bold hover:underline">
               Ansiedad por Comer →
             </a>
           </div>

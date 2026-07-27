@@ -4,12 +4,37 @@
 User-agent: *
 Allow: /
 
+# AI answer engines are allowed on purpose. For a small brand these are a
+# discovery channel, not a threat — blocking them would remove MVV Natural
+# from AI Overviews / ChatGPT / Perplexity answers about weight-loss supplements.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Commercial SEO crawlers: no crawl budget spent here.
+# Each needs its own Disallow — a bare Crawl-delay blocks nothing.
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
 # Sitemap location
 Sitemap: https://www.mvvnaturales.com/sitemap-index.xml
-
-# Block common bot crawlers that waste bandwidth
-User-agent: AhrefsBot
-User-agent: SemrushBot
-User-agent: DotBot
-Crawl-delay: 10
-

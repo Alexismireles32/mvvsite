@@ -4,69 +4,162 @@ import { Navbar6 } from '../components/navbar-06.jsx';
 import { WhatsAppProvider } from '../components/home-wrapper.jsx';
 import Footer from '../components/Footer.astro';
 
-const comparativas = [
+// Todos los títulos y descripciones provienen del frontmatter real de cada página.
+const topicGroups = [
   {
-    title: "Duo 60 vs Lida Booster",
-    url: "/recursos/comparativas/duo-60-vs-lida",
-    description: "Comparativa completa entre los dos quemadores más populares. ¿Cuál elegir según tu objetivo?",
-    keywords: "duo 60 fusion vs lida booster, qué producto comprar",
-    icon: "⚖️"
+    id: "metabolismo",
+    eyebrow: "Cómo Quemas Calorías",
+    heading: "Metabolismo",
+    intro: "Qué es el metabolismo, por qué se vuelve lento y qué puedes cambiar en tu dieta y tu entrenamiento para acelerarlo.",
+    items: [
+      {
+        title: "10 Formas Naturales de Acelerar tu Metabolismo",
+        url: "/recursos/guias/acelerar-metabolismo/",
+        description: "Cómo acelerar tu metabolismo naturalmente para quemar más calorías. Incluye dieta, ejercicio, suplementos y hábitos comprobados por la ciencia.",
+        cta: "Ver las 10 formas de acelerar el metabolismo",
+        icon: "⚡"
+      },
+      {
+        title: "Metabolismo Lento: Causas y Soluciones Naturales",
+        url: "/recursos/guias/metabolismo-lento-causas/",
+        description: "Descubre por qué tienes metabolismo lento: 15 causas comunes y cómo solucionarlo de forma natural. Guía completa con tips efectivos.",
+        cta: "Ver las causas del metabolismo lento",
+        icon: "🐢"
+      },
+      {
+        title: "15 Alimentos que Aceleran el Metabolismo",
+        url: "/recursos/guias/alimentos-acelerar-metabolismo/",
+        description: "Lista completa de alimentos termogénicos que aceleran tu metabolismo. Incluye té verde, café, proteínas, especias y más. Guía práctica.",
+        cta: "Ver los 15 alimentos termogénicos",
+        icon: "🌶️"
+      },
+      {
+        title: "Ejercicios que Aceleran el Metabolismo: HIIT, Pesas y Cardio",
+        url: "/recursos/guias/ejercicios-metabolismo/",
+        description: "10 ejercicios comprobados para acelerar tu metabolismo. Rutinas HIIT, entrenamiento de fuerza y cardio efectivo. Guía práctica.",
+        cta: "Ver los ejercicios que aceleran el metabolismo",
+        icon: "🏃"
+      }
+    ]
   },
   {
-    title: "SOS Burn vs Body Shape",
-    url: "/recursos/comparativas/sos-burn-vs-body-shape",
-    description: "Diferencia entre quemador agresivo y suplemento suave. Encuentra el perfecto para ti.",
-    keywords: "sos burn vs body shape, qué quemador elegir",
-    icon: "🔥"
+    id: "control-de-apetito",
+    eyebrow: "Antojos y Saciedad",
+    heading: "Control de apetito",
+    intro: "Los antojos y el comer por emociones son la razón más común por la que se abandona una dieta. Aquí tienes cómo trabajarlos.",
+    items: [
+      {
+        title: "Cómo Controlar el Apetito Naturalmente y Eliminar Antojos",
+        url: "/recursos/guias/controlar-apetito/",
+        description: "10 estrategias para controlar el apetito sin pasar hambre: dieta, suplementos naturales, técnicas mentales y productos que reducen los antojos.",
+        cta: "Ver las 10 estrategias para controlar el apetito",
+        icon: "🍽️"
+      },
+      {
+        title: "15 Alimentos Más Saciantes Para Eliminar el Hambre",
+        url: "/recursos/guias/alimentos-saciantes/",
+        description: "Lista de alimentos que mantienen saciedad durante horas. Proteínas, fibra y grasas buenas que reducen apetito sin calorías excesivas.",
+        cta: "Ver los 15 alimentos más saciantes",
+        icon: "🥑"
+      },
+      {
+        title: "Ansiedad por Comer: Cómo Controlarla de Forma Natural",
+        url: "/recursos/guias/ansiedad-por-comer/",
+        description: "Guía completa para controlar ansiedad por comer. Causas emocionales, físicas y técnicas probadas para eliminar comer compulsivo.",
+        cta: "Ver cómo controlar la ansiedad por comer",
+        icon: "😰"
+      },
+      {
+        title: "Hambre Emocional: Cómo Identificarla y Superarla",
+        url: "/recursos/guias/hambre-emocional/",
+        description: "Aprende a diferenciar hambre física de hambre emocional. Técnicas psicológicas y suplementos para controlar comer por emociones.",
+        cta: "Ver cómo superar el hambre emocional",
+        icon: "🧠"
+      }
+    ]
   },
   {
-    title: "Mejores Quemadores 2025",
-    url: "/recursos/comparativas/mejor-quemador-grasa",
-    description: "Ranking de los 5 mejores quemadores de grasa naturales basado en resultados reales.",
-    keywords: "mejor quemador de grasa natural, top quemadores",
-    icon: "🏆"
-  }
-];
-
-const guias = [
-  {
-    title: "Acelerar Metabolismo",
-    url: "/recursos/guias/acelerar-metabolismo",
-    description: "10 formas naturales de acelerar tu metabolismo y quemar más calorías sin esfuerzo extra.",
-    keywords: "como acelerar el metabolismo, acelerar metabolismo naturalmente",
-    icon: "⚡"
+    id: "grasa-abdominal",
+    eyebrow: "Vientre y Cintura",
+    heading: "Grasa abdominal",
+    intro: "Qué tipo de grasa tienes, cómo se ataca desde la cocina y qué entrenamiento la acompaña.",
+    items: [
+      {
+        title: "Cómo Quemar Grasa Abdominal: La Guía Completa",
+        url: "/recursos/guias/quemar-grasa-abdominal/",
+        description: "Guía completa para eliminar grasa del vientre. Plan de dieta, ejercicios específicos y suplementos naturales que queman grasa abdominal efectivamente.",
+        cta: "Ver la guía para quemar grasa abdominal",
+        icon: "🎯"
+      },
+      {
+        title: "Dieta para Eliminar Grasa Abdominal: Plan y Menús de 30 Días",
+        url: "/recursos/guias/dieta-grasa-abdominal/",
+        description: "Plan de alimentación específico para quemar grasa de la barriga. 30 días de menús, alimentos que funcionan y qué evitar. Guía práctica.",
+        cta: "Ver el plan de dieta de 30 días",
+        icon: "🥗"
+      },
+      {
+        title: "Grasa Visceral vs Subcutánea: ¿Cuál Es Más Peligrosa?",
+        url: "/recursos/guias/grasa-visceral-vs-subcutanea/",
+        description: "Diferencias entre grasa visceral y subcutánea. Por qué la visceral es más peligrosa y cómo eliminarla. Guía con soluciones naturales.",
+        cta: "Ver la diferencia entre grasa visceral y subcutánea",
+        icon: "🔬"
+      },
+      {
+        title: "Rutina de Ejercicios para Abdomen Plano en 30 Días",
+        url: "/recursos/guias/rutina-ejercicios-abdomen/",
+        description: "Rutina específica para eliminar grasa abdominal y fortalecer abdominales. 3 niveles: principiante, intermedio, avanzado. Plan de 30 días.",
+        cta: "Ver la rutina para abdomen plano",
+        icon: "💪"
+      }
+    ]
   },
   {
-    title: "Controlar Apetito",
-    url: "/recursos/guias/controlar-apetito",
-    description: "10 estrategias para eliminar antojos y controlar el apetito de forma natural sin pasar hambre.",
-    keywords: "como controlar el apetito, eliminar antojos, suprimir apetito",
-    icon: "🍽️"
-  },
-  {
-    title: "Quemar Grasa Abdominal",
-    url: "/recursos/guias/quemar-grasa-abdominal",
-    description: "Guía completa con dieta, ejercicio y suplementos para eliminar grasa del vientre de forma efectiva.",
-    keywords: "como quemar grasa abdominal, eliminar grasa del vientre, perder cintura",
-    icon: "🎯"
-  },
-  {
-    title: "Elegir Suplemento Correcto",
-    url: "/recursos/guias/elegir-suplemento",
-    description: "Guía personalizada para elegir el suplemento perfecto según tu objetivo, experiencia y tipo de cuerpo.",
-    keywords: "como elegir suplemento, que suplemento necesito, que producto comprar",
-    icon: "📋"
+    id: "comparativas",
+    eyebrow: "Antes de Comprar",
+    heading: "Comparativas y guías de compra",
+    intro: "Evaluación honesta basada en 15 años vendiendo estos productos. Sin promesas vacías.",
+    items: [
+      {
+        title: "¿Qué Suplemento Necesito? Guía de Decisión",
+        url: "/recursos/guias/elegir-suplemento/",
+        description: "Guía interactiva para elegir el suplemento correcto según tu objetivo, experiencia, tolerancia y metas de pérdida de peso.",
+        cta: "Ver la guía para elegir tu suplemento",
+        icon: "📋"
+      },
+      {
+        title: "Duo 60 Fusion vs Lida Booster: Comparativa Honesta",
+        url: "/recursos/comparativas/duo-60-vs-lida/",
+        description: "Comparativa detallada entre Duo 60 Fusion Xtreme y Lida Booster. Diferencias, ventajas, cuándo elegir cada uno y resultados observados.",
+        cta: "Ver la comparativa Duo 60 vs Lida Booster",
+        icon: "⚖️"
+      },
+      {
+        title: "Top 5 Mejores Quemadores de Grasa Naturales 2025",
+        url: "/recursos/comparativas/mejor-quemador-grasa/",
+        description: "Ranking basado en resultados reales de nuestros 5 mejores quemadores de grasa. Duo 60, SOS Burn, Body Shape, Thyroide Support y Lida Booster comparados.",
+        cta: "Ver el top 5 de quemadores de grasa",
+        icon: "🏆"
+      },
+      {
+        title: "SOS Burn vs Body Shape: ¿Cuál Quemador Elegir?",
+        url: "/recursos/comparativas/sos-burn-vs-body-shape/",
+        description: "Comparativa honesta: SOS Burn (agresivo) vs Body Shape (suave). Diferencias, cuándo usar cada uno y resultados reales.",
+        cta: "Ver la comparativa SOS Burn vs Body Shape",
+        icon: "🔥"
+      }
+    ]
   }
 ];
 ---
 
-<Layout 
-  title="Recursos Para Bajar de Peso Naturalmente | Guías y Comparativas MVV Natural"
+<Layout
+  title="Bajar de Peso Naturalmente: Guías y Comparativas | MVV Natural"
   description="Comparativas de productos, guías completas y consejos expertos para ayudarte a elegir el tratamiento correcto y alcanzar tus objetivos de pérdida de peso."
 >
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
-    
+
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-como to-[#3d6849] px-[5%] py-16 md:py-24 lg:py-32">
       <div class="container max-w-4xl mx-auto text-center text-white">
@@ -79,130 +172,107 @@ const guias = [
       </div>
     </section>
 
-    <!-- Comparativas -->
-    <section class="px-[5%] py-16 md:py-20">
+    <!-- Índice por tema -->
+    <nav class="px-[5%] py-8 border-b border-gray-200/60 bg-white" aria-label="Temas de recursos">
       <div class="container max-w-6xl mx-auto">
-        <div class="text-center mb-12 md:mb-16">
-          <span class="inline-block text-sm font-semibold text-como uppercase tracking-wider mb-3">Análisis Profesional</span>
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Comparativas Detalladas
-          </h2>
-          <p class="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
-            Evaluación honesta basada en 15 años vendiendo estos productos. Sin promesas vacías.
-          </p>
-        </div>
-
-        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-16">
-          {comparativas.map((item) => (
-            <a href={item.url} class="group relative block bg-gradient-to-br from-white to-gray-50 border border-gray-200/60 rounded-3xl p-8 transition-all duration-500 hover:border-como/50 hover:shadow-2xl hover:-translate-y-2 active:scale-[0.98] overflow-hidden">
-              {/* Decorative background gradient */}
-              <div class="absolute inset-0 bg-gradient-to-br from-como/0 to-como/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
-              {/* Icon with enhanced styling */}
-              <div class="relative mb-6">
-                <div class="text-6xl mb-2 opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300">
-                  {item.icon}
-                </div>
-                <div class="h-1 w-16 bg-gradient-to-r from-como to-transparent rounded-full"></div>
-              </div>
-              
-              {/* Content */}
-              <div class="relative">
-                <h3 class="text-2xl font-bold mb-3 text-gray-900 group-hover:text-como transition-colors duration-300">
-                  {item.title}
-                </h3>
-                <p class="text-base text-text-secondary leading-relaxed mb-6">
-                  {item.description}
-                </p>
-                
-                {/* Enhanced CTA */}
-                <div class="flex items-center gap-2 text-sm font-bold text-como group-hover:gap-3 transition-all duration-300">
-                  <span>Ver análisis completo</span>
-                  <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </div>
-              </div>
-              
-              {/* Subtle corner accent */}
-              <div class="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-br from-como/10 to-transparent rounded-tl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            </a>
+        <ul class="flex flex-wrap justify-center gap-3">
+          {topicGroups.map((group) => (
+            <li>
+              <a
+                href={`#${group.id}`}
+                class="inline-flex items-center min-h-[44px] rounded-full border border-gray-200 bg-white px-5 py-2 text-sm font-semibold text-gray-800 transition-colors hover:border-como hover:text-como"
+              >
+                {group.heading}
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
-    </section>
+    </nav>
 
-    <!-- Guías -->
-    <section class="px-[5%] py-16 md:py-20 bg-gradient-to-b from-ecru-white to-white">
-      <div class="container max-w-6xl mx-auto">
-        <div class="text-center mb-12 md:mb-16">
-          <span class="inline-block text-sm font-semibold text-como uppercase tracking-wider mb-3">Conocimiento Experto</span>
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Guías Especializadas
-          </h2>
-          <p class="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
-            Metodología probada y recomendaciones basadas en ciencia real. No teoría, práctica.
-          </p>
-        </div>
+    <!-- Grupos temáticos -->
+    {topicGroups.map((group, groupIndex) => (
+      <section
+        id={group.id}
+        class:list={[
+          "px-[5%] py-16 md:py-20 scroll-mt-24",
+          groupIndex % 2 === 1 && "bg-gradient-to-b from-ecru-white to-white"
+        ]}
+      >
+        <div class="container max-w-6xl mx-auto">
+          <div class="text-center mb-12 md:mb-16">
+            <span class="inline-block text-sm font-semibold text-como uppercase tracking-wider mb-3">{group.eyebrow}</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              {group.heading}
+            </h2>
+            <p class="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
+              {group.intro}
+            </p>
+          </div>
 
-        <div class="grid gap-6 md:grid-cols-2 mb-16">
-          {guias.map((item) => (
-            <a href={item.url} class="group relative block bg-white border border-gray-200/60 rounded-3xl p-8 transition-all duration-500 hover:border-como/50 hover:shadow-2xl hover:-translate-y-2 active:scale-[0.98] overflow-hidden">
-              {/* Decorative gradient overlay */}
-              <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-como/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
-              {/* Content */}
-              <div class="relative">
-                <div class="flex items-center gap-4 mb-4">
-                  <div class="text-5xl opacity-90 group-hover:scale-110 group-hover:opacity-100 transition-all duration-300">
-                    {item.icon}
+          <div class="grid gap-6 md:grid-cols-2">
+            {group.items.map((item) => (
+              <a href={item.url} class="group relative flex flex-col bg-white border border-gray-200/60 rounded-3xl p-8 transition-all duration-500 hover:border-como/50 hover:shadow-2xl hover:-translate-y-2 active:scale-[0.98] overflow-hidden">
+                {/* Decorative gradient overlay */}
+                <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-como/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                {/* Content */}
+                <div class="relative flex flex-col flex-1">
+                  <div class="flex items-center gap-4 mb-4">
+                    <div class="text-5xl opacity-90 group-hover:scale-110 group-hover:opacity-100 transition-all duration-300">
+                      {item.icon}
+                    </div>
+                    <div class="h-1 flex-1 bg-gradient-to-r from-como to-transparent rounded-full"></div>
                   </div>
-                  <div class="h-1 flex-1 bg-gradient-to-r from-como to-transparent rounded-full"></div>
-                </div>
-                
-                <h3 class="text-2xl font-bold mb-3 text-gray-900 group-hover:text-como transition-colors duration-300">
-                  {item.title}
-                </h3>
-                <p class="text-base text-text-secondary leading-relaxed mb-6">
-                  {item.description}
-                </p>
-                
-                {/* Enhanced CTA */}
-                <div class="inline-flex items-center gap-2 text-sm font-bold text-como group-hover:gap-3 transition-all duration-300">
-                  <span>Explorar guía</span>
-                  <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </div>
-              </div>
-              
-              {/* Bottom accent */}
-              <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-como/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            </a>
-          ))}
-        </div>
 
-        <!-- CTA Section - Redesigned -->
+                  <h3 class="text-2xl font-bold mb-3 text-gray-900 group-hover:text-como transition-colors duration-300 leading-snug">
+                    {item.title}
+                  </h3>
+                  <p class="text-base text-text-secondary leading-relaxed mb-6 flex-1">
+                    {item.description}
+                  </p>
+
+                  {/* CTA con texto descriptivo */}
+                  <div class="inline-flex items-center gap-2 text-sm font-bold text-como group-hover:gap-3 transition-all duration-300">
+                    <span>{item.cta}</span>
+                    <svg class="w-5 h-5 flex-shrink-0 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </div>
+                </div>
+
+                {/* Bottom accent */}
+                <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-como/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    ))}
+
+    <!-- CTA Section -->
+    <section class="px-[5%] pb-16 md:pb-20 bg-gradient-to-b from-white to-ecru-white">
+      <div class="container max-w-6xl mx-auto">
         <div class="relative overflow-hidden bg-gradient-to-br from-como via-[#3d6849] to-como rounded-3xl p-10 md:p-14 text-white shadow-2xl">
           {/* Background pattern */}
           <div class="absolute inset-0 opacity-10">
             <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
           </div>
-          
+
           <div class="relative text-center max-w-3xl mx-auto">
             <div class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider mb-4 opacity-90">
               <span class="w-8 h-[2px] bg-white"></span>
               <span>Asesoría Personalizada</span>
               <span class="w-8 h-[2px] bg-white"></span>
             </div>
-            
-            <h3 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
               ¿Necesitas Orientación Específica?
-            </h3>
+            </h2>
             <p class="text-lg md:text-xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">
               Nuestro equipo tiene 15 años ayudando a miles de clientes. Te asesoramos gratis según tu perfil y objetivos.
             </p>
-            
+
             <button
               id="open-whatsapp-expert"
               class="group inline-flex items-center justify-center gap-3 bg-white text-como font-bold text-base px-8 py-4 md:px-12 md:py-6 shadow-2xl hover:shadow-3xl active:scale-95 md:hover:scale-105 transition-all duration-300 rounded-full min-h-[56px]"
@@ -213,15 +283,15 @@ const guias = [
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </button>
-            
+
             <script is:inline>
               document.addEventListener('DOMContentLoaded', () => {
                 const expertButton = document.getElementById('open-whatsapp-expert');
-                
+
                 if (expertButton) {
                   expertButton.addEventListener('click', () => {
                     const floatButton = document.querySelector('[aria-label="Contactar por WhatsApp"]');
-                    
+
                     if (floatButton) {
                       floatButton.click();
                     } else {
@@ -244,4 +314,3 @@ const guias = [
     <Footer />
   </WhatsAppProvider>
 </Layout>
-

@@ -6,6 +6,7 @@ import { Footer2 } from '../components/footer-02.jsx';
 
 const productData = {
   productName: "Slim Coffee Thermogenic",
+  productUrl: "/slimcoffee",
   productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549565/catalogo-mvvnatural-29_fqn4vq.webp",
   secondaryImages: ['https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549733/catalogo-mvv-natural-28_wok8x6.webp'],
   ingredients: [
@@ -23,6 +24,7 @@ const productData = {
 <Layout 
   title="SLIM COFFE THERMOGENIC - Quema Grasa Tomando Café | 100 Gramos"
   description="SLIM COFFE THERMOGENIC quema grasa tomando café. Alto poder antioxidante, metabolismo acelerado, disminuye apetito. Para amantes del café adelgazante."
+  image={productData.productImage}
 >
   <Navbar6 client:load />
   <ProductPageWrapper client:load productData={productData} />

@@ -88,7 +88,7 @@ export function PDFCatalogViewer() {
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
             <a
-              href="/productos"
+              href="/productos/"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-como px-8 py-4 text-base font-bold text-white shadow-xl transition-all duration-300 hover:bg-[#3d6849] active:scale-95"
             >
               Ver Todos los Productos

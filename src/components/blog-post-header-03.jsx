@@ -36,11 +36,11 @@ export function BlogPostHeader3() {
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
+                  <BreadcrumbLink href="/blog/">Blog</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                  <BreadcrumbLink href="/articulo-de-blog">Salud natural</BreadcrumbLink>
+                  <BreadcrumbLink href="/articulo-de-blog/">Salud natural</BreadcrumbLink>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>

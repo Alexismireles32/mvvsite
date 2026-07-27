@@ -3,12 +3,39 @@ import Layout from '../../../layouts/Layout.astro';
 import { Navbar6 } from '../../../components/navbar-06.jsx';
 import { WhatsAppProvider } from '../../../components/home-wrapper.jsx';
 import Footer from '../../../components/Footer.astro';
+
+// BreadcrumbList Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.mvvnaturales.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos",
+      "item": "https://www.mvvnaturales.com/recursos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "SOS Burn vs Body Shape: ¿Cuál Quemador Elegir? | MVV Natural 2025",
+      "item": "https://www.mvvnaturales.com/recursos/comparativas/sos-burn-vs-body-shape/"
+    }
+  ]
+};
 ---
 
 <Layout 
   title="SOS Burn vs Body Shape: ¿Cuál Quemador Elegir? | MVV Natural 2025"
   description="Comparativa honesta: SOS Burn (agresivo) vs Body Shape (suave). Diferencias, cuándo usar cada uno y resultados reales."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
 
@@ -92,7 +119,7 @@ import Footer from '../../../components/Footer.astro';
               <li class="flex items-start gap-3">
                 <span class="text-red-600 font-bold text-xl">•</span>
                 <div>
-                  <strong>Sinéfina + Teacrina:</strong> Energía sin nerviosismo<br/>
+                  <strong>Sinefrina + Teacrina:</strong> Energía sin nerviosismo<br/>
                   <span class="text-sm text-text-secondary">Energía sostenida sin crash</span>
                 </div>
               </li>
@@ -102,7 +129,7 @@ import Footer from '../../../components/Footer.astro';
             <ul class="space-y-2 mb-6">
               <li class="flex items-start gap-3">
                 <span class="text-green-600 font-bold text-xl">✓</span>
-                <span><strong>Máxima velocidad:</strong> 10-15 kilos en 30 días (casos documentados)</span>
+                <span><strong>Máxima velocidad:</strong> Algunos clientes reportan 10-15 kilos en 30 días. Son casos no típicos y los resultados varían según cada persona.</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-green-600 font-bold text-xl">✓</span>
@@ -139,7 +166,7 @@ import Footer from '../../../components/Footer.astro';
             </ul>
           </div>
 
-          <a href="/sos-burn-clear" class="inline-flex items-center gap-2 text-como font-bold hover:underline">
+          <a href="/sosburn-clear/" class="inline-flex items-center gap-2 text-como font-bold hover:underline">
             Ver más sobre SOS Burn →
           </a>
         </section>
@@ -151,7 +178,7 @@ import Footer from '../../../components/Footer.astro';
           <div class="bg-white border-2 border-como rounded-2xl p-6 md:p-8 mb-6">
             <h3 class="text-2xl font-bold mb-4 text-como">💚 ¿Qué Es Body Shape?</h3>
             <p class="text-base md:text-lg text-text-secondary leading-relaxed mb-6">
-              Body Shape es el quemador <strong>"todo terreno" de MVV</strong>. Funciona acelerando tu metabolismo de forma <strong>suave y sostenida</strong>, sin nerviosismo, sin ansiedad, sin efectos secundarios. Perfecto para personas que quieren bajar de peso gradualmente y de forma natural.
+              Body Shape es el quemador <strong>"todo terreno" de MVV</strong>. Funciona acelerando tu metabolismo de forma <strong>suave y sostenida</strong>, sin nerviosismo y sin la ansiedad típica de los termogénicos fuertes. Perfecto para personas que quieren bajar de peso gradualmente y de forma natural.
             </p>
 
             <h3 class="text-2xl font-bold mb-4 text-como">🧪 Ingredientes Clave:</h3>
@@ -166,14 +193,14 @@ import Footer from '../../../components/Footer.astro';
               <li class="flex items-start gap-3">
                 <span class="text-como font-bold text-xl">•</span>
                 <div>
-                  <strong>Citrus Aurantium (Sinéfina):</strong> Quema grasa sin estimulantes<br/>
+                  <strong>Citrus Aurantium (Sinefrina):</strong> Quema grasa sin estimulantes<br/>
                   <span class="text-sm text-text-secondary">Termogénesis sin nerviosismo</span>
                 </div>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-como font-bold text-xl">•</span>
                 <div>
-                  <strong>Cromo:</strong> Controla azúcar en sangre<br/>
+                  <strong>Cromo:</strong> Contribuye al metabolismo normal de los macronutrientes<br/>
                   <span class="text-sm text-text-secondary">Reduce antojos de azúcar y carbohidratos</span>
                 </div>
               </li>
@@ -190,7 +217,7 @@ import Footer from '../../../components/Footer.astro';
             <ul class="space-y-2 mb-6">
               <li class="flex items-start gap-3">
                 <span class="text-green-600 font-bold text-xl">✓</span>
-                <span><strong>Sin efectos secundarios:</strong> Perfecto para personas sensibles</span>
+                <span><strong>Fórmula suave:</strong> Pensada para personas sensibles a los estimulantes</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-green-600 font-bold text-xl">✓</span>
@@ -198,7 +225,7 @@ import Footer from '../../../components/Footer.astro';
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-green-600 font-bold text-xl">✓</span>
-                <span><strong>Regula hormonas:</strong> Especialmente útil para mujeres con PCOS</span>
+                <span><strong>Fórmula equilibrada:</strong> Pensada para acompañar tu metabolismo día a día</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-green-600 font-bold text-xl">✓</span>
@@ -208,11 +235,11 @@ import Footer from '../../../components/Footer.astro';
 
             <h3 class="text-2xl font-bold mb-4 text-como">⏱️ Resultados:</h3>
             <p class="text-base text-text-secondary">
-              <strong>7-12 kilos en 60-90 días</strong> (resultados graduales pero sostenibles). Ideal para mantenimiento y para personas que quieren cambiar su cuerpo sin dramas.
+              Algunos clientes reportan <strong>7-12 kilos en 60-90 días</strong> de forma gradual. Los resultados varían según cada persona. Ideal para mantenimiento y para personas que quieren cambiar su cuerpo sin dramas.
             </p>
           </div>
 
-          <a href="/body-shape" class="inline-flex items-center gap-2 text-como font-bold hover:underline">
+          <a href="/cmpushup/" class="inline-flex items-center gap-2 text-como font-bold hover:underline">
             Ver más sobre Body Shape →
           </a>
         </section>
@@ -233,8 +260,8 @@ import Footer from '../../../components/Footer.astro';
               <tbody>
                 <tr class="border-b border-gray-200">
                   <td class="py-3 px-4 font-semibold">Velocidad</td>
-                  <td class="text-center">🔥🔥🔥 Extrema (10-15 kg/30 días)</td>
-                  <td class="text-center">🌿 Suave (7-12 kg/60-90 días)</td>
+                  <td class="text-center">🔥🔥🔥 Extrema</td>
+                  <td class="text-center">🌿 Suave y gradual</td>
                 </tr>
                 <tr class="border-b border-gray-200 bg-gray-50">
                   <td class="py-3 px-4 font-semibold">Energía</td>
@@ -326,7 +353,7 @@ import Footer from '../../../components/Footer.astro';
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="text-xl">✓</span>
-                  <span>Tienes PCOS o problemas hormonales</span>
+                  <span>Buscas una fórmula suave para uso prolongado</span>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="text-xl">✓</span>

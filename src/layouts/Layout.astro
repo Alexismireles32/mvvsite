@@ -7,17 +7,25 @@ interface Props {
   description?: string;
   image?: string;
   noindex?: boolean;
+  ogType?: 'website' | 'article' | 'product';
 }
 
-const { 
+const {
   title = 'MVV Natural - Suplementos Naturales para Bajar de Peso | México y USA',
   description = 'Suplementos 100% naturales para bajar de peso, acelerar metabolismo y controlar antojos. 15 años de experiencia. Envíos a México y USA. Resultados reales comprobados.',
   image = 'https://res.cloudinary.com/dsulhqvza/image/upload/w_1200,h_630,c_pad,b_rgb:F5F1E8/v1761550208/mvvnatural_pbzwrl.png',
-  noindex = false
+  noindex = false,
+  ogType
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const siteName = 'MVV Natural';
+
+// og:type was previously hardcoded to "website" on all 70 pages. Infer it from
+// the route so blog posts announce themselves as articles, unless overridden.
+const path = Astro.url.pathname;
+const resolvedOgType =
+  ogType ?? (path.startsWith('/blog/') || path.startsWith('/recursos/') ? 'article' : 'website');
 ---
 
 <!DOCTYPE html>
@@ -43,13 +51,14 @@ const siteName = 'MVV Natural';
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonicalURL} />
     
-    <!-- hreflang for Mexico and USA regions -->
-    <link rel="alternate" hreflang="es-MX" href={canonicalURL} />
-    <link rel="alternate" hreflang="en-US" href={canonicalURL} />
-    <link rel="alternate" hreflang="x-default" href={canonicalURL} />
-    
+    <!-- No hreflang cluster. This is a single-language (es-MX) site with one URL
+         per page; the previous markup declared an "en-US" alternate pointing at
+         the same Spanish page, which is an invalid annotation. Spanish-speaking
+         users in the USA are served by the same URLs. Re-add a real cluster only
+         if a genuine English version is ever built. -->
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={resolvedOgType} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -58,11 +67,11 @@ const siteName = 'MVV Natural';
     <meta property="og:locale" content="es_MX" />
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalURL} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={image.startsWith('http') ? image : new URL(image, Astro.site).toString()} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image.startsWith('http') ? image : new URL(image, Astro.site).toString()} />
     
     <!-- External Asset Preconnects -->
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
@@ -83,8 +92,9 @@ const siteName = 'MVV Natural';
       {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://www.mvvnaturales.com/#organization",
         "name": "MVV Natural",
-        "alternateName": "MVV Natural México",
+        "alternateName": ["MVV Natural México", "MVV Naturales"],
         "url": "https://www.mvvnaturales.com",
         "logo": {
           "@type": "ImageObject",
@@ -102,13 +112,11 @@ const siteName = 'MVV Natural';
         "address": [
           {
             "@type": "PostalAddress",
-            "addressCountry": "MX",
-            "areaServed": "Mexico"
+            "addressCountry": "MX"
           },
           {
             "@type": "PostalAddress",
-            "addressCountry": "US",
-            "areaServed": "United States"
+            "addressCountry": "US"
           }
         ],
         "areaServed": [
@@ -126,7 +134,7 @@ const siteName = 'MVV Natural';
             "@type": "ContactPoint",
             "contactType": "customer service",
             "telephone": "+52-631-298-2043",
-            "email": "info@mvvnaturales.com",
+            "email": "contacto@mvvnaturales.com",
             "availableLanguage": ["Spanish", "English"],
             "areaServed": "MX"
           },
@@ -134,7 +142,7 @@ const siteName = 'MVV Natural';
             "@type": "ContactPoint",
             "contactType": "customer service",
             "telephone": "+1-520-216-1443",
-            "email": "info@mvvnaturales.com",
+            "email": "contacto@mvvnaturales.com",
             "availableLanguage": ["Spanish", "English"],
             "areaServed": "US"
           }
@@ -145,11 +153,46 @@ const siteName = 'MVV Natural';
         ]
       }
     </script>
+
+    <!-- WebSite entity, @id-linked to the Organization above so Google can
+         resolve the brand as a single entity across pages. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://www.mvvnaturales.com/#website",
+        "url": "https://www.mvvnaturales.com",
+        "name": "MVV Natural",
+        "inLanguage": "es-MX",
+        "publisher": { "@id": "https://www.mvvnaturales.com/#organization" }
+      }
+    </script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
     <main id="main-content" role="main" tabIndex="-1">
     <slot />
     </main>
+
+    <!-- Site-wide medical/safety disclaimer. Rendered from the Layout so it reaches
+         every page regardless of which footer component the page uses. -->
+    <aside class="bg-como/95 text-white" aria-label="Aviso de seguridad y salud">
+      <div class="px-[5%] py-6">
+        <div class="mx-auto max-w-3xl text-center text-xs leading-relaxed text-white/80">
+          <p>
+            ⚠️ <strong>Aviso de Seguridad:</strong> Los productos de MVV Natural son
+            <strong>suplementos alimenticios, no medicamentos</strong>. No están destinados a
+            diagnosticar, tratar, curar ni prevenir ninguna enfermedad. Los resultados de pérdida de
+            peso varían según cada individuo, su metabolismo y su compromiso con la dieta y el
+            ejercicio; <strong>no garantizamos resultados específicos</strong>. Consulte a su médico
+            antes de comenzar cualquier tratamiento, especialmente si está embarazada o lactando,
+            tiene alguna condición médica o toma medicación. La información de este sitio es
+            orientativa y no sustituye el consejo médico profesional.
+          </p>
+        </div>
+      </div>
+    </aside>
+
     <SpeedInsights />
   </body>
 </html>

@@ -9,14 +9,14 @@ export function Product4_2() {
       <div className="container">
         <div className="grid grid-cols-2 justify-items-start gap-x-4 gap-y-8 xxs:gap-x-5 xxs:gap-y-10 xs:grid-cols-2 md:gap-x-8 md:gap-y-12 lg:grid-cols-4">
           <div className="group">
-            <a href="/colit6" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
+            <a href="/colit6/" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575551/colit6_te7kpi.png"
                 alt="Colit 6 - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                  width="600" height="720" loading="lazy" />
             </a>
-            <a href="/colit6" className="flex flex-col text-center md:text-md">
+            <a href="/colit6/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Colit 6</h3>
               </div>
@@ -28,7 +28,7 @@ export function Product4_2() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/colit6">
+              <a href="/colit6/">
                 Ver Producto
               </a>
             </Button>
@@ -38,7 +38,7 @@ export function Product4_2() {
               <div className="absolute -top-2 -right-2 z-10 bg-como text-white px-3 py-1 rounded-full font-bold text-xs shadow-xl rotate-12 animate-pulse">
                 ✨ Producto Nuevo
               </div>
-              <a href="/floryva" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
+              <a href="/floryva/" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575563/floryva_nb3b0y.png"
                   alt="Floryva - MVV Natural"
@@ -46,7 +46,7 @@ export function Product4_2() {
                    width="600" height="720" loading="lazy" />
               </a>
             </div>
-            <a href="/floryva" className="flex flex-col text-center md:text-md">
+            <a href="/floryva/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Floryva</h3>
               </div>
@@ -58,7 +58,7 @@ export function Product4_2() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/floryva">
+              <a href="/floryva/">
                 Ver Producto
               </a>
             </Button>
@@ -68,7 +68,7 @@ export function Product4_2() {
               <div className="absolute -top-2 -right-2 z-10 bg-como text-white px-3 py-1 rounded-full font-bold text-xs shadow-xl rotate-12 animate-pulse">
                 ✨ Producto Nuevo
               </div>
-              <a href="/encimax" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
+              <a href="/encimax/" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575578/encimax_kuhluy.png"
                   alt="Encimax - MVV Natural"
@@ -76,7 +76,7 @@ export function Product4_2() {
                    width="600" height="720" loading="lazy" />
               </a>
             </div>
-            <a href="/encimax" className="flex flex-col text-center md:text-md">
+            <a href="/encimax/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Encimax</h3>
               </div>
@@ -88,20 +88,20 @@ export function Product4_2() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/encimax">
+              <a href="/encimax/">
                 Ver Producto
               </a>
             </Button>
           </div>
           <div className="group">
-            <a href="/macapremium" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
+            <a href="/macapremium/" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575588/macapremium_s6k65z.png"
                 alt="Maca Premium - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                  width="600" height="720" loading="lazy" />
             </a>
-            <a href="/macapremium" className="flex flex-col text-center md:text-md">
+            <a href="/macapremium/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Maca Premium</h3>
               </div>
@@ -113,20 +113,20 @@ export function Product4_2() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/macapremium">
+              <a href="/macapremium/">
                 Ver Producto
               </a>
             </Button>
           </div>
           <div className="group">
-            <a href="/cmpushupmen" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
+            <a href="/cmpushupmen/" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575544/cmpushup_ncxzh6.png"
                 alt="CM Push up Men - MVV Natural"
                 className="size-full object-cover transition-transform duration-300 group-hover:scale-105"
                  width="600" height="720" loading="lazy" />
             </a>
-            <a href="/cmpushupmen" className="flex flex-col text-center md:text-md">
+            <a href="/cmpushupmen/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">CM Push up Men</h3>
               </div>
@@ -138,13 +138,13 @@ export function Product4_2() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/cmpushupmen">
+              <a href="/cmpushupmen/">
                 Ver Producto
               </a>
             </Button>
           </div>
           <div className="group">
-            <a href="/edetox" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
+            <a href="/edetox/" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Edetox_vnbmiq.png"
                 alt="E-Detox Plus - MVV Natural"
@@ -153,7 +153,7 @@ export function Product4_2() {
                 width="600"
                 height="720" />
             </a>
-            <a href="/edetox" className="flex flex-col text-center md:text-md">
+            <a href="/edetox/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">E-Detox Plus</h3>
               </div>
@@ -165,13 +165,13 @@ export function Product4_2() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/edetox">
+              <a href="/edetox/">
                 Ver Producto
               </a>
             </Button>
           </div>
           <div className="group">
-            <a href="/ashwagandha" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
+            <a href="/ashwagandha/" className="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
               <img
                 src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575567/Ashawandha_nmq29y.png"
                 alt="Ashwagandha - MVV Natural"
@@ -180,7 +180,7 @@ export function Product4_2() {
                 width="600"
                 height="720" />
             </a>
-            <a href="/ashwagandha" className="flex flex-col text-center md:text-md">
+            <a href="/ashwagandha/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Ashwagandha</h3>
               </div>
@@ -192,7 +192,7 @@ export function Product4_2() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/ashwagandha">
+              <a href="/ashwagandha/">
                 Ver Producto
               </a>
             </Button>

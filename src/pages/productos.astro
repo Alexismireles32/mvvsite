@@ -37,7 +37,7 @@ const breadcrumbSchema = {
 
 <Layout 
   title="Comprar Suplementos Para Bajar de Peso | Catálogo MVV Natural"
-  description="Catálogo completo: pastillas para quemar grasa, acelerar metabolismo y controlar antojos. 100% naturales. Precios accesibles. Envío rápido México y USA."
+  description="Catálogo completo de suplementos naturales para quemar grasa, acelerar el metabolismo y controlar antojos. Cotiza menudeo o mayoreo por WhatsApp."
 >
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   
@@ -50,7 +50,59 @@ const breadcrumbSchema = {
     <Product4_2 client:visible />
     <Product4_3 client:visible />
     <Product4_4 client:visible />
-    
+
+    {/* Productos adicionales del catálogo */}
+    <section class="px-[5%] py-10 md:py-16 lg:py-20">
+      <div class="container">
+        <div class="mb-10 md:mb-14 lg:mb-18">
+          <div class="mx-auto max-w-lg text-center">
+            <h2 class="mt-2 text-2xl font-bold leading-tight xxs:text-3xl sm:mt-3 md:mt-4 md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight">
+              También Disponibles
+            </h2>
+            <p class="mt-4 text-sm xxs:text-base md:mt-6 md:text-md">
+              Otros suplementos naturales de nuestro catálogo
+            </p>
+          </div>
+        </div>
+        <div class="mx-auto grid max-w-3xl grid-cols-2 justify-items-start gap-x-4 gap-y-8 xxs:gap-x-5 xxs:gap-y-10 md:gap-x-8 md:gap-y-12">
+          <div class="group w-full">
+            <a href="/30fusion/" class="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
+              <img
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575561/duo30fusion_t59hk3.png"
+                alt="30 Fusion Xtreme - MVV Natural"
+                class="size-full object-contain transition-transform duration-300 group-hover:scale-105"
+                width="600" height="720" loading="lazy" />
+            </a>
+            <a href="/30fusion/" class="flex flex-col text-center md:text-md">
+              <div class="mb-2">
+                <h3 class="font-semibold text-text-primary transition-colors group-hover:underline">30 Fusion Xtreme</h3>
+              </div>
+              <p class="text-sm text-text-secondary">
+                Comprar 30 Fusion Xtreme: quemador de grasa en formato de 30 cápsulas
+              </p>
+            </a>
+          </div>
+          <div class="group w-full">
+            <a href="/hflex/" class="mb-3 block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como md:mb-4">
+              <img
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549507/catalogo-mvv-natural-8_kctrrh.webp"
+                alt="H-Flex - MVV Natural"
+                class="size-full object-contain transition-transform duration-300 group-hover:scale-105"
+                width="600" height="720" loading="lazy" />
+            </a>
+            <a href="/hflex/" class="flex flex-col text-center md:text-md">
+              <div class="mb-2">
+                <h3 class="font-semibold text-text-primary transition-colors group-hover:underline">H-Flex</h3>
+              </div>
+              <p class="text-sm text-text-secondary">
+                Comprar H-Flex: suplemento natural para flexibilidad y movilidad articular
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     {/* CTAs después de ver productos */}
     <Cta25 client:idle />
     

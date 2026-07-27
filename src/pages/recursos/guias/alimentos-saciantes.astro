@@ -3,12 +3,39 @@ import Layout from '../../../layouts/Layout.astro';
 import { Navbar6 } from '../../../components/navbar-06.jsx';
 import { WhatsAppProvider } from '../../../components/home-wrapper.jsx';
 import Footer from '../../../components/Footer.astro';
+
+// BreadcrumbList Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.mvvnaturales.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos",
+      "item": "https://www.mvvnaturales.com/recursos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "15 Alimentos Más Saciantes Para Eliminar el Hambre | Guía 2025",
+      "item": "https://www.mvvnaturales.com/recursos/guias/alimentos-saciantes/"
+    }
+  ]
+};
 ---
 
 <Layout 
-  title="15 Alimentos Más Saciantes: Elimina Hambre Naturalmente | Guía 2025"
+  title="15 Alimentos Más Saciantes Para Eliminar el Hambre | Guía 2025"
   description="Lista de alimentos que mantienen saciedad durante horas. Proteínas, fibra y grasas buenas que reducen apetito sin calorías excesivas."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
 
@@ -141,7 +168,7 @@ import Footer from '../../../components/Footer.astro';
             Si aun así sientes hambre constante, estos suplementos ayudan:
           </p>
           <a
-            href="/cmpushup"
+            href="/cmpushup/"
             class="inline-flex items-center justify-center gap-3 bg-como hover:bg-[#3d6849] text-white px-8 py-4 md:px-12 md:py-6 rounded-full font-bold text-base md:text-lg shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-300"
           >
             Ver Body Shape →
@@ -152,15 +179,15 @@ import Footer from '../../../components/Footer.astro';
         <section class="mb-8 text-center">
           <p class="text-text-secondary mb-4">💡 <strong>Lee más:</strong></p>
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="/recursos/guias/controlar-apetito" class="text-como font-bold hover:underline">
+            <a href="/recursos/guias/controlar-apetito/" class="text-como font-bold hover:underline">
               Guía: Controlar Apetito →
             </a>
             <span class="text-gray-400">|</span>
-            <a href="/recursos/guias/ansiedad-por-comer" class="text-como font-bold hover:underline">
+            <a href="/recursos/guias/ansiedad-por-comer/" class="text-como font-bold hover:underline">
               Ansiedad por Comer →
             </a>
             <span class="text-gray-400">|</span>
-            <a href="/recursos/guias/hambre-emocional" class="text-como font-bold hover:underline">
+            <a href="/recursos/guias/hambre-emocional/" class="text-como font-bold hover:underline">
               Hambre Emocional →
             </a>
           </div>

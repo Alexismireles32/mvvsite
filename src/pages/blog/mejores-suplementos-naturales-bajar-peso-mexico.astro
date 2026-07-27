@@ -7,6 +7,12 @@ import BlogHero from '../../components/BlogHero.astro';
 import BlogSection from '../../components/BlogSection.astro';
 import BlogCTA from '../../components/BlogCTA.astro';
 
+// Hero image: MVV Natural's own product-catalogue cover. Replaces a generic
+// Unsplash stock photo — a first-party asset is a stronger trust signal on a
+// health topic and removes an uncontrolled third-party image dependency.
+// Padded to 16:9 so the portrait catalogue page fills the hero slot uncropped.
+const heroImage = "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200,h_675,c_pad,b_rgb:F5F1E8/v1761549725/catalogo-mvv-natural-1_upvivj.webp";
+
 // Article Schema
 const articleSchema = {
   "@context": "https://schema.org",
@@ -26,14 +32,15 @@ const articleSchema = {
     }
   },
   "datePublished": "2025-01-13",
-  "dateModified": new Date().toISOString().split('T')[0],
-  "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200&h=800&fit=crop"
+  "dateModified": "2025-11-03",
+  "image": heroImage
 };
 ---
 
-<Layout 
-  title="Los 10 Mejores Suplementos Naturales Para Bajar de Peso México 2025"
-  description="Comparativa completa de los mejores suplementos naturales para adelgazar en México. Precios, resultados reales y cuál comprar según tu objetivo. Guía actualizada 2025."
+<Layout
+  title="10 Mejores Suplementos Naturales Para Bajar de Peso México 2025"
+  description="Comparativa de los mejores suplementos naturales para adelgazar en México. Resultados reales y cuál comprar según tu objetivo. Guía actualizada 2025."
+  image={heroImage}
 >
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
   
@@ -46,7 +53,7 @@ const articleSchema = {
         subtitle="Comparativa honesta de los mejores productos para adelgazar disponibles en México. Con precios reales, pros/contras y para quién es cada uno."
         category="Comparativas"
         readTime="18 min lectura"
-        heroImage="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1200&h=800&fit=crop"
+        heroImage={heroImage}
       />
 
       <div class="container max-w-4xl mx-auto px-[5%] py-12 md:py-16 lg:py-20">
@@ -114,7 +121,7 @@ const articleSchema = {
               <p class="text-lg">Personas que quieren bajar de peso rápido y sostenido. Con metabolismo lento. Con ansiedad por comer. Principiantes en suplementos.</p>
             </div>
 
-            <a href="/duo-60-fusion" class="inline-block w-full text-center bg-como text-white py-4 rounded-xl font-bold hover:bg-[#3d6849] transition-all mt-4">
+            <a href="/duo-60-fusion/" class="inline-block w-full text-center bg-como text-white py-4 rounded-xl font-bold hover:bg-[#3d6849] transition-all mt-4">
               Ver Detalles de Duo 60 Fusion →
             </a>
           </div>
@@ -264,9 +271,9 @@ const articleSchema = {
         <BlogCTA
           title="¿Cuál Es El Mejor Para Ti?"
           description="Cada cuerpo es diferente. Nuestros asesores te ayudan a elegir el producto perfecto según tu objetivo, peso actual y estilo de vida. Gratis. Sin compromiso."
-          primaryLink="/productos"
+          primaryLink="/productos/"
           primaryText="Ver Todos los Productos"
-          secondaryLink="/preguntas-frecuentes"
+          secondaryLink="/preguntas-frecuentes/"
           secondaryText="¿Tienes Dudas? FAQ"
         />
 

@@ -6,6 +6,7 @@ import { Footer2 } from '../components/footer-02.jsx';
 
 const productData = {
   productName: "Lipo HD 360",
+  productUrl: "/lipohd",
   productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549485/catalogo-mvv-natural-3_fpfmfj.webp",
   secondaryImages: ['https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549485/catalogo-mvv-natural-3_fpfmfj.webp'],
   description: "Lipo HD 360 sin cirugía es el suplemento de 30 cápsulas que trabaja mediante la inhibición del apetito, por lo cual lograrás déficit calórico, lo que llevará a la pérdida de grasa corporal y visceral. Dale un giro a tu figura con 30 cápsulas que ayudan a inhibir el apetito y provocar sensación de saciedad. Aporta gran cantidad de energía mejorando el rendimiento físico y mental y por lo tanto combatir la fatiga y el estrés. Combate la flacidez ya que sus componentes ayudan a generar músculo magro logrando bajar de peso y tonificar a la vez. Dale un giro a tu figura. Lipo HD sin cirugía. Inhibe el apetito, déficit calórico, pérdida de grasa visceral. Contiene ingredientes como L-carnitina, wakame, semilla de pomelo, hamamelis, jengibre, té verde, diente de león, etc. 30 cápsulas.",
@@ -31,6 +32,7 @@ const productData = {
 <Layout 
   title="Lipo HD 360 Sin Cirugía - 30 Cápsulas | Dale un Giro a Tu Figura"
   description="Lipo HD 360: inhibe apetito, déficit calórico, pérdida grasa corporal y visceral. 30 cápsulas. Sin cirugía. Dale un giro a tu figura naturalmente."
+  image={productData.productImage}
 >
   <Navbar6 client:load />
   <ProductPageWrapper client:load productData={productData} />

@@ -7,12 +7,12 @@ export function Footer2() {
   return (
     <footer id="relume" className="bg-background-secondary px-[5%] py-10 md:py-12 lg:py-14">
       <div className="container">
-        <div className="grid grid-cols-1 items-start gap-8 pb-8 md:grid-cols-2 md:gap-12 md:pb-10 lg:grid-cols-3 lg:pb-12">
+        <div className="grid grid-cols-1 items-start gap-8 pb-8 md:grid-cols-2 md:gap-12 md:pb-10 lg:grid-cols-4 lg:pb-12">
           {/* Logo and Social */}
           <div className="flex flex-col gap-4">
             <a href="/" className="flex items-center">
               <img
-                src="https://res.cloudinary.com/dsulhqvza/image/upload/v1761550208/mvvnatural_pbzwrl.png"
+                src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_240/v1761550208/mvvnatural_pbzwrl.png"
                 alt="MVV Natural"
                 className="h-10 w-auto md:h-12"
                 width="500"
@@ -20,10 +20,10 @@ export function Footer2() {
               />
             </a>
             <div className="flex items-center gap-3">
-              <a href="#" className="p-2 min-h-[44px] min-w-[44px] flex items-center justify-center text-white hover:text-ecru-white transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/mvvnatural" target="_blank" rel="noopener" className="p-2 min-h-[44px] min-w-[44px] flex items-center justify-center text-white hover:text-ecru-white transition-colors" aria-label="Facebook">
                 <BiLogoFacebookCircle className="size-7 md:size-6" />
               </a>
-              <a href="#" className="p-2 min-h-[44px] min-w-[44px] flex items-center justify-center text-white hover:text-ecru-white transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/mvvnatural" target="_blank" rel="noopener" className="p-2 min-h-[44px] min-w-[44px] flex items-center justify-center text-white hover:text-ecru-white transition-colors" aria-label="Instagram">
                 <BiLogoInstagram className="size-7 md:size-6" />
               </a>
             </div>
@@ -39,23 +39,55 @@ export function Footer2() {
                 </a>
               </li>
               <li>
-                <a href="/productos" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
+                <a href="/productos/" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
                   Productos
                 </a>
               </li>
               <li>
-                <a href="/testimonios" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
+                <a href="/testimonios/" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
                   Testimonios
                 </a>
               </li>
               <li>
-                <a href="/blog" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
+                <a href="/blog/" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="/contacto" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
+                <a href="/contacto/" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
                   Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Recursos */}
+          <div className="flex flex-col items-start justify-start">
+            <h2 className="mb-3 font-semibold text-base text-white md:mb-4">Recursos</h2>
+            <ul className="space-y-2">
+              <li>
+                <a href="/recursos/" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
+                  Guías y comparativas
+                </a>
+              </li>
+              <li>
+                <a href="/recursos/guias/acelerar-metabolismo/" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
+                  Cómo acelerar el metabolismo
+                </a>
+              </li>
+              <li>
+                <a href="/recursos/guias/quemar-grasa-abdominal/" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
+                  Cómo quemar grasa abdominal
+                </a>
+              </li>
+              <li>
+                <a href="/recursos/guias/controlar-apetito/" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
+                  Cómo controlar el apetito
+                </a>
+              </li>
+              <li>
+                <a href="/recursos/guias/elegir-suplemento/" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
+                  Qué suplemento necesito
                 </a>
               </li>
             </ul>
@@ -66,17 +98,17 @@ export function Footer2() {
             <h2 className="mb-3 font-semibold text-base text-white md:mb-4">Legal</h2>
             <ul className="space-y-2">
               <li>
-                <a href="/aviso-legal" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
+                <a href="/aviso-legal/" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
                   Aviso Legal
                 </a>
               </li>
               <li>
-                <a href="/politica-de-privacidad" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
+                <a href="/politica-de-privacidad/" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
                   Política de Privacidad
                 </a>
               </li>
               <li>
-                <a href="/preguntas-frecuentes" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
+                <a href="/preguntas-frecuentes/" className="flex items-center py-2 text-sm text-white/90 md:py-1.5 min-h-[44px] hover:text-white transition-colors">
                   Preguntas Frecuentes
                 </a>
               </li>
@@ -90,7 +122,7 @@ export function Footer2() {
         {/* Copyright */}
         <div className="flex flex-col items-center justify-center pt-6 text-center md:pt-8">
           <p className="text-sm text-white/80">
-            © 2025 MVV Natural USA. Todos los derechos reservados.
+            © {new Date().getFullYear()} MVV Natural USA. Todos los derechos reservados.
           </p>
         </div>
       </div>

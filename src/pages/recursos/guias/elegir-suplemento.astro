@@ -3,12 +3,39 @@ import Layout from '../../../layouts/Layout.astro';
 import { Navbar6 } from '../../../components/navbar-06.jsx';
 import { WhatsAppProvider } from '../../../components/home-wrapper.jsx';
 import Footer from '../../../components/Footer.astro';
+
+// BreadcrumbList Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.mvvnaturales.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos",
+      "item": "https://www.mvvnaturales.com/recursos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "¿Qué Suplemento Necesito? Guía de Decisión | MVV Natural",
+      "item": "https://www.mvvnaturales.com/recursos/guias/elegir-suplemento/"
+    }
+  ]
+};
 ---
 
 <Layout 
-  title="¿Qué Suplemento Necesito? Guía de Decisión Personalizada 2025 | MVV Natural"
+  title="¿Qué Suplemento Necesito? Guía de Decisión | MVV Natural"
   description="Guía interactiva para elegir el suplemento correcto según tu objetivo, experiencia, tolerancia y metas de pérdida de peso."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
 
@@ -42,7 +69,7 @@ import Footer from '../../../components/Footer.astro';
           
           <div class="space-y-6">
             <div class="bg-white border-2 border-como rounded-2xl p-6">
-              <h3 class="text-xl font-bold mb-3 text-como">🎯 Objetivo: Bajar Rápido (15-25 kilos en 2-3 meses)</h3>
+              <h3 class="text-xl font-bold mb-3 text-como">🎯 Objetivo: Bajar Rápido (en 2-3 meses)</h3>
               <p class="text-base text-text-secondary mb-4">
                 Tienes un evento, boda, o simplemente quieres resultados dramáticos en poco tiempo.
               </p>
@@ -53,14 +80,14 @@ import Footer from '../../../components/Footer.astro';
                     <span class="text-2xl">🥇</span>
                     <div>
                       <strong>Duo 60 Fusion Xtreme</strong> (si toleras cafeína)<br/>
-                      <span class="text-sm text-text-secondary">8-15 kilos en 30-60 días | Eficacia 90%</span>
+                      <span class="text-sm text-text-secondary">Algunos clientes reportan 8-15 kilos en 30-60 días. Los resultados varían según cada persona.</span>
                     </div>
                   </li>
                   <li class="flex items-start gap-3">
                     <span class="text-2xl">🥈</span>
                     <div>
                       <strong>SOS Burn</strong> (si ya probaste otros quemadores)<br/>
-                      <span class="text-sm text-text-secondary">10-18 kilos en 30-60 días | Eficacia 85%</span>
+                      <span class="text-sm text-text-secondary">Algunos clientes reportan 10-18 kilos en 30-60 días. Los resultados varían según cada persona.</span>
                     </div>
                   </li>
                 </ul>
@@ -68,7 +95,7 @@ import Footer from '../../../components/Footer.astro';
             </div>
 
             <div class="bg-white border-2 border-gray-200 rounded-2xl p-6">
-              <h3 class="text-xl font-bold mb-3 text-como">📉 Objetivo: Bajar Gradual (10-20 kilos en 3-6 meses)</h3>
+              <h3 class="text-xl font-bold mb-3 text-como">📉 Objetivo: Bajar Gradual (en 3-6 meses)</h3>
               <p class="text-base text-text-secondary mb-4">
                 Prefieres perder peso de forma gradual y mantenerlo para siempre (sin efecto rebote).
               </p>
@@ -79,14 +106,14 @@ import Footer from '../../../components/Footer.astro';
                     <span class="text-2xl">🥇</span>
                     <div>
                       <strong>Lida Booster</strong> (sin cafeína)<br/>
-                      <span class="text-sm text-text-secondary">10-20 kilos en 60-90 días | Sin rebote</span>
+                      <span class="text-sm text-text-secondary">Algunos clientes reportan 10-20 kilos en 60-90 días. Los resultados varían según cada persona.</span>
                     </div>
                   </li>
                   <li class="flex items-start gap-3">
                     <span class="text-2xl">🥈</span>
                     <div>
                       <strong>Body Shape</strong> (quemador suave)<br/>
-                      <span class="text-sm text-text-secondary">7-12 kilos en 60-90 días | Suave y seguro</span>
+                      <span class="text-sm text-text-secondary">Algunos clientes reportan 7-12 kilos en 60-90 días. Los resultados varían según cada persona.</span>
                     </div>
                   </li>
                 </ul>
@@ -225,7 +252,7 @@ import Footer from '../../../components/Footer.astro';
               <div class="bg-gray-200 rounded-lg p-4">
                 <h4 class="font-bold mb-2 text-como">✅ Recomendación:</h4>
                 <p class="font-semibold mb-2">Body Shape o Lida Booster</p>
-                <p class="text-sm text-text-secondary">Suave, efectivo, sin efectos secundarios</p>
+                <p class="text-sm text-text-secondary">Fórmulas suaves, bien toleradas por la mayoría de nuestros clientes</p>
               </div>
             </div>
           </div>
@@ -293,7 +320,7 @@ import Footer from '../../../components/Footer.astro';
           
           <div class="grid gap-4 md:grid-cols-2 max-w-2xl mx-auto mb-8">
             <a 
-              href="/productos"
+              href="/productos/"
               class="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/20 active:scale-95 transition-all duration-300"
             >
               Ver Todos los Productos

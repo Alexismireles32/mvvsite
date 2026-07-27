@@ -33,7 +33,7 @@ export function Header76({ onOpenWhatsApp }) {
             asChild
             className="w-full sm:w-auto bg-white border-2 border-como text-como hover:bg-ecru-white font-semibold text-sm xxs:text-base px-6 py-3.5 xxs:px-8 xxs:py-4 min-h-[44px] md:text-lg md:px-10 md:py-6 hover:shadow-lg active:scale-95 md:hover:scale-105 transition-all duration-300 rounded-full"
           >
-            <a href="/productos" className="flex items-center justify-center gap-2 md:gap-3">
+            <a href="/productos/" className="flex items-center justify-center gap-2 md:gap-3">
               <span>Ver Todos los Productos</span>
               <span className="text-lg xxs:text-xl md:text-2xl">🛍️</span>
             </a>
@@ -44,7 +44,7 @@ export function Header76({ onOpenWhatsApp }) {
         <div className="grid w-full grid-cols-2 gap-x-4">
           <div className="-mt-[120%] grid size-full animate-loop-vertically columns-2 grid-cols-1 gap-4 self-center">
             <div className="grid size-full grid-cols-1 gap-4">
-              <a href="/duo-60-fusion" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
+              <a href="/duo-60-fusion/" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Duo-60fusion_xhsjhs.png"
@@ -59,7 +59,7 @@ export function Header76({ onOpenWhatsApp }) {
               </a>
             </div>
             <div className="grid size-full grid-cols-1 gap-4">
-              <a href="/higa2" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
+              <a href="/higa2/" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575578/higa2_bzokur.png"
@@ -73,7 +73,7 @@ export function Header76({ onOpenWhatsApp }) {
               </a>
             </div>
             <div className="grid size-full grid-cols-1 gap-4">
-              <a href="/lidabooster" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
+              <a href="/lidabooster/" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575576/Lidabooster_xd5mo9.png"
@@ -87,7 +87,7 @@ export function Header76({ onOpenWhatsApp }) {
               </a>
             </div>
             <div className="grid size-full grid-cols-1 gap-4">
-              <a href="/lipohd" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
+              <a href="/lipohd/" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575584/lipohd_zg9lxy.png"
@@ -101,7 +101,7 @@ export function Header76({ onOpenWhatsApp }) {
               </a>
             </div>
             <div className="grid size-full grid-cols-1 gap-4">
-              <a href="/duo-60-fusion" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
+              <a href="/duo-60-fusion/" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Duo-60fusion_xhsjhs.png"
@@ -115,7 +115,7 @@ export function Header76({ onOpenWhatsApp }) {
               </a>
             </div>
             <div className="grid size-full grid-cols-1 gap-4">
-              <a href="/sosburn" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
+              <a href="/sosburn/" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575596/sosburn_g2ui2b.png"
@@ -131,7 +131,7 @@ export function Header76({ onOpenWhatsApp }) {
           </div>
           <div className="grid size-full animate-loop-vertically grid-cols-1 gap-4">
             <div className="grid size-full grid-cols-1 gap-4">
-              <a href="/primerose" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
+              <a href="/primrose/" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575597/primerose_jk26zj.png"
@@ -145,7 +145,7 @@ export function Header76({ onOpenWhatsApp }) {
               </a>
             </div>
             <div className="grid size-full grid-cols-1 gap-4">
-              <a href="/duo-60-fusion" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
+              <a href="/duo-60-fusion/" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Duo-60fusion_xhsjhs.png"
@@ -159,7 +159,7 @@ export function Header76({ onOpenWhatsApp }) {
               </a>
             </div>
             <div className="grid size-full grid-cols-1 gap-4">
-              <a href="/chupapanza" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
+              <a href="/chupapanza/" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575545/chupapanza_m7zfgs.png"
@@ -173,7 +173,7 @@ export function Header76({ onOpenWhatsApp }) {
               </a>
             </div>
             <div className="grid size-full grid-cols-1 gap-4">
-              <a href="/30daydetox" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
+              <a href="/30daydetox/" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575526/30daydetox_roziws.png"
@@ -187,7 +187,7 @@ export function Header76({ onOpenWhatsApp }) {
               </a>
             </div>
             <div className="grid size-full grid-cols-1 gap-4">
-              <a href="/duo-60-fusion" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
+              <a href="/duo-60-fusion/" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575568/Duo-60fusion_xhsjhs.png"
@@ -201,7 +201,7 @@ export function Header76({ onOpenWhatsApp }) {
               </a>
             </div>
             <div className="grid size-full grid-cols-1 gap-4">
-              <a href="/cmpushup" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
+              <a href="/cmpushup/" className="relative w-full pt-[120%] block overflow-hidden rounded-lg transition-transform hover:scale-105">
                 <img
                   className="absolute inset-0 size-full object-cover"
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761575544/cmpushup_ncxzh6.png"

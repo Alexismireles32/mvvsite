@@ -3,12 +3,39 @@ import Layout from '../../../layouts/Layout.astro';
 import { Navbar6 } from '../../../components/navbar-06.jsx';
 import { WhatsAppProvider } from '../../../components/home-wrapper.jsx';
 import Footer from '../../../components/Footer.astro';
+
+// BreadcrumbList Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.mvvnaturales.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos",
+      "item": "https://www.mvvnaturales.com/recursos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Metabolismo Lento: Causas y Soluciones Naturales | MVV Natural",
+      "item": "https://www.mvvnaturales.com/recursos/guias/metabolismo-lento-causas/"
+    }
+  ]
+};
 ---
 
 <Layout 
   title="Metabolismo Lento: Causas y Soluciones Naturales | MVV Natural"
   description="Descubre por qué tienes metabolismo lento: 15 causas comunes y cómo solucionarlo de forma natural. Guía completa con tips efectivos."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
 
@@ -96,7 +123,7 @@ import Footer from '../../../components/Footer.astro';
               <p class="text-base text-text-secondary leading-relaxed mb-4">
                 <strong>La solución:</strong> Consulta a un médico para análisis de TSH, T3 y T4. Si está todo normal pero aún tienes síntomas, considera Thyroide Support (optimiza función tiroidea).
               </p>
-              <a href="/thyroide-support" class="inline-flex items-center gap-2 text-como font-bold hover:underline mt-3">
+              <a href="/thyroide-support/" class="inline-flex items-center gap-2 text-como font-bold hover:underline mt-3">
                 Ver Thyroide Support →
               </a>
             </div>
@@ -168,10 +195,10 @@ import Footer from '../../../components/Footer.astro';
         <section class="mb-12 bg-gradient-to-br from-como to-[#3d6849] rounded-2xl p-8 md:p-12 text-white text-center">
           <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Tu Tiroides Está Frenando Tu Metabolismo?</h2>
           <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-            Thyroide Support optimiza la función de tu tiroides de forma natural, acelerando tu metabolismo sin efectos secundarios.
+            Thyroide Support acompaña tu metabolismo con ingredientes naturales en una fórmula suave y bien tolerada. Si tienes una condición de tiroides diagnosticada o tomas medicación, consulta a tu médico antes de usarlo.
           </p>
           <a
-            href="/thyroide-support"
+            href="/thyroide-support/"
             class="inline-flex items-center justify-center gap-3 bg-white text-como px-8 py-4 md:px-12 md:py-6 rounded-full font-bold text-base md:text-lg shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-300 min-h-[56px]"
           >
             Ver Thyroide Support
@@ -182,7 +209,7 @@ import Footer from '../../../components/Footer.astro';
         <!-- Enlace al pilar -->
         <section class="mb-8 text-center">
           <p class="text-text-secondary mb-4">💡 <strong>¿Quieres más información?</strong></p>
-          <a href="/recursos/guias/acelerar-metabolismo" class="inline-flex items-center gap-2 text-como font-bold hover:underline text-lg">
+          <a href="/recursos/guias/acelerar-metabolismo/" class="inline-flex items-center gap-2 text-como font-bold hover:underline text-lg">
             Ver Guía Completa: Cómo Acelerar Tu Metabolismo →
           </a>
         </section>

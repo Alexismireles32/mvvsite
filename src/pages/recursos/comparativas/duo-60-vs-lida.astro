@@ -3,12 +3,39 @@ import Layout from '../../../layouts/Layout.astro';
 import { Navbar6 } from '../../../components/navbar-06.jsx';
 import { WhatsAppProvider } from '../../../components/home-wrapper.jsx';
 import Footer from '../../../components/Footer.astro';
+
+// BreadcrumbList Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.mvvnaturales.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos",
+      "item": "https://www.mvvnaturales.com/recursos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Duo 60 Fusion vs Lida Booster: Comparativa Honesta | MVV Natural",
+      "item": "https://www.mvvnaturales.com/recursos/comparativas/duo-60-vs-lida/"
+    }
+  ]
+};
 ---
 
 <Layout 
-  title="Duo 60 Fusion vs Lida Booster: Comparativa Honesta 2025 | MVV Natural"
+  title="Duo 60 Fusion vs Lida Booster: Comparativa Honesta | MVV Natural"
   description="Comparativa detallada entre Duo 60 Fusion Xtreme y Lida Booster. Diferencias, ventajas, cuándo elegir cada uno y resultados observados."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
 
@@ -116,7 +143,7 @@ import Footer from '../../../components/Footer.astro';
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-como font-bold text-xl">•</span>
-                <span><strong>Sinfefrina:</strong> Quema grasa abdominal específica</span>
+                <span><strong>Sinefrina:</strong> Ingrediente termogénico de origen cítrico</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-como font-bold text-xl">•</span>
@@ -128,7 +155,7 @@ import Footer from '../../../components/Footer.astro';
             <ul class="space-y-2 mb-6">
               <li class="flex items-start gap-3">
                 <span class="text-green-600 font-bold text-xl">✓</span>
-                <span><strong>Resultados más rápidos:</strong> 8-15 kilos en 30-60 días</span>
+                <span><strong>Resultados más rápidos:</strong> Algunos clientes reportan 8-15 kilos en 30-60 días. Los resultados varían según cada persona.</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-green-600 font-bold text-xl">✓</span>
@@ -157,7 +184,7 @@ import Footer from '../../../components/Footer.astro';
             </ul>
           </div>
 
-          <a href="/duo-60-fusion" class="inline-flex items-center gap-2 text-como font-bold hover:underline">
+          <a href="/duo-60-fusion/" class="inline-flex items-center gap-2 text-como font-bold hover:underline">
             Ver más sobre Duo 60 Fusion →
           </a>
         </section>
@@ -210,7 +237,7 @@ import Footer from '../../../components/Footer.astro';
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-green-600 font-bold text-xl">✓</span>
-                <span><strong>Sin rebote:</strong> Mantuén tu peso después del tratamiento</span>
+                <span><strong>Enfoque sostenible:</strong> Mantén tu peso con los hábitos que construyes durante el tratamiento</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-green-600 font-bold text-xl">✓</span>
@@ -226,7 +253,7 @@ import Footer from '../../../components/Footer.astro';
             <ul class="space-y-2">
               <li class="flex items-start gap-3">
                 <span class="text-yellow-600 font-bold text-xl">!</span>
-                <span>Resultados más lentos pero más estables: 10-20 kilos en 2-3 meses</span>
+                <span>Resultados más graduales: algunos clientes reportan 10-20 kilos en 2-3 meses. Los resultados varían según cada persona.</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="text-yellow-600 font-bold text-xl">!</span>
@@ -235,7 +262,7 @@ import Footer from '../../../components/Footer.astro';
             </ul>
           </div>
 
-          <a href="/lidabooster" class="inline-flex items-center gap-2 text-como font-bold hover:underline">
+          <a href="/lidabooster/" class="inline-flex items-center gap-2 text-como font-bold hover:underline">
             Ver más sobre Lida Booster →
           </a>
         </section>
@@ -328,7 +355,10 @@ import Footer from '../../../components/Footer.astro';
 
         <!-- Real Testimonials -->
         <section class="mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold mb-8">💬 ¿Qué Dicen Nuestros Clientes?</h2>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">💬 ¿Qué Dicen Nuestros Clientes?</h2>
+          <p class="text-sm text-text-secondary mb-8">
+            Experiencias individuales compartidas por clientes. No son resultados típicos ni garantizados: los resultados varían según cada persona.
+          </p>
           
           <div class="grid gap-6 md:grid-cols-2">
             <!-- Testimonio Duo 60 -->
@@ -363,7 +393,7 @@ import Footer from '../../../components/Footer.astro';
           
           <div class="max-w-3xl mx-auto space-y-4 mb-8">
             <p class="text-lg md:text-xl">
-              <strong>Duo 60 Fusion</strong> es para quien necesita <strong>resultados rápidos</strong> y tiene tolerancia a la cafeína. Es tu mejor opción si quieres bajar 10-20 kilos en 2 meses.
+              <strong>Duo 60 Fusion</strong> es para quien necesita <strong>resultados rápidos</strong> y tiene tolerancia a la cafeína. Es la opción que suelen elegir quienes buscan avanzar rápido, teniendo en cuenta que los resultados varían según cada persona.
             </p>
             
             <p class="text-lg md:text-xl">
@@ -373,13 +403,13 @@ import Footer from '../../../components/Footer.astro';
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="/duo-60-fusion"
+              href="/duo-60-fusion/"
               class="inline-flex items-center justify-center gap-2 bg-white text-como px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-300"
             >
               Ver Duo 60 Fusion
             </a>
             <a 
-              href="/lidabooster"
+              href="/lidabooster/"
               class="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/20 active:scale-95 transition-all duration-300"
             >
               Ver Lida Booster

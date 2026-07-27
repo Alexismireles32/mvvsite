@@ -6,6 +6,7 @@ import { Footer2 } from '../components/footer-02.jsx';
 
 const productData = {
   productName: "Maca Premium Peruana",
+  productUrl: "/macapremium",
   productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549733/catalogo-mvv-natural-19_aabf7p.webp",
   secondaryImages: ["https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549733/catalogo-mvv-natural-19_aabf7p.webp", "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549733/catalogo-mvv-natural-20_zplemr.webp"],
   ingredients: [
@@ -25,6 +26,7 @@ const productData = {
 <Layout 
   title="Maca Premium Peruana - Energía, Libido y Vitalidad Natural | MVV"
   description="Maca Premium peruana 10:1: aumenta energía, libido, fertilidad. Equilibra hormonas en hombres y mujeres. Combate fatiga. 100% pura Andes."
+  image={productData.productImage}
 >
   <Navbar6 client:load />
   <ProductPageWrapper client:load productData={productData} />

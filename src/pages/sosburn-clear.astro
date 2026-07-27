@@ -6,6 +6,7 @@ import { Footer2 } from '../components/footer-02.jsx';
 
 const productData = {
   productName: "SOS Burn Clean",
+  productUrl: "/sosburn-clear",
   productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549528/catalogo-mvv-natural-12_pd7yxq.webp",
   secondaryImages: ['https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549733/catalogo-mvv-natural-12_vhazhu.webp'],
   description: "SOS BURN Clean control de apetito y mejora del tracto intestinal. 24 HR PURIFIC SLIM para él y para ella. Desintoxica, diurética, depura el cuerpo. Mejora el estreñimiento, reduce azúcar en la sangre, baja de peso, mejora el sueño, quita dolor muscular y reduce niveles de colesterol. 30 cápsulas purificantes y adelgazantes.",
@@ -29,8 +30,9 @@ const productData = {
 ---
 
 <Layout 
-  title="SOS Burn Clean 30 Cápsulas - 24 HR PURIFIC SLIM | Para Él y Para Ella"
+  title="SOS Burn Clean: 30 Cápsulas Depurativas y Diuréticas"
   description="SOS BURN Clean: control de apetito, mejora tracto intestinal, desintoxica, diurética, depura cuerpo. Reduce azúcar, colesterol. Para él y para ella."
+  image={productData.productImage}
 >
   <Navbar6 client:load />
   <ProductPageWrapper client:load productData={productData} />

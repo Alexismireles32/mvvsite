@@ -14,7 +14,7 @@ export function Product4_3() {
               <div className="absolute -top-2 -right-2 z-10 bg-[#FFD700] text-como px-3 py-1 rounded-full font-bold text-xs shadow-xl rotate-12 animate-pulse">
                 🆕 Nuevo
               </div>
-              <a href="/maxi-fibra" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
+              <a href="/maxi-fibra/" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-18_bj3iwu.webp"
                   alt="Maxi Fibra - MVV Natural"
@@ -25,7 +25,7 @@ export function Product4_3() {
                 />
               </a>
             </div>
-            <a href="/maxi-fibra" className="flex flex-col text-center md:text-md">
+            <a href="/maxi-fibra/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Maxi Fibra</h3>
               </div>
@@ -37,7 +37,7 @@ export function Product4_3() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/maxi-fibra">
+              <a href="/maxi-fibra/">
                 Ver Producto
               </a>
             </Button>
@@ -49,7 +49,7 @@ export function Product4_3() {
               <div className="absolute -top-2 -right-2 z-10 bg-[#FFD700] text-como px-3 py-1 rounded-full font-bold text-xs shadow-xl rotate-12 animate-pulse">
                 🆕 Nuevo
               </div>
-              <a href="/bikini-strong" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
+              <a href="/bikini-strong/" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-32_qqgu08.webp"
                   alt="Bikini Strong - MVV Natural"
@@ -60,7 +60,7 @@ export function Product4_3() {
                 />
               </a>
             </div>
-            <a href="/bikini-strong" className="flex flex-col text-center md:text-md">
+            <a href="/bikini-strong/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Bikini Strong</h3>
               </div>
@@ -72,7 +72,7 @@ export function Product4_3() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/bikini-strong">
+              <a href="/bikini-strong/">
                 Ver Producto
               </a>
             </Button>
@@ -84,7 +84,7 @@ export function Product4_3() {
               <div className="absolute -top-2 -right-2 z-10 bg-[#FFD700] text-como px-3 py-1 rounded-full font-bold text-xs shadow-xl rotate-12 animate-pulse">
                 🆕 Nuevo
               </div>
-              <a href="/mens-exotic" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
+              <a href="/mens-exotic/" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-24_cayyap.webp"
                   alt="Mens Exotic - MVV Natural"
@@ -95,7 +95,7 @@ export function Product4_3() {
                 />
               </a>
             </div>
-            <a href="/mens-exotic" className="flex flex-col text-center md:text-md">
+            <a href="/mens-exotic/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Mens Exotic</h3>
               </div>
@@ -107,7 +107,7 @@ export function Product4_3() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/mens-exotic">
+              <a href="/mens-exotic/">
                 Ver Producto
               </a>
             </Button>
@@ -119,7 +119,7 @@ export function Product4_3() {
               <div className="absolute -top-2 -right-2 z-10 bg-[#FFD700] text-como px-3 py-1 rounded-full font-bold text-xs shadow-xl rotate-12 animate-pulse">
                 🆕 Nuevo
               </div>
-              <a href="/magic-booty-up" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
+              <a href="/magic-booty-up/" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-26_qacvkr.webp"
                   alt="Magic Booty Up - MVV Natural"
@@ -130,7 +130,7 @@ export function Product4_3() {
                 />
               </a>
             </div>
-            <a href="/magic-booty-up" className="flex flex-col text-center md:text-md">
+            <a href="/magic-booty-up/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Magic Booty Up</h3>
               </div>
@@ -142,7 +142,7 @@ export function Product4_3() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/magic-booty-up">
+              <a href="/magic-booty-up/">
                 Ver Producto
               </a>
             </Button>
@@ -154,7 +154,7 @@ export function Product4_3() {
               <div className="absolute -top-2 -right-2 z-10 bg-[#FFD700] text-como px-3 py-1 rounded-full font-bold text-xs shadow-xl rotate-12 animate-pulse">
                 🆕 Nuevo
               </div>
-              <a href="/slim-shake" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
+              <a href="/slim-shake/" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-30_nal8d7.webp"
                   alt="Slim Shake - MVV Natural"
@@ -165,7 +165,7 @@ export function Product4_3() {
                 />
               </a>
             </div>
-            <a href="/slim-shake" className="flex flex-col text-center md:text-md">
+            <a href="/slim-shake/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Slim Shake</h3>
               </div>
@@ -177,7 +177,7 @@ export function Product4_3() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/slim-shake">
+              <a href="/slim-shake/">
                 Ver Producto
               </a>
             </Button>
@@ -189,7 +189,7 @@ export function Product4_3() {
               <div className="absolute -top-2 -right-2 z-10 bg-[#FFD700] text-como px-3 py-1 rounded-full font-bold text-xs shadow-xl rotate-12 animate-pulse">
                 🆕 Nuevo
               </div>
-              <a href="/blueberry-colageno" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
+              <a href="/blueberry-colageno/" className="block aspect-[5/6] overflow-hidden rounded-lg border-2 border-transparent transition-all duration-300 group-hover:border-como">
                 <img
                   src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_600/v1761549733/catalogo-mvv-natural-31_qsewuj.webp"
                   alt="Blueberry Colágeno - MVV Natural"
@@ -200,7 +200,7 @@ export function Product4_3() {
                 />
               </a>
             </div>
-            <a href="/blueberry-colageno" className="flex flex-col text-center md:text-md">
+            <a href="/blueberry-colageno/" className="flex flex-col text-center md:text-md">
               <div className="mb-2">
                 <h3 className="font-semibold text-text-primary transition-colors group-hover:underline">Blueberry Colágeno</h3>
               </div>
@@ -212,7 +212,7 @@ export function Product4_3() {
               className="mt-3 w-full md:mt-4"
               asChild
             >
-              <a href="/blueberry-colageno">
+              <a href="/blueberry-colageno/">
                 Ver Producto
               </a>
             </Button>

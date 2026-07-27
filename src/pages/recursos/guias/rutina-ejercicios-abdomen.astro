@@ -3,12 +3,39 @@ import Layout from '../../../layouts/Layout.astro';
 import { Navbar6 } from '../../../components/navbar-06.jsx';
 import { WhatsAppProvider } from '../../../components/home-wrapper.jsx';
 import Footer from '../../../components/Footer.astro';
+
+// BreadcrumbList Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.mvvnaturales.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos",
+      "item": "https://www.mvvnaturales.com/recursos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Rutina de Ejercicios para Abdomen Plano en 30 Días | MVV Natural",
+      "item": "https://www.mvvnaturales.com/recursos/guias/rutina-ejercicios-abdomen/"
+    }
+  ]
+};
 ---
 
 <Layout 
-  title="Rutina de Ejercicios para Abdomen Plano en 30 Días | Guía Completa"
+  title="Rutina de Ejercicios para Abdomen Plano en 30 Días | MVV Natural"
   description="Rutina específica para eliminar grasa abdominal y fortalecer abdominales. 3 niveles: principiante, intermedio, avanzado. Plan de 30 días."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
 
@@ -142,13 +169,13 @@ import Footer from '../../../components/Footer.astro';
           </p>
           <div class="flex flex-wrap justify-center gap-4">
             <a
-              href="/duo-60-fusion"
+              href="/duo-60-fusion/"
               class="inline-flex items-center justify-center gap-3 bg-white text-como px-8 py-4 md:px-12 md:py-6 rounded-full font-bold text-base md:text-lg shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-300"
             >
               Ver Duo 60 Fusion →
             </a>
             <a
-              href="/sosburn"
+              href="/sosburn/"
               class="inline-flex items-center justify-center gap-3 bg-white/10 border-2 border-white text-white px-8 py-4 md:px-12 md:py-6 rounded-full font-bold text-base md:text-lg hover:bg-white/20 transition-all duration-300"
             >
               Ver SOS Burn →
@@ -160,15 +187,15 @@ import Footer from '../../../components/Footer.astro';
         <section class="mb-8 text-center">
           <p class="text-text-secondary mb-4">💡 <strong>Lee más:</strong></p>
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="/recursos/guias/quemar-grasa-abdominal" class="text-como font-bold hover:underline">
+            <a href="/recursos/guias/quemar-grasa-abdominal/" class="text-como font-bold hover:underline">
               Guía: Quemar Grasa Abdominal →
             </a>
             <span class="text-gray-400">|</span>
-            <a href="/recursos/guias/grasa-visceral-vs-subcutanea" class="text-como font-bold hover:underline">
+            <a href="/recursos/guias/grasa-visceral-vs-subcutanea/" class="text-como font-bold hover:underline">
               Grasa Visceral →
             </a>
             <span class="text-gray-400">|</span>
-            <a href="/recursos/guias/dieta-grasa-abdominal" class="text-como font-bold hover:underline">
+            <a href="/recursos/guias/dieta-grasa-abdominal/" class="text-como font-bold hover:underline">
               Dieta para Barriga →
             </a>
           </div>

@@ -6,6 +6,7 @@ import { Footer2 } from '../components/footer-02.jsx';
 
 const productData = {
   productName: "SOS Burn",
+  productUrl: "/sosburn",
   productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549517/catalogo-mvv-natural-10_vs3aqv.webp",
   secondaryImages: ['https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549733/catalogo-mvv-natural-10_drstvu.webp'],
   description: "S&S BURN quita ansiedad y baja de peso. Gracias a sus ingredientes perfectamente diseñados logras la pérdida de peso contundente y eliminar esa grasa difícil de tu cuerpo. SOS BURN ayuda a inhibir el apetito y provocar sensación de saciedad. Aporta gran cantidad de energía mejorando el rendimiento físico y mental y por lo tanto combatir la fatiga y el estrés. Combate la flacidez ya que sus componentes ayudan a generar músculo magro logrando bajar de peso y tonificar a la vez. Logra resultados en los primeros 15 días comenzando por el vientre, pierde tallas y kilos de grasa. Lograrás mantener un balance en tu digestión ya que no causa estreñimiento pero no laxa. SOSBURN ayuda a agilizar hasta 5 veces tu metabolismo lo que elimina la lipogénesis y disminuye el colesterol malo y triglicéridos. Para él y para ella. 30 cápsulas. Quita ansiedad y baja de peso. Quema grasa, inhibe el apetito y brinda energía. Resultados en 15 días. Acelera el metabolismo 5 ×, reduce colesterol y triglicéridos. Ingredientes: acetil-L-carnitina, extracto de semilla de griffonia, simpirolita 5-HTP, inositol, cromo, vitamina B6.",
@@ -33,8 +34,9 @@ const productData = {
 ---
 
 <Layout 
-  title="S&S BURN Quita Ansiedad y Baja de Peso | 5x Metabolismo | 30 Cápsulas"
-  description="S&S BURN quita ansiedad, baja de peso, pérdida contundente, elimina grasa difícil. 5x metabolismo. Para él y para ella. 30 cápsulas."
+  title="SOS Burn: Control de Ansiedad y Apetito, 30 Cápsulas"
+  description="SOS Burn: 30 cápsulas con acetil-L-carnitina, 5-HTP y cromo para apoyar el control de la ansiedad y del apetito. Para él y para ella."
+  image={productData.productImage}
 >
   <Navbar6 client:load />
   <ProductPageWrapper client:load productData={productData} />

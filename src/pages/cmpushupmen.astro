@@ -6,6 +6,7 @@ import { Footer2 } from '../components/footer-02.jsx';
 
 const productData = {
   productName: "CM Push Up MEN",
+  productUrl: "/cmpushupmen",
   productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549482/catalogo-mvv-natural-7_wzfkvr.webp",
   secondaryImages: ['https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549733/catalogo-mvv-natural-7_pfkwq9.webp'],
   description: "CM Push Up MEN es la solución para ellos también que quieren sentirse y verse bien. Pensado para lo que ellos también quieren: aumento de glúteos, aumento de pectorales, masa muscular, brinda energía, claridad mental y potencia sexual. Por que ellos también quieren sentirse y verse bien. 90 cápsulas con piridoxina, niacina, tiamina, riboflavina, maca y fenogreco puro. Para aumento de glúteos, aumento de pectorales y masa muscular con energía y potencia sexual. Incrementa glúteos y pectorales. Incrementa masa muscular, energía, claridad mental y potencia sexual. Ingredientes: piridoxina, niacina, tiamina, riboflavina, maca, fenogreco.",
@@ -30,8 +31,9 @@ const productData = {
 ---
 
 <Layout 
-  title="CM Push Up MEN 90 Cápsulas - Aumento de Glúteos, Pectorales y Masa Muscular"
+  title="CM Push Up MEN: Glúteos, Pectorales y Masa Muscular"
   description="CM Push Up MEN para hombres: aumenta glúteos, pectorales, masa muscular, energía, claridad mental, potencia sexual. 90 cápsulas con maca y fenogreco."
+  image={productData.productImage}
 >
   <Navbar6 client:load />
   <ProductPageWrapper client:load productData={productData} />

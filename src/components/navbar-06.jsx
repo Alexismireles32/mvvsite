@@ -48,7 +48,7 @@ export function Navbar6() {
       <div className="mx-auto flex size-full max-w-full items-center justify-between">
         <a href="/" className="flex items-center">
           <img
-            src="https://res.cloudinary.com/dsulhqvza/image/upload/v1761550208/mvvnatural_pbzwrl.png"
+            src="https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_240/v1761550208/mvvnatural_pbzwrl.png"
             alt="MVV Natural - Suplementos Naturales"
             className="h-12 w-auto md:h-14"
             width="500"
@@ -64,31 +64,31 @@ export function Navbar6() {
               Inicio
             </a>
             <a
-              href="/productos"
+              href="/productos/"
               className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
             >
               Productos
             </a>
             <a
-              href="/catalogo"
+              href="/catalogo/"
               className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
             >
               Catálogo
             </a>
             <a
-              href="/blog"
+              href="/blog/"
               className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
             >
               Blog
             </a>
             <a
-              href="/testimonios"
+              href="/testimonios/"
               className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
             >
               Testimonios
             </a>
             <a
-              href="/recursos"
+              href="/recursos/"
               className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
             >
               Recursos
@@ -192,31 +192,31 @@ export function Navbar6() {
                 Inicio
               </a>
               <a
-                href="/productos"
+                href="/productos/"
                 className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
               >
                 Productos
               </a>
               <a
-                href="/catalogo"
+                href="/catalogo/"
                 className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
               >
                 Catálogo
               </a>
               <a
-                href="/blog"
+                href="/blog/"
                 className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
               >
                 Blog
                             </a>
                             <a
-                href="/testimonios"
+                href="/testimonios/"
                 className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
               >
                 Testimonios
                             </a>
                             <a
-                href="/recursos"
+                href="/recursos/"
                 className="relative block w-auto py-3 text-md lg:inline-block lg:px-4 lg:py-6 lg:text-base"
               >
                 Recursos

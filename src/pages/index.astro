@@ -19,6 +19,64 @@ import Cta25_1 from '../components/cta-25_1.astro';
 import { Layout401 } from '../components/layout-401.jsx';
 import { Faq7 } from '../components/faq-07.jsx';
 
+// Enlaces internos hacia el cluster de contenido.
+// Los títulos y descripciones se copian del frontmatter real de cada página
+// (Layout title / description). No inventar copys: si cambia la página destino,
+// actualiza también estas tarjetas.
+const guias = [
+  {
+    url: "/recursos/guias/acelerar-metabolismo/",
+    title: "10 Formas Naturales de Acelerar tu Metabolismo",
+    description: "Cómo acelerar tu metabolismo naturalmente para quemar más calorías. Incluye dieta, ejercicio, suplementos y hábitos comprobados por la ciencia.",
+    icon: "⚡"
+  },
+  {
+    url: "/recursos/guias/quemar-grasa-abdominal/",
+    title: "Cómo Quemar Grasa Abdominal: Dieta + Ejercicio + Suplementos",
+    description: "Guía completa para eliminar grasa del vientre. Plan de dieta, ejercicios específicos y suplementos naturales que queman grasa abdominal efectivamente.",
+    icon: "🎯"
+  },
+  {
+    url: "/recursos/guias/controlar-apetito/",
+    title: "Cómo Controlar el Apetito Naturalmente y Eliminar Antojos",
+    description: "10 estrategias para controlar el apetito sin pasar hambre: dieta, suplementos naturales, técnicas mentales y productos que reducen los antojos.",
+    icon: "🍽️"
+  },
+  {
+    url: "/recursos/guias/elegir-suplemento/",
+    title: "¿Qué Suplemento Necesito? Guía de Decisión",
+    description: "Guía interactiva para elegir el suplemento correcto según tu objetivo, experiencia, tolerancia y metas de pérdida de peso.",
+    icon: "📋"
+  },
+  {
+    url: "/recursos/comparativas/mejor-quemador-grasa/",
+    title: "Top 5 Mejores Quemadores de Grasa Naturales 2025",
+    description: "Ranking basado en resultados reales de nuestros 5 mejores quemadores de grasa. Duo 60, SOS Burn, Body Shape, Thyroide Support y Lida Booster comparados.",
+    icon: "🏆"
+  }
+];
+
+const articulos = [
+  {
+    url: "/blog/como-acelerar-metabolismo-naturalmente/",
+    title: "Cómo Acelerar tu Metabolismo Naturalmente: Guía Completa 2025",
+    description: "Descubre cómo acelerar tu metabolismo lento con métodos naturales que SÍ funcionan. Suplementos, alimentos y ejercicios probados, con resultados reales.",
+    icon: "🔥"
+  },
+  {
+    url: "/blog/funcionan-pastillas-para-bajar-de-peso/",
+    title: "¿Funcionan Las Pastillas Para Bajar de Peso? La Verdad 2025",
+    description: "La verdad sin filtros sobre si funcionan las pastillas para adelgazar. Estudios reales, experiencia de 15 años y qué esperar. No más mentiras ni falsas promesas.",
+    icon: "💊"
+  },
+  {
+    url: "/blog/mejores-suplementos-naturales-bajar-peso-mexico/",
+    title: "10 Mejores Suplementos Naturales Para Bajar de Peso México 2025",
+    description: "Comparativa de los mejores suplementos naturales para adelgazar en México. Resultados reales y cuál comprar según tu objetivo. Guía actualizada 2025.",
+    icon: "🇲🇽"
+  }
+];
+
 // BreadcrumbList for Homepage
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -36,7 +94,7 @@ const breadcrumbSchema = {
 
 <Layout 
   title="Pastillas Para Bajar de Peso México | Suplementos Naturales MVV"
-  description="Pierde 15-25 kilos con pastillas naturales para adelgazar. Quemadores de grasa que SÍ funcionan. 15 años de resultados reales. Envío rápido México y USA con rastreo."
+  description="Suplementos naturales para bajar de peso, acelerar el metabolismo y controlar antojos. 15 años vendiendo en México y USA. Cotiza por WhatsApp."
 >
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   
@@ -66,6 +124,110 @@ const breadcrumbSchema = {
     <Faq7 client:idle />
     <Cta25_1 />
     <Layout401 client:idle />
+
+    {/*
+      Enlazado interno hacia el cluster de contenido.
+      Markup Astro estático a propósito (sin isla React ni client:*) para garantizar
+      que estos enlaces existan en el HTML servido y Google pueda rastrearlos.
+    */}
+
+    {/* Guías Para Bajar de Peso */}
+    <section class="bg-ecru-white px-[5%] py-12 md:py-16 lg:py-20">
+      <div class="container max-w-6xl mx-auto">
+        <div class="text-center mb-10 md:mb-14">
+          <span class="inline-block text-sm font-semibold text-como uppercase tracking-wider mb-3">
+            Aprende Antes de Comprar
+          </span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-text-primary mb-4">
+            Guías Para Bajar de Peso
+          </h2>
+          <p class="text-base md:text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
+            Guías prácticas y comparativas honestas escritas con 15 años de experiencia vendiendo
+            suplementos naturales en México y Estados Unidos.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          {guias.map((guia) => (
+            <a
+              href={guia.url}
+              class="group flex flex-col bg-white border border-gray-200/60 rounded-3xl p-6 md:p-8 transition-all duration-300 hover:border-como/50 hover:shadow-xl hover:-translate-y-1 active:scale-[0.98]"
+            >
+              <div class="flex items-center gap-4 mb-4">
+                <span class="text-4xl" aria-hidden="true">{guia.icon}</span>
+                <div class="h-1 flex-1 bg-gradient-to-r from-como to-transparent rounded-full"></div>
+              </div>
+              <h3 class="text-xl md:text-2xl font-heading font-bold text-text-primary group-hover:text-como transition-colors duration-300 leading-snug mb-3">
+                {guia.title}
+              </h3>
+              <p class="text-base text-text-secondary leading-relaxed flex-1">
+                {guia.description}
+              </p>
+            </a>
+          ))}
+        </div>
+
+        <div class="mt-10 text-center">
+          <a
+            href="/recursos/"
+            class="inline-flex items-center justify-center gap-2 min-h-[44px] bg-como hover:bg-[#3d6849] text-white font-bold text-base px-8 py-4 rounded-full shadow-xl hover:shadow-2xl active:scale-95 md:hover:scale-105 transition-all duration-300"
+          >
+            Ver todas las guías y comparativas para bajar de peso
+            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    {/* Últimos Artículos */}
+    <section class="bg-white px-[5%] py-12 md:py-16 lg:py-20">
+      <div class="container max-w-6xl mx-auto">
+        <div class="text-center mb-10 md:mb-14">
+          <span class="inline-block text-sm font-semibold text-como uppercase tracking-wider mb-3">
+            Del Blog MVV Natural
+          </span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-text-primary mb-4">
+            Últimos Artículos
+          </h2>
+          <p class="text-base md:text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
+            Lo que necesitas saber antes de tomar cualquier pastilla para adelgazar, explicado sin
+            promesas milagrosas.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          {articulos.map((articulo) => (
+            <a
+              href={articulo.url}
+              class="group flex flex-col bg-ecru-white border border-gray-200/60 rounded-3xl p-6 md:p-8 transition-all duration-300 hover:border-como/50 hover:shadow-xl hover:-translate-y-1 active:scale-[0.98]"
+            >
+              <span class="text-4xl mb-4" aria-hidden="true">{articulo.icon}</span>
+              <h3 class="text-xl font-heading font-bold text-text-primary group-hover:text-como transition-colors duration-300 leading-snug mb-3">
+                {articulo.title}
+              </h3>
+              <p class="text-base text-text-secondary leading-relaxed flex-1">
+                {articulo.description}
+              </p>
+            </a>
+          ))}
+        </div>
+
+        <div class="mt-10 text-center">
+          <a
+            href="/blog/"
+            class="inline-flex items-center justify-center gap-2 min-h-[44px] border-2 border-como text-como hover:bg-como hover:text-white font-bold text-base px-8 py-4 rounded-full active:scale-95 md:hover:scale-105 transition-all duration-300"
+          >
+            Ver todos los artículos del blog sobre bajar de peso
+            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <Footer />
   </WhatsAppProvider>
 </Layout>

@@ -7,6 +7,13 @@ import BlogHero from '../../components/BlogHero.astro';
 import BlogSection from '../../components/BlogSection.astro';
 import BlogCTA from '../../components/BlogCTA.astro';
 
+// Hero image: still an Unsplash stock photo. Deliberately NOT swapped for a
+// Cloudinary asset — every MVV image available is either a product-package shot
+// or a catalogue flyer with promotional weight-loss claims burned into the
+// pixels, and none is a defensible illustration for an editorial guide about
+// metabolism. Swap this one constant when a genuine editorial image exists.
+const heroImage = "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1200&h=800&fit=crop";
+
 // Article Schema
 const articleSchema = {
   "@context": "https://schema.org",
@@ -26,14 +33,15 @@ const articleSchema = {
     }
   },
   "datePublished": "2025-01-13",
-  "dateModified": new Date().toISOString().split('T')[0],
-  "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1200&h=800&fit=crop"
+  "dateModified": "2025-11-03",
+  "image": heroImage
 };
 ---
 
-<Layout 
+<Layout
   title="Cómo Acelerar tu Metabolismo Naturalmente: Guía Completa 2025"
-  description="Descubre cómo acelerar tu metabolismo lento con métodos naturales que SÍ funcionan. Suplementos, alimentos y ejercicios probados. Guía completa con resultados reales."
+  description="Descubre cómo acelerar tu metabolismo lento con métodos naturales que SÍ funcionan. Suplementos, alimentos y ejercicios probados, con resultados reales."
+  image={heroImage}
 >
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)}></script>
   
@@ -47,7 +55,7 @@ const articleSchema = {
         subtitle="La guía más completa y honesta sobre cómo activar tu metabolismo sin pastillas raras ni dietas imposibles. Con ciencia real y experiencia de 15 años."
         category="Salud Natural"
         readTime="15 min lectura"
-        heroImage="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1200&h=800&fit=crop"
+        heroImage={heroImage}
       />
 
       {/* Main Content */}
@@ -107,7 +115,7 @@ const articleSchema = {
             <div class="border-l-4 border-como pl-6 bg-gradient-to-br from-como/10 to-como/5 p-4 rounded-r-lg">
               <h3 class="text-xl font-bold mb-2">🏆 Nuestro Recomendado: Duo 60 Fusion</h3>
               <p class="leading-relaxed">
-                Combina todo lo anterior en dosis efectivas. Por eso es nuestro más vendido desde hace años. <a href="/duo-60-fusion" class="font-semibold text-como hover:underline">No es casualidad que sea el favorito</a> - tiene los ingredientes correctos en las cantidades que funcionan.
+                Combina todo lo anterior en dosis efectivas. Por eso es nuestro más vendido desde hace años. <a href="/duo-60-fusion/" class="font-semibold text-como hover:underline">No es casualidad que sea el favorito</a> - tiene los ingredientes correctos en las cantidades que funcionan.
               </p>
             </div>
           </div>
@@ -224,9 +232,9 @@ const articleSchema = {
         <BlogCTA
           title="¿Listo para Acelerar tu Metabolismo?"
           description="Comienza tu transformación hoy. Nuestros productos naturales están probados por miles de clientes. 15 años de experiencia."
-          primaryLink="/productos"
+          primaryLink="/productos/"
           primaryText="Ver Productos"
-          secondaryLink="/preguntas-frecuentes"
+          secondaryLink="/preguntas-frecuentes/"
           secondaryText="¿Tienes Dudas? FAQ"
         />
 

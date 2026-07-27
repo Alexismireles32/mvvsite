@@ -3,12 +3,39 @@ import Layout from '../../../layouts/Layout.astro';
 import { Navbar6 } from '../../../components/navbar-06.jsx';
 import { WhatsAppProvider } from '../../../components/home-wrapper.jsx';
 import Footer from '../../../components/Footer.astro';
+
+// BreadcrumbList Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://www.mvvnaturales.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Recursos",
+      "item": "https://www.mvvnaturales.com/recursos/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Grasa Visceral vs Subcutánea: ¿Cuál Es Más Peligrosa?",
+      "item": "https://www.mvvnaturales.com/recursos/guias/grasa-visceral-vs-subcutanea/"
+    }
+  ]
+};
 ---
 
 <Layout 
-  title="Grasa Visceral vs Subcutánea: ¿Cuál Es Más Peligrosa? | Guía Completa"
+  title="Grasa Visceral vs Subcutánea: ¿Cuál Es Más Peligrosa?"
   description="Diferencias entre grasa visceral y subcutánea. Por qué la visceral es más peligrosa y cómo eliminarla. Guía con soluciones naturales."
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
   <WhatsAppProvider client:load>
     <Navbar6 client:load />
 
@@ -107,7 +134,7 @@ import Footer from '../../../components/Footer.astro';
             <div class="bg-gradient-to-r from-como to-[#3d6849] rounded-xl p-6 text-white">
               <h3 class="text-xl font-bold mb-4">1. Cardio Intensivo</h3>
               <p class="text-sm mb-4">HIIT 3-4 veces por semana. La grasa visceral responde RÁPIDO a cardio.</p>
-              <a href="/recursos/guias/ejercicios-metabolismo" class="inline-flex items-center gap-2 text-white font-bold hover:underline">
+              <a href="/recursos/guias/ejercicios-metabolismo/" class="inline-flex items-center gap-2 text-white font-bold hover:underline">
                 Ver rutinas de HIIT →
               </a>
             </div>
@@ -132,13 +159,13 @@ import Footer from '../../../components/Footer.astro';
           </p>
           <div class="flex flex-wrap justify-center gap-4">
             <a
-              href="/sosburn"
+              href="/sosburn/"
               class="inline-flex items-center justify-center gap-3 bg-white text-como px-8 py-4 md:px-12 md:py-6 rounded-full font-bold text-base md:text-lg shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-300"
             >
               Ver SOS Burn →
             </a>
             <a
-              href="/lidabooster"
+              href="/lidabooster/"
               class="inline-flex items-center justify-center gap-3 bg-white/10 border-2 border-white text-white px-8 py-4 md:px-12 md:py-6 rounded-full font-bold text-base md:text-lg hover:bg-white/20 transition-all duration-300"
             >
               Ver Lida Booster →
@@ -150,11 +177,11 @@ import Footer from '../../../components/Footer.astro';
         <section class="mb-8 text-center">
           <p class="text-text-secondary mb-4">💡 <strong>Lee más:</strong></p>
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="/recursos/guias/quemar-grasa-abdominal" class="text-como font-bold hover:underline">
+            <a href="/recursos/guias/quemar-grasa-abdominal/" class="text-como font-bold hover:underline">
               Guía: Quemar Grasa Abdominal →
             </a>
             <span class="text-gray-400">|</span>
-            <a href="/recursos/guias/dieta-grasa-abdominal" class="text-como font-bold hover:underline">
+            <a href="/recursos/guias/dieta-grasa-abdominal/" class="text-como font-bold hover:underline">
               Dieta para Barriga →
             </a>
           </div>

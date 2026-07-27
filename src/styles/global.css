@@ -61,9 +61,21 @@
     }
   }
   
-  /* Better focus states for accessibility and keyboard navigation */
+  /* Better focus states for accessibility and keyboard navigation.
+     `outline` (outline-style: solid) is required — with only outline-2 the
+     browser keeps its UA `outline-style: auto` and ignores our width/colour. */
   *:focus-visible {
-    @apply outline-2 outline-offset-2 outline-como;
+    @apply outline outline-2 outline-offset-2 outline-como;
+  }
+
+  /* Skip link: visually hidden until focused, then pinned to the top-left. */
+  .skip-link {
+    @apply absolute left-2 z-[10000] rounded-md bg-como px-4 py-2 text-white;
+    top: -100px;
+    transition: top 0.15s ease-in-out;
+  }
+  .skip-link:focus {
+    top: 0.5rem;
   }
   
   /* Respect user's motion preferences */

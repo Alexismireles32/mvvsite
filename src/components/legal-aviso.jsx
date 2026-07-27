@@ -181,7 +181,7 @@ export function LegalAviso() {
                 10. Protección de Datos Personales
               </h2>
               <p>
-                Para obtener información sobre cómo recopilamos, utilizamos y protegemos sus datos personales, consulte nuestra <a href="/politica-de-privacidad" className="text-como hover:underline font-semibold">Política de Privacidad</a>.
+                Para obtener información sobre cómo recopilamos, utilizamos y protegemos sus datos personales, consulte nuestra <a href="/politica-de-privacidad/" className="text-como hover:underline font-semibold">Política de Privacidad</a>.
               </p>
               <p>
                 Cumplimos con las regulaciones de protección de datos aplicables en México (Ley Federal de Protección de Datos Personales) y Estados Unidos (incluyendo CCPA de California cuando aplique).

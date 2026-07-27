@@ -6,6 +6,7 @@ import { Footer2 } from '../components/footer-02.jsx';
 
 const productData = {
   productName: "SOS Burn Sensitive",
+  productUrl: "/sosburn-sensitive",
   productImage: "https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549520/catalogo-mvv-natural-11_we83am.webp",
   secondaryImages: ['https://res.cloudinary.com/dsulhqvza/image/upload/f_auto,q_auto,w_1200/v1761549733/catalogo-mvv-natural-11_hqpxok.webp'],
   description: "S&S BURN Sensitive llegó la solución para personas diabéticas, hipertensas e hipotiroidismo. Potente quema grasa indicado para grasa rebelde. Saciador e inhibidor del apetito. Acelerador del metabolismo. 5 veces más aporte de energía sin efecto rebote. Para él y para ella. Quema grasa intenso, energizante y adelgazante. Sin efecto rebote garantizado.",
@@ -31,8 +32,9 @@ const productData = {
 ---
 
 <Layout 
-  title="SOS Burn Sensitive 30 Cápsulas - Diabéticos Hipertensos Hipotiroidismo"
-  description="S&S BURN Sensitive: solución para diabéticos, hipertensos e hipotiroidismo. Potente quema grasa, 5x energía. Sin efecto rebote. Para él y para ella."
+  title="SOS Burn Sensitive: Para Diabéticos e Hipertensos"
+  description="SOS Burn Sensitive: fórmula suave, sin estimulantes fuertes, pensada para personas sensibles. Consulta a tu médico si tomas alguna medicación."
+  image={productData.productImage}
 >
   <Navbar6 client:load />
   <ProductPageWrapper client:load productData={productData} />
