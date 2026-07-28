@@ -1,6 +1,5 @@
 // @ts-check
-import { execSync } from 'node:child_process';
-import { existsSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
@@ -20,37 +19,22 @@ const EXCLUDED_PATHS = new Set([
   '/articulo-de-blog/',
 ]);
 
-// Per-URL lastmod derived from git history. Previously every URL shared one
-// build-time timestamp, which gave Google no per-page recrawl trigger — the
-// live sitemap stamped all 70 URLs with 2025-11-03T00:28:59.892Z.
-// On Vercel, file mtimes are all checkout time, so git is the only real source.
-const lastmodCache = new Map();
-
-function sourceFileForPath(pathname) {
-  const clean = pathname.replace(/^\/|\/$/g, '');
-  const candidates = clean
-    ? [`src/pages/${clean}.astro`, `src/pages/${clean}/index.astro`]
-    : ['src/pages/index.astro'];
-  return candidates.find((c) => existsSync(c));
-}
-
-function lastmodFor(pathname) {
-  if (lastmodCache.has(pathname)) return lastmodCache.get(pathname);
-  let iso;
-  const file = sourceFileForPath(pathname);
-  if (file) {
-    try {
-      const out = execSync(`git log -1 --format=%cI -- "${file}"`, {
-        encoding: 'utf8',
-        stdio: ['ignore', 'pipe', 'ignore'],
-      }).trim();
-      if (out) iso = new Date(out).toISOString();
-    } catch {
-      // git unavailable (e.g. shallow clone) — omit rather than emit a false date
-    }
-  }
-  lastmodCache.set(pathname, iso);
-  return iso;
+// Per-URL lastmod. Previously every URL shared one build-time timestamp, which
+// gave Google no per-page recrawl trigger — the live sitemap stamped all 70
+// URLs with 2025-11-03T00:28:59.892Z.
+//
+// The dates are resolved from full git history by `npm run lastmod` and
+// COMMITTED to src/data/lastmod.json. They are deliberately NOT derived from
+// git here: Vercel builds from a shallow clone, where every file reports the
+// same single commit date and all URLs collapse to one value again.
+//
+// Run `npm run lastmod` whenever you change page content.
+let LASTMOD = {};
+try {
+  LASTMOD = JSON.parse(readFileSync('src/data/lastmod.json', 'utf8'));
+} catch {
+  console.warn('[sitemap] src/data/lastmod.json missing — run `npm run lastmod`. ' +
+               'Omitting <lastmod> rather than emitting a false date.');
 }
 
 // https://astro.build/config
@@ -104,7 +88,7 @@ export default defineConfig({
       // URLs previously shared priority 0.8, so the field carried no signal.
       serialize(item) {
         const { pathname } = new URL(item.url);
-        const lastmod = lastmodFor(pathname);
+        const lastmod = LASTMOD[pathname];
         return lastmod ? { url: item.url, lastmod } : { url: item.url };
       },
     }),
