@@ -2,17 +2,17 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": true,
   "redirects": [
-    { "source": "/primerose", "destination": "/primrose/", "permanent": true },
-    { "source": "/slimcoffe", "destination": "/slimcoffee/", "permanent": true },
-    { "source": "/ashawandha", "destination": "/ashwagandha/", "permanent": true },
-    { "source": "/sosburnclear", "destination": "/sosburn-clear/", "permanent": true },
-    { "source": "/sosburnsensitive", "destination": "/sosburn-sensitive/", "permanent": true },
-    { "source": "/applecyder", "destination": "/applecidervingar/", "permanent": true },
-    { "source": "/body-shape", "destination": "/cmpushup/", "permanent": true },
-    { "source": "/prim-rose", "destination": "/primrose/", "permanent": true },
-    { "source": "/sos-burn-clear", "destination": "/sosburn-clear/", "permanent": true },
+    { "source": "/primerose{/}?", "destination": "/primrose/", "permanent": true },
+    { "source": "/slimcoffe{/}?", "destination": "/slimcoffee/", "permanent": true },
+    { "source": "/ashawandha{/}?", "destination": "/ashwagandha/", "permanent": true },
+    { "source": "/sosburnclear{/}?", "destination": "/sosburn-clear/", "permanent": true },
+    { "source": "/sosburnsensitive{/}?", "destination": "/sosburn-sensitive/", "permanent": true },
+    { "source": "/applecyder{/}?", "destination": "/applecidervingar/", "permanent": true },
+    { "source": "/body-shape{/}?", "destination": "/cmpushup/", "permanent": true },
+    { "source": "/prim-rose{/}?", "destination": "/primrose/", "permanent": true },
+    { "source": "/sos-burn-clear{/}?", "destination": "/sosburn-clear/", "permanent": true },
     {
-      "source": "/articulo-de-blog",
+      "source": "/articulo-de-blog{/}?",
       "destination": "/blog/como-acelerar-metabolismo-naturalmente/",
       "permanent": true
     }
